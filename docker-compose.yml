@@ -16,8 +16,6 @@ services:
     container_name: notpal_django
     build:
       context: ./backend
-    ports:
-      - "8017:8017"
     command: python manage.py runserver 0.0.0.0:8017
     volumes:
       - ./backend:/app
