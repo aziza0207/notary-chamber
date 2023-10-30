@@ -1,8 +1,8 @@
 from rest_framework import generics
-from .serializers import DocumentSerializer
-from .models import Document
+from .serializers import DocumentSerializer, CategorySerializer
+from .models import Document, Category
 
 
 class DocumentListAPIView(generics.ListAPIView):
-    serializer_class = DocumentSerializer
-    queryset = Document.objects.all()
+    serializer_class = CategorySerializer
+    queryset = Category.objects.all()
