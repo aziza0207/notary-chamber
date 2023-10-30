@@ -48,7 +48,7 @@ ADMIN_APPS = [
     'modeltranslation',
 ]
 
-LOCAL_APPS = [
+LOCAL_APPS = ["content", "notary",
 
 ]
 

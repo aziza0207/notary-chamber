@@ -1,3 +1,8 @@
-from django.shortcuts import render
+from rest_framework import generics
+from .serializers import NotarySerializer
+from .models import Notary
 
-# Create your views here.
+
+class NotaryListAPIView(generics.ListAPIView):
+    serializer_class = NotarySerializer
+    queryset = Notary.objects.all()
