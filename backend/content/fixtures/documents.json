@@ -1,0 +1,56 @@
+[
+    {   
+        "model": "content.document",
+        "pk": 1,
+        "fields": {
+            "title": "Доверенность на машину",
+            "file": "documents/car.docx",
+            "category": "1"
+        }
+    },
+    {   
+        "model": "content.document",
+        "pk": 2,
+        "fields": {
+            "title": "Доверенность на квартиру",
+            "file": "documents/apartment.docx",
+            "category": "1"
+        }
+    },
+    {   
+        "model": "content.document",
+        "pk": 3,
+        "fields": {
+            "title": "Завещание родственнику",
+            "file": "documents/sibling.docx",
+            "category": "2"
+        }
+    },
+    {   
+        "model": "content.document",
+        "pk": 4,
+        "fields": {
+            "title": "Завещание фонду",
+            "file": "documents/found.docx",
+            "category": "2"
+        }
+    },
+    {   
+        "model": "content.document",
+        "pk": 5,
+        "fields": {
+            "title": "Дарственная на родителей",
+            "file": "documents/parents.docx",
+            "category": "3"
+        }
+    },
+    {   
+        "model": "content.document",
+        "pk": 6,
+        "fields": {
+            "title": "Дарственная на друзей",
+            "file": "documents/friends.docx",
+            "category": "3"
+        }
+    }
+]

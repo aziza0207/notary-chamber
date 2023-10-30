@@ -1,2 +1,2 @@
 from .contacts_model  import Contact
-from .docements_model import Document
+from .documents_model import Document, Category

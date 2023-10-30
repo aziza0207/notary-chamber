@@ -18,7 +18,7 @@ def document_files(instance, filename):
 
 
 class Document(models.Model):
-    title = models.CharField("Название", max_length=20)
+    title = models.CharField("Название", max_length=100)
     file = models.FileField("Файл", upload_to=document_files)
     category = models.ForeignKey("Category", related_name="documents", on_delete=models.CASCADE)
 
