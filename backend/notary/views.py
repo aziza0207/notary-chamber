@@ -7,6 +7,7 @@ from django.core.mail import send_mail
 from django.views.decorators.csrf import csrf_exempt
 from django.http import JsonResponse
 import json
+from notary.tasks import send_mail_delayed
 
 
 class NotaryListAPIView(generics.ListAPIView):
@@ -14,21 +15,14 @@ class NotaryListAPIView(generics.ListAPIView):
     queryset = Notary.objects.all()
 
 
-# @csrf_exempt
-def perform_mailing(request):
+def make_and_send_message(request):
     if request.method == 'POST':
         data = json.loads(request.body)
         message = f'''Сообщение от {data.get('name')}.
         \nКонтакты: email - {data.get('email')}.
         \nСообщение:
         \n"{data.get('text')}".'''
-        success = send_mail(
-            subject='New message from a client',
-            message=message,
-            from_email='vlk@gmail.com',
-            recipient_list=['valentine@mail.ru'],
-            fail_silently=False
-        )
+        success = send_mail_delayed.delay(message)
         if success:
             response = JsonResponse({'message': 'Message sended successfully'}, status=status.HTTP_202_ACCEPTED)
         else:
