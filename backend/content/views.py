@@ -15,7 +15,7 @@ class NewsListAPIView(generics.ListAPIView):
 
 class NewsDetailAPIView(generics.RetrieveAPIView):
     lookup_field = "slug"
-    serializer_class = NewsListSerializer
+    serializer_class = NewsDetailSerializer
 
     def get_object(self):
         slug = self.kwargs["slug"]
@@ -26,4 +26,5 @@ class NewsPinnedAPIView(generics.ListAPIView):
     serializer_class = NewsListSerializer
 
     def get_queryset(self):
-        return News.objects.filter(is_pinned=True)[::3]
+        return News.objects.filter(is_pinned=True)[:2]
+

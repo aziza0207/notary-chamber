@@ -27,7 +27,7 @@ class News(models.Model):
     title = models.CharField("Заголовок", max_length=255)
     description = models.TextField()
     video = models.URLField("Линк на ютуб", blank=True, null=True)
-    date = models.DateField("Дата", auto_now_add=True)
+    date = models.DateField("Дата", auto_now_add=True, blank=True, null=True)
     is_pinned = models.BooleanField("Закрепить", default=False)
 
     class Meta:

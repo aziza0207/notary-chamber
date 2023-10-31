@@ -12,7 +12,7 @@ class NewsAdmin(ModelAdmin):
     inlines = (NewsImageImageInline,)
     prepopulated_fields = {"slug": ("title",)}
 
-    list_display = ["id", "title"]
+    list_display = ["id", "title", "date"]
     list_display_links = ["title"]
 
     readonly_fields = ["id", "date"]
