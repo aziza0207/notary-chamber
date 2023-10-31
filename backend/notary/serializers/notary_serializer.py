@@ -1,5 +1,5 @@
 from rest_framework import serializers
-from .models import Notary
+from ..models import Notary
 
 
 class NotarySerializer(serializers.ModelSerializer):

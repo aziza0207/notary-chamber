@@ -10,6 +10,7 @@ class Notary(models.Model):
     full_name = models.CharField("Имя", max_length=100)
     photo = models.ImageField("Фото", blank=True, null=True, upload_to=notary_photos)
     city = models.CharField("Город", choices=CityChoice.choices)
+    address = models.CharField("Адрес", max_length=255)
     region = models.CharField("Регион", choices=RegionChoice.choices)
 
     class Meta:
