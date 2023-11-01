@@ -1,0 +1,42 @@
+[
+    {
+        "model": "content.newsimage",
+        "pk": 1,
+        "fields": {
+            "image": "news_images/img-1.jpg",
+    "news": 1
+        }
+    },
+  {
+        "model": "content.newsimage",
+        "pk": 2,
+        "fields": {
+            "image": "news_images/img-2.jpg",
+    "news": 1
+        }
+    },
+  {
+        "model": "content.newsimage",
+        "pk": 3,
+        "fields": {
+            "image": "news_images/img-3.jpg",
+    "news": 2
+        }
+    },
+{
+        "model": "content.newsimage",
+        "pk": 4,
+        "fields": {
+            "image": "news_images/img-4.jpg",
+    "news": 2
+        }
+    },
+{
+        "model": "content.newsimage",
+        "pk": 5,
+        "fields": {
+            "image": "news_images/img-5.jpg",
+    "news": 3
+        }
+    }
+]

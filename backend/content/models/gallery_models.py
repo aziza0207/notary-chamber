@@ -1,7 +1,9 @@
 from django.db import models
 
+
 def gallery_files(instance, filename):
     return f'gallery/photos/{filename}'
+
 
 class Photo(models.Model):
     title = models.CharField(max_length=250, verbose_name='Название')
@@ -15,10 +17,11 @@ class Photo(models.Model):
     def __str__(self):
         return self.title
 
+
 class Video(models.Model):
     title = models.CharField(max_length=250, verbose_name='Название')
     link = models.URLField(max_length=300, verbose_name='Ссылка')
-    
+
     class Meta:
         ordering = ['id']
         verbose_name = 'Видео'

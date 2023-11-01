@@ -33,4 +33,5 @@ class NewsDetailSerializer(serializers.ModelSerializer):
                   "title",
                   "description",
                   "video",
+                  "images",
                   "date")
