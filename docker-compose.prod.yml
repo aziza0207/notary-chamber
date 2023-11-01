@@ -7,6 +7,7 @@ services:
   api:
     expose:
       - 8017
+
     networks:
       - notpal_network
 
@@ -25,6 +26,29 @@ services:
       # local
       # - ./static_root:/static_root
       # - ./media_storage:/media_storage
+
+    networks:
+      - notpal_network
+
+  redis:
+    container_name: notpal_redis
+    image: redis:7.2.2-alpine
+    expose:
+      - 6379
+
+    networks:
+      - notpal_network
+  
+  celery:
+    container_name: notpal_celery
+    build:
+      context: ./backend
+    command: celery -A core worker -l INFO
+    depends_on:
+      - redis
+      - api
+    env_file:
+      - ./backend/.env
 
     networks:
       - notpal_network

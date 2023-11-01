@@ -1,0 +1,26 @@
+[
+    {   
+        "model": "content.faq",
+        "pk": 1,
+        "fields": {
+            "question": "Где лучший фронтенд?",
+            "answer": "В team3!"
+        }
+    },
+    {   
+        "model": "content.faq",
+        "pk": 2,
+        "fields": {
+            "question": "Где лучший бэкенд?",
+            "answer": "В team3!"
+        }
+    },
+    {   
+        "model": "content.faq",
+        "pk": 3,
+        "fields": {
+            "question": "Где лучший нотариусы?",
+            "answer": "В нотариальной палате Республики Кыргызстан!"
+        }
+    }
+]

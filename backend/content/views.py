@@ -1,7 +1,11 @@
 from rest_framework import generics
-from .serializers import CategorySerializer, NewsListSerializer, NewsDetailSerializer
-from .models import Category, News
+from .serializers import CategorySerializer, NewsListSerializer, NewsDetailSerializer, FAQSerializer
+from .models import Category, News, FAQ
 
+
+class FAQListAPIView(generics.ListAPIView):
+    serializer_class = FAQSerializer
+    queryset = FAQ.objects.all()
 
 class DocumentListAPIView(generics.ListAPIView):
     serializer_class = CategorySerializer
@@ -27,4 +31,3 @@ class NewsPinnedAPIView(generics.ListAPIView):
 
     def get_queryset(self):
         return News.objects.filter(is_pinned=True)[:2]
-
