@@ -5,4 +5,4 @@ from ..models import Notary
 class NotarySerializer(serializers.ModelSerializer):
     class Meta:
         model = Notary
-        fields = ("is_pinned", )
+        fields = "__all__"
