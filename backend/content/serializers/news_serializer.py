@@ -1,5 +1,11 @@
 from rest_framework import serializers
-from ..models import News
+from ..models import News, NewsImage
+
+
+class ImageSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = NewsImage
+        fields = ("image",)
 
 
 class NewsListSerializer(serializers.ModelSerializer):
@@ -19,6 +25,12 @@ class NewsListSerializer(serializers.ModelSerializer):
 
 
 class NewsDetailSerializer(serializers.ModelSerializer):
+    images = ImageSerializer(many=True)
+
     class Meta:
         model = News
-        exclude = ("id", )
+        fields = ("main_image",
+                  "title",
+                  "description",
+                  "video",
+                  "date")
