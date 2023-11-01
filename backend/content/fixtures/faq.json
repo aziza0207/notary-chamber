@@ -4,7 +4,7 @@
         "pk": 1,
         "fields": {
             "question": "Где лучший фронтенд?",
-            "answer": "В team3!"
+            "answer": "В team2!"
         }
     },
     {   
@@ -12,7 +12,7 @@
         "pk": 2,
         "fields": {
             "question": "Где лучший бэкенд?",
-            "answer": "В team3!"
+            "answer": "В team2!"
         }
     },
     {   
