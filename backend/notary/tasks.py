@@ -3,11 +3,6 @@ from django.core.mail import send_mail
 
 
 @shared_task()
-def send_mail_delayed(message):
-    send_mail(
-            subject='New message from a client',
-            message=message,
-            from_email='vlk@gmail.com',
-            recipient_list=['valentine@mail.ru'],
-            fail_silently=False
-        )
+def send_mail_delayed(subject, message, from_email, recipient_list, fail_silently):
+    send_mail(subject=subject, message=message, from_email=from_email,
+                                recipient_list=recipient_list, fail_silently=fail_silently)
