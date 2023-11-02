@@ -10,11 +10,21 @@ import json
 from notary.tasks import send_mail_delayed
 from django.conf import settings
 from .services import make_message
+from .pagination import NotaryListPagination
+from django.db.models import Q
 
 
 class NotaryListAPIView(generics.ListAPIView):
     serializer_class = NotarySerializer
-    queryset = Notary.objects.all()
+    
+    pagination_class = NotaryListPagination
+    
+    def get_queryset(self):
+        value_to_search = self.request.query_params.get('search')
+        queryset = Notary.objects.all()
+        if value_to_search:
+            queryset = Notary.objects.filter(Q(full_name__icontains=value_to_search) | Q(city__icontains=value_to_search))
+        return queryset
 
 
 @csrf_exempt

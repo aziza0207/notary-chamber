@@ -5,7 +5,7 @@ FRONTEND_HOME = config('FRONTEND_HOME', default='')
 JAZZMIN_SETTINGS = {
     "site_title": "Briskly Minds",
 
-    "site_logo": 'img/briskly_logo.jpg',
+    # "site_logo": 'img/briskly_logo.jpg',
 
     "copyright": "Sanarip Galley",
     "topmenu_links": [
@@ -14,9 +14,9 @@ JAZZMIN_SETTINGS = {
 
         {"name": "Открыть сайт", "url": FRONTEND_HOME, "new_window": True},
 
-        {"app": "questions", },
+        # {"app": "questions", },
 
-        {"app": "candidates", },
+        # {"app": "candidates", },
     ],
 
     # Whether to display the side menu
@@ -29,9 +29,7 @@ JAZZMIN_SETTINGS = {
 
     "hide_models": [],
 
-    "order_with_respect_to": ["questions.questionform", "candidates.recruitment",
-                              "candidates.candidate", "candidates.waitinglist",
-                              "candidates.blacklist"],
+    "order_with_respect_to": [],
 
     # "show_ui_builder": True
 }
