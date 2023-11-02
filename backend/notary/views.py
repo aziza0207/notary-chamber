@@ -17,14 +17,15 @@ class NotaryListAPIView(generics.ListAPIView):
     queryset = Notary.objects.all()
 
 
+@csrf_exempt
 def make_and_send_message(request):
     if request.method == 'POST':
-        kwargs = make_message(request)
+        message = make_message(request)
 
         if settings.PRODUCTION:
-            success = send_mail_delayed.delay(**kwargs)
+            success = send_mail_delayed.delay(**message)
         else:
-            success = send_mail(**kwargs)
+            success = send_mail(**message)
 
         if success:
             response = JsonResponse({'message': 'Message sended successfully'}, status=status.HTTP_202_ACCEPTED)

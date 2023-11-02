@@ -6,9 +6,10 @@ def gallery_files(instance, filename):
 class Photo(models.Model):
     title = models.CharField(max_length=250, verbose_name='Название')
     image = models.ImageField(upload_to='gallery_files', verbose_name='Картинка')
+    pub_date = models.DateField(auto_now_add=True)
 
     class Meta:
-        ordering = ['id']
+        ordering = ['-pub_date']
         verbose_name = 'Фотография'
         verbose_name_plural = 'Фотографии'
 
@@ -18,9 +19,10 @@ class Photo(models.Model):
 class Video(models.Model):
     title = models.CharField(max_length=250, verbose_name='Название')
     link = models.URLField(max_length=300, verbose_name='Ссылка')
-    
+    pub_date = models.DateField(auto_now_add=True)
+
     class Meta:
-        ordering = ['id']
+        ordering = ['-pub_date']
         verbose_name = 'Видео'
         verbose_name_plural = 'Видео'
 

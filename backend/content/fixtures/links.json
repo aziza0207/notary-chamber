@@ -1,0 +1,34 @@
+[
+    {
+        "model": "content.link",
+        "pk": 1,
+        "fields": {
+            "name": "ChatGPT",
+            "link": "https://chat.openai.com/"
+        }
+    },
+    {
+        "model": "content.link",
+        "pk": 2,
+        "fields": {
+            "name": "Django docs",
+            "link": "https://docs.djangoproject.com/"
+        }
+    },
+    {
+        "model": "content.link",
+        "pk": 3,
+        "fields": {
+            "name": "DRF на русском",
+            "link": "https://ilyachch.gitbook.io/django-rest-framework-russian-documentation/overview/navigaciya-po-api"
+        }
+    },
+    {
+        "model": "content.link",
+        "pk": 4,
+        "fields": {
+            "name": "Ruff docs",
+            "link": "https://docs.astral.sh/ruff/"
+        }
+    }
+]
