@@ -13,7 +13,7 @@ class NewsListSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = News
-        fields = ("slug", "main_image", "title", "description")
+        fields = ("slug", "main_image", "title", "description", "date")
 
     def get_description(self, obj):
         max_length = 120

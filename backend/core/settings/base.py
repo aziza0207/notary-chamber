@@ -23,7 +23,6 @@ ALLOWED_HOSTS = config('ALLOWED_HOSTS').split(',')
 
 CSRF_TRUSTED_ORIGINS = config('CSRF_TRUSTED_ORIGINS').split(',')
 
-
 INTERNAL_IPS = [
     "127.0.0.1",
     "localhost",
@@ -50,7 +49,7 @@ ADMIN_APPS = [
 
 LOCAL_APPS = ["content", "notary",
 
-]
+              ]
 
 INSTALLED_APPS = [
     *ADMIN_APPS,
@@ -68,8 +67,8 @@ INSTALLED_APPS = [
 ]
 
 MIDDLEWARE = [
-    'debug_toolbar.middleware.DebugToolbarMiddleware', # activate only during development
-    
+    'debug_toolbar.middleware.DebugToolbarMiddleware',  # activate only during development
+
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.locale.LocaleMiddleware',
@@ -174,6 +173,7 @@ DJANGO_ADMIN_LOGS_ENABLED = False
 REST_FRAMEWORK = {
 
     'DEFAULT_SCHEMA_CLASS': 'drf_spectacular.openapi.AutoSchema',
+
 }
 
 if DEBUG:
@@ -185,5 +185,5 @@ EMAIL_HOST_USER = config('EMAIL_HOST_USER')
 EMAIL_HOST_PASSWORD = config('EMAIL_HOST_PASSWORD')
 EMAIL_USE_SSL = config('EMAIL_USE_SSL')
 
-CELERY_BROKER_URL=config('CELERY_BROKER_URL')
-CELERY_RESULT_BACKEND=config('CELERY_RESULT_BACKEND')
+CELERY_BROKER_URL = config('CELERY_BROKER_URL')
+CELERY_RESULT_BACKEND = config('CELERY_RESULT_BACKEND')

@@ -1,11 +1,13 @@
 from rest_framework import generics
 from .serializers import CategorySerializer, NewsListSerializer, NewsDetailSerializer, FAQSerializer
 from .models import Category, News, FAQ
+from .pagination import NewsListPagination
 
 
 class FAQListAPIView(generics.ListAPIView):
     serializer_class = FAQSerializer
     queryset = FAQ.objects.all()
+
 
 class DocumentListAPIView(generics.ListAPIView):
     serializer_class = CategorySerializer
@@ -15,6 +17,7 @@ class DocumentListAPIView(generics.ListAPIView):
 class NewsListAPIView(generics.ListAPIView):
     serializer_class = NewsListSerializer
     queryset = News.objects.all()
+    pagination_class = NewsListPagination
 
 
 class NewsDetailAPIView(generics.RetrieveAPIView):
