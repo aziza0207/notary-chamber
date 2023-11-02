@@ -1,7 +1,8 @@
 from rest_framework import generics
-from .serializers import CategorySerializer, NewsListSerializer, NewsDetailSerializer, FAQSerializer
-from .models import Category, News, FAQ
 from .pagination import NewsListPagination
+from .serializers import CategorySerializer, NewsListSerializer, NewsDetailSerializer, FAQSerializer, LinkSerializer, PhotoSerializer, VideoSerializer
+from .models import Category, News, FAQ, Link, Photo, Video
+
 
 
 class FAQListAPIView(generics.ListAPIView):
@@ -34,3 +35,18 @@ class NewsPinnedAPIView(generics.ListAPIView):
 
     def get_queryset(self):
         return News.objects.filter(is_pinned=True)[:2]
+
+
+class LinksListAPIView(generics.ListAPIView):
+    serializer_class = LinkSerializer
+    queryset = Link.objects.all()
+
+
+class PhotoListAPIView(generics.ListAPIView):
+    serializer_class = PhotoSerializer
+    queryset = Photo.objects.all()
+
+
+class VideoListAPIView(generics.ListAPIView):
+    serializer_class = VideoSerializer
+    queryset = Video.objects.all()

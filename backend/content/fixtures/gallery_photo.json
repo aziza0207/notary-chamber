@@ -1,0 +1,38 @@
+[
+    {
+        "model": "content.photo",
+        "pk": 1,
+        "fields": {
+            "title": "Корпоратив в Мадине",
+            "image": "gallery/photos/corporate_madina.jpg",
+            "pub_date": "2015-10-09"
+        }
+    },
+    {
+        "model": "content.photo",
+        "pk": 2,
+        "fields": {
+            "title": "Биз ачылдык",
+            "image": "gallery/photos/biz_achildik.jpg",
+            "pub_date": "2015-11-09"
+        }
+    },
+    {
+        "model": "content.photo",
+        "pk": 3,
+        "fields": {
+            "title": "Pizza party",
+            "image": "gallery/photos/pizza_party.jpg",
+            "pub_date": "2015-11-09"
+        }
+    },
+    {
+        "model": "content.photo",
+        "pk": 4,
+        "fields": {
+            "title": "Поем гимн Бишкегим",
+            "image": "gallery/photos/sing.jpg",
+            "pub_date": "2015-05-09"
+        }
+    }
+]

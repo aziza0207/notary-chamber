@@ -1,0 +1,38 @@
+[
+    {
+        "model": "content.video",
+        "pk": 1,
+        "fields": {
+            "title": "Лекция в палате",
+            "link": "https://youtu.be/F4o9p4gzQms?si=qLq8qDR3XWI_sv1c",
+            "pub_date": "2015-10-09"
+        }
+    },
+    {
+        "model": "content.video",
+        "pk": 2,
+        "fields": {
+            "title": "Жогорку кенеш",
+            "link": "https://www.youtube.com/live/xPnjBtwgnoc?si=TUon8-Qdog2qcTJM",
+            "pub_date": "2015-10-09"
+        }
+    },
+    {
+        "model": "content.video",
+        "pk": 3,
+        "fields": {
+            "title": "Бир бойалык",
+            "link": "https://www.youtube.com/live/oo2ZsrSPT0Q?si=KZauFUB6cBqfdVw6",
+            "pub_date": "2015-10-09"
+        }
+    },
+    {
+        "model": "content.video",
+        "pk": 4,
+        "fields": {
+            "title": "Три кота",
+            "link": "https://youtu.be/7IEmqMOj3vM?si=Ech5y-T3hE3WK_m8",
+            "pub_date": "2015-10-09"
+        }
+    }
+]
