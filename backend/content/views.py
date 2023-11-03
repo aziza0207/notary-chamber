@@ -52,6 +52,4 @@ class VideoListAPIView(generics.ListAPIView):
     queryset = Video.objects.all()
 
 
-class NewsRecommendedAPIView(generics.ListAPIView):
-    serializer_class = NewsListSerializer
-    queryset = News.objects.all().order_by()
+
