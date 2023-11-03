@@ -1,6 +1,8 @@
 from django.utils.safestring import mark_safe
 from django.contrib import admin
+from modeltranslation.admin import TabbedTranslationAdmin
 from ..models import News, NewsImage
+from ..mixins import AdminFieldMixin
 
 
 class NewsImageImageInline(admin.StackedInline):
@@ -18,25 +20,19 @@ def make_unpinned(modeladmin, request, queryset):
     queryset.update(is_pinned=False)
 
 
-class NewsAdmin(admin.ModelAdmin):
+class NewsAdmin(AdminFieldMixin, TabbedTranslationAdmin):
     inlines = (NewsImageImageInline,)
     prepopulated_fields = {"slug": ("title",)}
 
     list_display = ["id", "title", "get_little_image", "is_pinned", "date"]
     list_display_links = ["title"]
 
-    readonly_fields = ["id", "date"]
+    readonly_fields = ["id", "date", "get_little_image",]
     search_fields = ["title", "slug"]
+    fields = ["title", "slug", "description", ("main_image", "get_little_image",), "video", "is_pinned", "date"]
 
     actions = [make_pinned, make_unpinned]
 
-
-
-    def get_little_image(self, object):
-        if object.main_image:
-            return mark_safe(f"<img src='{object.main_image.url}' width=50>")
-
-    get_little_image.short_description = ""
-
+    
 
 admin.site.register(News, NewsAdmin)

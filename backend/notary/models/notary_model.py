@@ -11,8 +11,12 @@ class Notary(models.Model):
     city = models.CharField("Город", choices=CityChoice.choices)
     address = models.CharField("Адрес", max_length=255)
     region = models.CharField("Регион", choices=RegionChoice.choices)
-    latitude = models.CharField("Широта", default='Coordinates not defined', max_length=30)
-    longitude = models.CharField("Долгота", default='Coordinates not defined', max_length=30)
+    latitude = models.CharField("Широта", default='Coordinates not defined', blank=True, max_length=30)
+    longitude = models.CharField("Долгота", default='Coordinates not defined', blank=True, max_length=30, help_text=
+                                '''Пустые поля координат заполняются автоматически.
+                                Автоматическое определение может давать некорректный результат,
+                                рекомендуется проверять полученные координаты.
+                                ''')
 
     class Meta:
         ordering = ["id"]

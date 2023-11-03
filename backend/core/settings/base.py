@@ -130,11 +130,11 @@ USE_L10N = True
 
 USE_TZ = True
 
-# LANGUAGES = (
-#     ('ru', gettext_lazy('Russian')),
-#     ('en', gettext_lazy('English')),
-#     ('ky', gettext_lazy('Kyrgyz')),
-# )
+LANGUAGES = (
+    ('ru', gettext_lazy('Russian')),
+    ('ky', gettext_lazy('Kyrgyz')),
+    ('en', gettext_lazy('English')),
+)
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/4.2/howto/static-files/
@@ -176,7 +176,7 @@ REST_FRAMEWORK = {
 
 }
 
-if DEBUG:
+if PRODUCTION:
     EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
 
 EMAIL_HOST = config('EMAIL_HOST')

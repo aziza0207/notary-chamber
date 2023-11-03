@@ -20,8 +20,11 @@ class NotaryListAPIView(generics.ListAPIView):
     pagination_class = NotaryListPagination
     
     def get_queryset(self):
+        requested_page = self.request.query_params.get('page')
         value_to_search = self.request.query_params.get('search')
         queryset = Notary.objects.all()
+        if requested_page == 'all':
+            self.pagination_class = None
         if value_to_search:
             queryset = Notary.objects.filter(Q(full_name__icontains=value_to_search) | Q(city__icontains=value_to_search))
         return queryset

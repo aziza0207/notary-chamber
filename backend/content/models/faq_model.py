@@ -8,7 +8,7 @@ class FAQ(models.Model):
     class Meta:
         ordering = ['id']
         verbose_name = 'Вопрос'
-        verbose_name_plural = 'Вопросы'
+        verbose_name_plural = 'Частые вопросы'
 
     def __str__(self):
         return self.question

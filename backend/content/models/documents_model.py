@@ -6,8 +6,8 @@ class Category(models.Model):
 
     class Meta:
         ordering = ["id"]
-        verbose_name = "Категория"
-        verbose_name_plural = "Категории"
+        verbose_name = "Категория документов"
+        verbose_name_plural = "Документы по категориям"
 
     def __str__(self):
         return self.title
@@ -25,7 +25,7 @@ class Document(models.Model):
     class Meta:
         ordering = ["id"]
         verbose_name = "Документ"
-        verbose_name_plural = "Документы"
+        verbose_name_plural = "Все документы"
 
     def __str__(self):
         return self.title
