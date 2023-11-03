@@ -1,5 +1,6 @@
 from django.utils.safestring import mark_safe
 from django.contrib import admin
+from django.contrib import messages
 from ..models import News, NewsImage
 
 
@@ -29,8 +30,6 @@ class NewsAdmin(admin.ModelAdmin):
     search_fields = ["title", "slug"]
 
     actions = [make_pinned, make_unpinned]
-
-
 
     def get_little_image(self, object):
         if object.main_image:

@@ -1,3 +1,4 @@
+import random
 from rest_framework import serializers
 from ..models import News, NewsImage
 
@@ -26,6 +27,8 @@ class NewsListSerializer(serializers.ModelSerializer):
 
 class NewsDetailSerializer(serializers.ModelSerializer):
     images = ImageSerializer(many=True)
+    recommended = serializers.SerializerMethodField()
+
 
     class Meta:
         model = News
@@ -34,4 +37,19 @@ class NewsDetailSerializer(serializers.ModelSerializer):
                   "description",
                   "video",
                   "images",
-                  "date")
+                  "recommended",
+                  "date",
+                  "recommended")
+
+    def get_recommended(self, obj):
+        slug = obj.slug
+        queryset = News.objects.exclude(slug=slug)[:11]
+        queryset_3 = random.sample(list(queryset), k=3)
+        serialized_data = NewsListSerializer(queryset_3, many=True).data
+        return serialized_data
+
+
+
+
+
+

@@ -31,6 +31,7 @@ class News(models.Model):
     video = models.URLField("Линк на ютуб", blank=True, null=True)
     date = models.DateField("Дата", auto_now_add=True, blank=True, null=True)
     is_pinned = models.BooleanField("Закрепленные", default=False)
+    is_recommended = models.BooleanField("Рекомендованные", default=False)
 
     class Meta:
         ordering = ["-date", "is_pinned"]
