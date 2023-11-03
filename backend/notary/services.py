@@ -1,7 +1,9 @@
-from django.core.mail import send_mail
 import json
+
 from django.conf import settings
+
 from notary.models import Recipient
+
 
 def make_message(request):
     data = json.loads(request.body)

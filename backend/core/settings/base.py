@@ -176,7 +176,7 @@ REST_FRAMEWORK = {
 
 }
 
-if PRODUCTION:
+if not PRODUCTION:
     EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
 
 EMAIL_HOST = config('EMAIL_HOST')

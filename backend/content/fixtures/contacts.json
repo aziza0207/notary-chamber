@@ -1,0 +1,10 @@
+[
+    {   
+        "model": "content.contact",
+        "pk": 1,
+        "fields": {
+            "phone": "8 800 555 3535",
+            "is_visible": "True"
+        }
+    }
+]

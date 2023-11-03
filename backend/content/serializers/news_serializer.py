@@ -1,5 +1,7 @@
 import random
+
 from rest_framework import serializers
+
 from ..models import News, NewsImage
 
 
@@ -46,10 +48,9 @@ class NewsDetailSerializer(serializers.ModelSerializer):
         queryset = News.objects.exclude(slug=slug)[:11]
         queryset_3 = random.sample(list(queryset), k=3)
         serialized_data = NewsListSerializer(queryset_3, many=True).data
+        request = self.context.get('request')
+        for item in serialized_data:
+            image_url = item.get('main_image')
+            absolute_image_url = request.build_absolute_uri(image_url)
+            item['main_image'] = absolute_image_url
         return serialized_data
-
-
-
-
-
-

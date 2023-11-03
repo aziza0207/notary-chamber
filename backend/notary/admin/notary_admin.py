@@ -1,7 +1,8 @@
-from django.contrib.admin import register, ModelAdmin
-from ..models import Notary
-from modeltranslation.admin import TabbedTranslationAdmin
+from django.contrib.admin import register
 from django.utils.safestring import mark_safe
+from modeltranslation.admin import TabbedTranslationAdmin
+
+from ..models import Notary
 
 
 @register(Notary)

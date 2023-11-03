@@ -1,3 +1,3 @@
 
 line-length = 120
-exclude = ['*__init__.py', '*migrations', '*test', 'test']
+exclude = ['*__init__.py', '*migrations', '*test', '*test.py', 'apps.py']

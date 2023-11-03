@@ -1,5 +1,6 @@
 from rest_framework import serializers
-from ..models import Document, Category
+
+from ..models import Category, Document
 
 
 class DocumentSerializer(serializers.ModelSerializer):

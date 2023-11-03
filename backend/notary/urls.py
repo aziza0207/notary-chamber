@@ -1,4 +1,5 @@
 from django.urls import path
+
 from .views import NotaryListAPIView, make_and_send_message
 
 urlpatterns = [

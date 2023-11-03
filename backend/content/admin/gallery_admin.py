@@ -1,6 +1,8 @@
-from modeltranslation.admin import TabbedTranslationAdmin
 from django.contrib import admin
+from modeltranslation.admin import TabbedTranslationAdmin
+
 from content.models import Photo, Video
+
 from ..mixins import AdminFieldMixin
 
 

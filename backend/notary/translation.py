@@ -1,5 +1,6 @@
-from modeltranslation.translator import register, TranslationOptions
-from notary.models import Notary 
+from modeltranslation.translator import TranslationOptions, register
+
+from notary.models import Notary
 
 
 @register(Notary)

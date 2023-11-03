@@ -1,5 +1,7 @@
 from django.db import models
+
 from ..constants import CityChoice, RegionChoice
+
 
 def notary_photos(instance, filename):
     return f'photos/{filename}'

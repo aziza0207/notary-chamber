@@ -1,9 +1,8 @@
-from django.utils.safestring import mark_safe
 from django.contrib import admin
 from modeltranslation.admin import TabbedTranslationAdmin
-from django.contrib import messages
-from ..models import News, NewsImage
+
 from ..mixins import AdminFieldMixin
+from ..models import News, NewsImage
 
 
 class NewsImageImageInline(admin.StackedInline):

@@ -1,7 +1,9 @@
 from django.db.models.signals import pre_save
 from django.dispatch import receiver
-from notary.models import Notary
 from geopy.geocoders import Nominatim
+
+from notary.models import Notary
+
 
 @receiver(pre_save, sender=Notary)
 def update_coordinates(sender, instance, **kwargs):

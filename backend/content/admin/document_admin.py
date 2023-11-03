@@ -1,5 +1,7 @@
 from django.contrib import admin
-from modeltranslation.admin import TabbedTranslationAdmin, TranslationStackedInline
+from modeltranslation.admin import (TabbedTranslationAdmin,
+                                    TranslationStackedInline)
+
 from content.models import Category, Document
 
 
