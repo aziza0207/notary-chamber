@@ -4,6 +4,7 @@
         "pk": 1,
         "fields": {
             "full_name": "Абдалбек кызы Аида",
+            "phone": "8568946198",
             "photo": "notary_photos/not1.jpg",
             "city": "Бишкек",
             "region": "Чуйский",
@@ -15,6 +16,7 @@
         "pk": 2,
         "fields": {
             "full_name": "Абдрахманов Тынычбек Казакбаевич",
+            "phone": "7465449865",
             "photo": "notary_photos/not2.jpg",
             "city": "Кант",
             "region": "Ысык-Атинский район",
@@ -26,6 +28,7 @@
         "pk": 3,
         "fields": {
             "full_name": "Абдыкадырова Назгул Дюшеновна",
+            "phone": "7465128523",
             "photo": "notary_photos/not3.jpg",
             "city": "Каракол",
             "region": "Ыссык-Кульская область",
@@ -38,6 +41,7 @@
         "pk": 4,
         "fields": {
             "full_name": "Абдылдабеков Жанболот Маликович",
+            "phone": "365771689",
             "photo": "notary_photos/not4.jpg",
             "city": "Нарын",
             "region": "Нарынская область",
@@ -49,6 +53,7 @@
         "pk": 5,
         "fields": {
             "full_name": "Айманбетова Назира Шаршенбековна",
+            "phone": "813265966",
             "photo": "notary_photos/not5.jpg",
             "city": "Бишкек",
             "region": "Чуйский",
@@ -60,6 +65,7 @@
         "pk": 6,
         "fields": {
             "full_name": "Аденова Чолпонай Аникеевна",
+            "phone": "147525569",
             "photo": "notary_photos/not6.jpg",
             "city": "Бишкек",
             "region": "Чуйский",
@@ -71,6 +77,7 @@
         "pk": 7,
         "fields": {
             "full_name": "Акбаралиева Барно Абдувалиевна",
+            "phone": "785565493",
             "photo": "notary_photos/not7.jpg",
             "city": "Токмок",
             "region": "Токмок",
@@ -82,6 +89,7 @@
         "pk": 8,
         "fields": {
             "full_name": "Акиева Кыял Саяковна",
+            "phone": "7895212157",
             "photo": "notary_photos/not8.jpg",
             "city": "Балыкчи",
             "region": "Ыссык-Кульская область",
@@ -93,6 +101,7 @@
         "pk": 9,
         "fields": {
             "full_name": "Алаева Сабира Джамангуловна",
+            "phone": "4987897836",
             "photo": "notary_photos/not9.jpg",
             "city": "Бишкек",
             "region": "Чуйский",
@@ -104,6 +113,7 @@
         "pk": 10,
         "fields": {
             "full_name": "Алиева Лариса Борисовна",
+            "phone": "368988455",
             "photo": "notary_photos/not10.jpg",
             "city": "Чуй",
             "region": "Чуйский",
