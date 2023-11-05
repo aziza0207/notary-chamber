@@ -16,7 +16,7 @@ class NewsImage(models.Model):
         verbose_name_plural = "Изображения"
 
     def __str__(self):
-        return f"Нововсти - {self.news.title}"
+        return f"Новости - {self.news.title}"
 
 
 def news_main_image(instance, filename):
