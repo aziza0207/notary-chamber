@@ -155,6 +155,8 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'media_storage/')
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
+# AUTOSLUG_SLUGIFY_FUNCTION = 'autoslug.utils.translit_long'
+
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',

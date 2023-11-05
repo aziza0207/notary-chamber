@@ -1,38 +1,46 @@
 [
     {
-        "model": "content.photo",
+        "model": "content.photoset",
         "pk": 1,
         "fields": {
             "title": "Корпоратив в Мадине",
+            "slug": "corporativ-v-Madine",
             "image": "gallery/photos/corporate_madina.jpg",
-            "pub_date": "2015-10-09"
+            "pub_date": "2015-10-09",
+            "description": "Корпоратив прошел чудесно. Море эмоций и вкусной еды."
         }
     },
     {
-        "model": "content.photo",
+        "model": "content.photoset",
         "pk": 2,
         "fields": {
             "title": "Биз ачылдык",
+            "slug": "biz-achildik",
             "image": "gallery/photos/biz_achildik.jpg",
-            "pub_date": "2015-11-09"
+            "pub_date": "2015-11-09",
+            "description": "Мы открылись! Прихолите и посмотрите сами."
         }
     },
     {
-        "model": "content.photo",
+        "model": "content.photoset",
         "pk": 3,
         "fields": {
             "title": "Pizza party",
+            "slug": "pizza-party",
             "image": "gallery/photos/pizza_party.jpg",
-            "pub_date": "2015-11-09"
+            "pub_date": "2015-11-09",
+            "description": "Пиццу придумали в КР."
         }
     },
     {
-        "model": "content.photo",
+        "model": "content.photoset",
         "pk": 4,
         "fields": {
             "title": "Поем гимн Бишкегим",
+            "slug": "sing-bishkek-song",
             "image": "gallery/photos/sing.jpg",
-            "pub_date": "2015-05-09"
+            "pub_date": "2015-05-09",
+            "description": "День Бишкека! 145 лет нашему городу!"
         }
     }
 ]

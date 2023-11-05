@@ -1,6 +1,6 @@
 from modeltranslation.translator import TranslationOptions, register
 
-from content.models import FAQ, Category, Document, Link, News, Photo, Video
+from content.models import FAQ, Category, Document, Link, News, PhotoSet, Video
 
 
 @register(Category)
@@ -18,9 +18,9 @@ class FAQTranslationOptions(TranslationOptions):
     fields = ('question', 'answer',)
 
 
-@register(Photo)
+@register(PhotoSet)
 class PhotoTranslationOptions(TranslationOptions):
-    fields = ('title',)
+    fields = ('title', 'description',)
 
 
 @register(Video)
