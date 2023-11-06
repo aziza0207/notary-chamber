@@ -9,9 +9,7 @@ def gallery_files(instance, filename):
 
 class PhotoSet(models.Model):
     title = models.CharField(max_length=250, verbose_name='Название')
-    slug = AutoSlugField(populate_from='title', always_update=True,
-                         unique=True, verbose_name='Слаг', help_text='''Уникальное поле. Автоматически генерируется
-                         из названия. Используется в качестве адреса страницы''')
+    slug = models.SlugField("Слаг", blank=True, null=True, db_index=True, unique=True)
     image = models.ImageField(upload_to=gallery_files, verbose_name='Обложка')
     description = models.TextField()
     pub_date = models.DateTimeField(auto_now_add=True, verbose_name='Опубликовано')

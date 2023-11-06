@@ -10,11 +10,15 @@ class PhotoAdmin(admin.StackedInline):
     model = Photo
     extra = 0
 
+
 @admin.register(PhotoSet)
 class PhotoSetAdmin(AdminFieldMixin, TabbedTranslationAdmin):
+
+    prepopulated_fields = {"slug": ("title",)}
+
     list_display = ('id', 'title', 'get_little_image', 'pub_date',)
     list_display_links = ('title',)
-    
+
     search_fields = ('title',)
     readonly_fields = ('get_little_image', 'pub_date', 'slug',)
     fields = ('title', 'slug', ('image', 'get_little_image',), 'pub_date',)
@@ -25,8 +29,7 @@ class PhotoSetAdmin(AdminFieldMixin, TabbedTranslationAdmin):
 class VideoAdmin(TabbedTranslationAdmin):
     list_display = ('id', 'title', 'pub_date',)
     list_display_links = ('title',)
-    
+
     search_fields = ('title',)
     readonly_fields = ('pub_date',)
     fields = ('title', 'link', 'pub_date',)
-

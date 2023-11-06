@@ -27,12 +27,11 @@ class NewsAdmin(AdminFieldMixin, TabbedTranslationAdmin):
     list_display = ["id", "title", "get_little_image", "is_pinned", "date"]
     list_display_links = ["title"]
 
-    readonly_fields = ["id", "date", "get_little_image",]
+    readonly_fields = ["id", "date", "get_little_image", ]
     search_fields = ["title", "slug"]
     fields = ["title", "slug", "description", ("main_image", "get_little_image",), "video", "is_pinned", "date"]
 
     actions = [make_pinned, make_unpinned]
 
-    
 
 admin.site.register(News, NewsAdmin)
