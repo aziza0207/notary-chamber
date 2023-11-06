@@ -19,9 +19,10 @@ from django.conf.urls.static import static
 from django.contrib import admin
 from django.urls import include, path
 from drf_spectacular.views import SpectacularAPIView, SpectacularSwaggerView
+from decouple import config
 
 urlpatterns = [
-    path('admin/', admin.site.urls),
+    path(f'{config("ADMIN_URL")}/', admin.site.urls),
     path('api/', include("content.urls")),
     path('api/', include("notary.urls")),
     path('api/schema/', SpectacularAPIView.as_view(), name='schema'),
