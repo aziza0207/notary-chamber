@@ -7,6 +7,14 @@ services:
   api:
     expose:
       - 8017
+    volumes:
+      - ./media_storage:/app/media_storage
+    command: gunicorn core.wsgi --bind 0.0.0.0:8017 --workers 3
+    environment:
+      - DEBUG=False
+      - PRODUCTION=True
+      - POSTGRES_HOST=postgres
+      - POSTGRES_PORT=5470
 
     networks:
       - notpal_network
@@ -18,14 +26,14 @@ services:
       - 8001:8001
     depends_on:
       - api
-    # volumes:
+    volumes:
       # server
       # - /home/team3/geoconsult/static_root:/static_root
       # - /home/team3/geoconsult/media_storage:/media_storage
 
       # local
-      # - ./static_root:/static_root
-      # - ./media_storage:/media_storage
+      - ./static_root:/static_root
+      - ./media_storage:/media_storage
 
     networks:
       - notpal_network
