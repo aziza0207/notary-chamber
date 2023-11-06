@@ -20,7 +20,7 @@ class PhotoSetAdmin(AdminFieldMixin, TabbedTranslationAdmin):
     list_display_links = ('title',)
 
     search_fields = ('title',)
-    readonly_fields = ('get_little_image', 'pub_date', 'slug',)
+    readonly_fields = ('get_little_image', 'pub_date', )
     fields = ('title', 'slug', ('image', 'get_little_image',), 'pub_date',)
     inlines = (PhotoAdmin,)
 
