@@ -10,7 +10,8 @@ class CategoryTranslationOptions(TranslationOptions):
 
 @register(Document)
 class DocumentTranslationOptions(TranslationOptions):
-    fields = ('title',)
+    fields = ('title', 'file',)
+    required_languages = ('ru', 'ky',)
 
 
 @register(FAQ)

@@ -13,7 +13,7 @@ def update_coordinates(sender, instance, **kwargs):
     verifies whether the fields need to be redefined and calls the geopy service to convert the textual address into
     coordinates. However, this service often returns an 'unavailable' error, requiring a retry at a later time.
     Upon a successful response, the function overrides the field with the retrieved coordinates.'''
-    sender_ = sender
+
     coordinates = ['latitude', 'longitude']
     location = None
     for item in coordinates:
