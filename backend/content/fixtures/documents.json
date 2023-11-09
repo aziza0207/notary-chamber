@@ -4,8 +4,7 @@
         "pk": 1,
         "fields": {
             "title": "Доверенность на машину",
-            "file": "documents/car.docx",
-            "category": "1"
+            "file": "documents/car.docx"
         }
     },
     {   
@@ -13,8 +12,7 @@
         "pk": 2,
         "fields": {
             "title": "Доверенность на квартиру",
-            "file": "documents/apartment.docx",
-            "category": "1"
+            "file": "documents/apartment.docx"
         }
     },
     {   
@@ -22,8 +20,7 @@
         "pk": 3,
         "fields": {
             "title": "Завещание родственнику",
-            "file": "documents/sibling.docx",
-            "category": "2"
+            "file": "documents/sibling.docx"
         }
     },
     {   
@@ -31,8 +28,7 @@
         "pk": 4,
         "fields": {
             "title": "Завещание фонду",
-            "file": "documents/found.docx",
-            "category": "2"
+            "file": "documents/found.docx"
         }
     },
     {   
@@ -40,8 +36,7 @@
         "pk": 5,
         "fields": {
             "title": "Дарственная на родителей",
-            "file": "documents/parents.docx",
-            "category": "3"
+            "file": "documents/parents.docx"
         }
     },
     {   
@@ -49,8 +44,7 @@
         "pk": 6,
         "fields": {
             "title": "Дарственная на друзей",
-            "file": "documents/friends.docx",
-            "category": "3"
+            "file": "documents/friends.docx"
         }
     }
 ]

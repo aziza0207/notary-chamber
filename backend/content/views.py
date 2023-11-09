@@ -1,8 +1,8 @@
 from rest_framework import generics
 
-from .models import FAQ, Category, Contact, Link, News, PhotoSet, Photo, Video
+from .models import FAQ, Contact, Link, News, PhotoSet, Photo, Video, Document
 from .pagination import NewsListPagination
-from .serializers import (CategorySerializer, ContactSerializer, FAQSerializer,
+from .serializers import (DocumentSerializer, ContactSerializer, FAQSerializer,
                           LinkSerializer, NewsDetailSerializer,
                           NewsListSerializer, PhotoSetListSerializer, PhotoSetDetailSerializer, VideoSerializer)
 
@@ -13,8 +13,8 @@ class FAQListAPIView(generics.ListAPIView):
 
 
 class DocumentListAPIView(generics.ListAPIView):
-    serializer_class = CategorySerializer
-    queryset = Category.objects.all()
+    serializer_class = DocumentSerializer
+    queryset = Document.objects.all()
 
 
 class NewsListAPIView(generics.ListAPIView):
