@@ -29,12 +29,11 @@ python manage.py loaddata content/fixtures/gallery_photo.json
 python manage.py loaddata content/fixtures/detail_photos.json
 python manage.py loaddata content/fixtures/gallery_video.json
 python manage.py loaddata content/fixtures/contacts.json
-python manage.py loaddata notary/fixtures/cities_all.json
-python manage.py loaddata notary/fixtures/notary_all.json
+
 
 # "big" fixtures
 
-# python manage.py loaddata notary/fixtures/cities_all.json
-# python manage.py loaddata notary/fixtures/notary_all.json
+ python manage.py loaddata notary/fixtures/cities_all.json
+ python manage.py loaddata notary/fixtures/notary_ex.json
 
 exec "$@"
