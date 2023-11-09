@@ -27,8 +27,8 @@ class WorkSchedule(models.Model):
     end_day = models.CharField("по", max_length=5,
                                choices=DaysChoice.choices,
                                blank=True, null=True)
-    start_time = models.TimeField("Рабочее время с")
-    end_time = models.TimeField("по")
+    start_time = models.TimeField("Рабочее время с", blank=True, null=True)
+    end_time = models.TimeField("по", blank=True, null=True)
     break_start = models.TimeField("Перерыв с", blank=True, null=True)
     break_end = models.TimeField("по", blank=True, null=True)
 
