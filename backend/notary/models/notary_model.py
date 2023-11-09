@@ -10,6 +10,7 @@ def notary_photos(instance, filename):
 class Notary(models.Model):
     full_name = models.CharField("Имя", max_length=100)
     phone = models.CharField("Номер телефона", max_length=30)
+    email = models.EmailField("Email", null=True, blank=True)
     photo = models.ImageField("Фото", blank=True, null=True, upload_to=notary_photos)
     city = models.CharField("Город", choices=CityChoice.choices)
     address = models.CharField("Адрес", max_length=255)
