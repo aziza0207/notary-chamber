@@ -15,7 +15,6 @@ from .services import make_message
 
 class NotaryListAPIView(generics.ListAPIView):
     serializer_class = NotarySerializer
-    
     pagination_class = NotaryListPagination
     
     def get_queryset(self):

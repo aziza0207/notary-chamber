@@ -1,25 +1,21 @@
-from django.contrib.admin import register, ModelAdmin
-from django.utils.safestring import mark_safe
-from modeltranslation.admin import TabbedTranslationAdmin
-from django.utils.translation import gettext_lazy as _
+from django.contrib.admin import register
+from modeltranslation.admin import TabbedTranslationAdmin, TranslationStackedInline
 
-from ..models import Notary, City
+from ..models import Notary, City, WorkSchedule, DayOffSchedule
+from .mixin import AdminFieldMixin
 
 
 @register(City)
 class CityAdmin(TabbedTranslationAdmin):
-    list_display = ["id", "name"]
+    list_display = ["id", "name", ]
+    list_display_links = ["name"]
+    fields = ["name"]
 
 
 @register(Notary)
-class NotaryAdmin(TabbedTranslationAdmin):
-    list_display = ['id', "full_name", "get_little_photo"]
-
-    def get_little_photo(self, object):
-        if object.photo:
-            return mark_safe(f"<img src='{object.photo.url}' width=50>")
-
-    get_little_photo.short_description = ""
+class NotaryAdmin(AdminFieldMixin, TabbedTranslationAdmin):
+    list_display = ['id', "full_name", "get_little_photo", "city"]
+    list_display_links = ["full_name"]
 
     fieldsets = (
         ("Личная информация", {
@@ -28,9 +24,32 @@ class NotaryAdmin(TabbedTranslationAdmin):
         }), ("Адрес", {
             "fields": ("region",
                        "city",
-                       "address"),
+                       "address",
+                       # "notary_coordinates",
+                       "latitude",
+                       "longitude",
+                       ),
 
-        }))
+        }),
+        ("График работы", {
+            "fields": ("start_day",
+                       "end_day",
+                       "start_time",
+                       "end_time",
+                       "break_start",
+                       "break_end",
+                       ),
+
+        }),
+        ("Выходные", {
+            "fields": ("start_day_off",
+                       "end_day_off",
+
+                       ),
+
+        }),
+
+    )
 
     add_fieldsets = (
         (None, {
@@ -40,10 +59,21 @@ class NotaryAdmin(TabbedTranslationAdmin):
                        "photo",
                        "region",
                        "city",
-                       "address"
+                       "address",
+                       # "notary_coordinates",
+                       "start_day",
+                       "end_day",
+                       "start_time",
+                       "end_time",
+                       "break_start",
+                       "break_end",
+                       "start_day_off",
+                       "end_day_off",
+                       "latitude",
+                       "longitude",
+
 
                        )}
          ),
     )
     search_fields = ("full_name", "region", "city")
-

@@ -24,10 +24,11 @@ class NewsAdmin(AdminFieldMixin, TabbedTranslationAdmin):
     inlines = (NewsImageImageInline,)
     prepopulated_fields = {"slug": ("title",)}
 
-    list_display = ["id", "title", "get_little_image", "is_pinned", "date"]
+    list_display = ["id", "title", "is_pinned", "date", "get_little_image"]
     list_display_links = ["title"]
 
-    readonly_fields = ["id", "date", "get_little_image", ]
+    readonly_fields = ["id", "date", ]
+
     search_fields = ["title", "slug"]
     fields = ["title", "slug", "description", ("main_image", "get_little_image",), "video", "is_pinned", "date"]
 

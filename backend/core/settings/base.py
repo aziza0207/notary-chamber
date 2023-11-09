@@ -35,6 +35,7 @@ THIRD_PARTY_APPS = [
     'drf_yasg',
     'drf_spectacular',
     'django_admin_logs',
+
 ]
 
 if not PRODUCTION:
@@ -180,6 +181,8 @@ REST_FRAMEWORK = {
 
 if not PRODUCTION:
     EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
+
+
 
 EMAIL_HOST = config('EMAIL_HOST')
 EMAIL_PORT = config('EMAIL_PORT')
