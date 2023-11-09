@@ -13,6 +13,7 @@ class Notary(WorkSchedule, DayOffSchedule):
     city = models.ForeignKey("City", on_delete=models.SET_NULL, null=True, verbose_name="Город")
 
     phone = models.CharField("Номер телефона", max_length=30)
+    email = models.EmailField("Email", null=True, blank=True)
     photo = models.ImageField("Фото", blank=True, null=True, upload_to=notary_photos)
     address = models.CharField("Адрес", max_length=255)
     region = models.CharField("Регион", null=True, blank=True)

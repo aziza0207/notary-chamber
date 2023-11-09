@@ -1,13 +1,16 @@
 from django.contrib import admin
 from modeltranslation.admin import TabbedTranslationAdmin
 
-from ..mixins import AdminFieldMixin
+from ..mixins import AdminFieldMixin, AdminMultiInputMixin
 from ..models import News, NewsImage
 
 
-class NewsImageImageInline(admin.StackedInline):
+class NewsImageImageInline(AdminMultiInputMixin, admin.StackedInline):
     model = NewsImage
     extra = 0
+    # readonly_fields = ('add_multiadd_button',)
+    # fields = ('image', 'add_multiadd_button',)
+    # list_display = ('add_multiadd_button',)
 
 
 @admin.action(description="Закрепить выбранные новости")

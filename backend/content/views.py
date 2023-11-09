@@ -1,8 +1,8 @@
 from rest_framework import generics
 
-from .models import FAQ, Category, Contact, Link, News, PhotoSet, Photo, Video
+from .models import FAQ, Contact, Link, News, PhotoSet, Photo, Video, Document
 from .pagination import NewsListPagination
-from .serializers import (CategorySerializer, ContactSerializer, FAQSerializer,
+from .serializers import (DocumentSerializer, ContactSerializer, FAQSerializer,
                           LinkSerializer, NewsDetailSerializer,
                           NewsListSerializer, PhotoSetListSerializer, PhotoSetDetailSerializer, VideoSerializer)
 
@@ -13,8 +13,14 @@ class FAQListAPIView(generics.ListAPIView):
 
 
 class DocumentListAPIView(generics.ListAPIView):
-    serializer_class = CategorySerializer
-    queryset = Category.objects.all()
+    serializer_class = DocumentSerializer
+
+    def get_queryset(self):
+        queryset = Document.objects.all()
+        value_to_search = self.request.query_params.get('search')
+        if value_to_search:
+            queryset = queryset.filter(title_ru__icontains=value_to_search)
+        return queryset
 
 
 class NewsListAPIView(generics.ListAPIView):

@@ -1,0 +1,198 @@
+[
+    {
+        "model": "notary.city",
+        "pk": 1,
+        "fields": {
+            "name": "Кара Балта"
+        }
+    },
+    {
+        "model": "notary.city",
+        "pk": 2,
+        "fields": {
+            "name": "Ала-Бука"
+        }
+    },
+    {
+        "model": "notary.city",
+        "pk": 3,
+        "fields": {
+            "name": "Чаек"
+        }
+    },
+    {
+        "model": "notary.city",
+        "pk": 4,
+        "fields": {
+            "name": "Алабука"
+        }
+    },
+    {
+        "model": "notary.city",
+        "pk": 5,
+        "fields": {
+            "name": "Кызыл-Адыр"
+        }
+    },
+    {
+        "model": "notary.city",
+        "pk": 6,
+        "fields": {
+            "name": "Базар-Коргон"
+        }
+    },
+    {
+        "model": "notary.city",
+        "pk": 7,
+        "fields": {
+            "name": "Военно Антоновка"
+        }
+    },
+    {
+        "model": "notary.city",
+        "pk": 8,
+        "fields": {
+            "name": "Токмок"
+        }
+    },
+    {
+        "model": "notary.city",
+        "pk": 9,
+        "fields": {
+            "name": "Кант"
+        }
+    },
+    {
+        "model": "notary.city",
+        "pk": 10,
+        "fields": {
+            "name": "Балыкчи"
+        }
+    },
+    {
+        "model": "notary.city",
+        "pk": 11,
+        "fields": {
+            "name": "Каракол"
+        }
+    },
+    {
+        "model": "notary.city",
+        "pk": 12,
+        "fields": {
+            "name": "Джалал-Абад"
+        }
+    },
+    {
+        "model": "notary.city",
+        "pk": 13,
+        "fields": {
+            "name": "None"
+        }
+    },
+    {
+        "model": "notary.city",
+        "pk": 14,
+        "fields": {
+            "name": "Арка"
+        }
+    },
+    {
+        "model": "notary.city",
+        "pk": 15,
+        "fields": {
+            "name": "Талас"
+        }
+    },
+    {
+        "model": "notary.city",
+        "pk": 16,
+        "fields": {
+            "name": "Интернациональное"
+        }
+    },
+    {
+        "model": "notary.city",
+        "pk": 17,
+        "fields": {
+            "name": "Чолпон-ата"
+        }
+    },
+    {
+        "model": "notary.city",
+        "pk": 18,
+        "fields": {
+            "name": "Беловодское"
+        }
+    },
+    {
+        "model": "notary.city",
+        "pk": 19,
+        "fields": {
+            "name": "Сузак"
+        }
+    },
+    {
+        "model": "notary.city",
+        "pk": 20,
+        "fields": {
+            "name": "Чуй"
+        }
+    },
+    {
+        "model": "notary.city",
+        "pk": 21,
+        "fields": {
+            "name": "Жаны-Жер"
+        }
+    },
+    {
+        "model": "notary.city",
+        "pk": 22,
+        "fields": {
+            "name": "Ивановка"
+        }
+    },
+    {
+        "model": "notary.city",
+        "pk": 23,
+        "fields": {
+            "name": "Сокулук"
+        }
+    },
+    {
+        "model": "notary.city",
+        "pk": 24,
+        "fields": {
+            "name": "Лебединовка"
+        }
+    },
+    {
+        "model": "notary.city",
+        "pk": 25,
+        "fields": {
+            "name": "Кызыл Кия"
+        }
+    },
+    {
+        "model": "notary.city",
+        "pk": 26,
+        "fields": {
+            "name": "Нарын"
+        }
+    },
+    {
+        "model": "notary.city",
+        "pk": 27,
+        "fields": {
+            "name": "Чолпон-Ата"
+        }
+    },
+    {
+        "model": "notary.city",
+        "pk": 28,
+        "fields": {
+            "name": "Бишкек"
+        }
+    }
+]

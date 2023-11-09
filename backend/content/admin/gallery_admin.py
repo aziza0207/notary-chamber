@@ -3,7 +3,7 @@ from modeltranslation.admin import TabbedTranslationAdmin
 
 from content.models import PhotoSet, Photo, Video
 
-from ..mixins import AdminFieldMixin
+from ..mixins import AdminFieldMixin, AdminFieldMixinPhotoSet
 
 
 class PhotoAdmin(admin.StackedInline):
@@ -12,7 +12,7 @@ class PhotoAdmin(admin.StackedInline):
 
 
 @admin.register(PhotoSet)
-class PhotoSetAdmin(AdminFieldMixin, TabbedTranslationAdmin):
+class PhotoSetAdmin(AdminFieldMixinPhotoSet, TabbedTranslationAdmin):
 
     prepopulated_fields = {"slug": ("title",)}
 

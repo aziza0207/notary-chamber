@@ -1,0 +1,1498 @@
+[
+    {
+        "model": "notary.notary",
+        "pk": 1,
+        "fields": {
+            "full_name": "Абдалбек кызы Аида",
+            "phone": "0550 508508",
+            "email": "aidaabdalbek@mail.ru",
+            "region": "Бишкек",
+            "city": "Бишкек",
+            "address": "ул Байтик Баатыра, 3а-53"}
+    },
+    {
+   "model": "notary.notary",
+      "pk": 2,
+     "fields": {
+            "full_name": "Абдрахманов Тынычбек Казакбаевич",
+            "phone": "0773741011",
+            "email": "tynychbek59@gmail.com",
+            "region": "None",
+            "city": "Кант",
+            "address": "ул Ленина, дом 65в"
+        }
+    },
+    {
+        "model": "notary.notary",
+        "pk": 3,
+        "fields": {
+            "full_name": "Абдыкадырова Назгул Дюшеновна",
+            "phone": "0555737999",
+            "email": "notariys_kg@mail.ru",
+            "region": "Ыссык-Кульская область",
+            "city": "Каракол",
+            "address": "ул. Орозова,д. 12/1"
+        }
+    },
+    {
+        "model": "notary.notary",
+        "pk": 4,
+        "fields": {
+            "full_name": "Абдылдабеков Жанболот Маликович",
+            "phone": "0555 298268",
+            "email": "janbolot_56@mail.ru",
+            "region": "Нарынская область",
+            "city": "Нарын",
+            "address": "ул.Ленина 72"
+        }
+    },
+    {
+        "model": "notary.notary",
+        "pk": 5,
+        "fields": {
+            "full_name": "Айманбетова Назира Шаршенбековна",
+            "phone": "+996555969174",
+            "email": "nazira.aymanbetova@mail.ru",
+            "region": "Бишкек",
+            "city": "Бишкек",
+            "address": "ул. Ибраимова, 57"
+        }
+    },
+    {
+        "model": "notary.notary",
+        "pk": 6,
+        "fields": {
+            "full_name": "Аденова Чолпонай Аникеевна",
+            "phone": "0554007998",
+            "email": "adenova_61@mail.ru",
+            "region": "Бишкек",
+            "city": "Бишкек",
+            "address": "ул. Горького, 23"
+        }
+    },
+    {
+        "model": "notary.notary",
+        "pk": 7,
+        "fields": {
+            "full_name": "Акбаралиева Барно Абдувалиевна",
+            "phone": "+996755976976",
+            "email": "notariustokmok@mail.ru",
+            "region": "None",
+            "city": "Токмок",
+            "address": "ул. Ибраимова, дом 118"
+        }
+    },
+    {
+        "model": "notary.notary",
+        "pk": 8,
+        "fields": {
+            "full_name": "Акиева Кыял Саяковна",
+            "phone": "0703 332352",
+            "email": "akieva1980@bk.ru",
+            "region": "Ыссык-Кульская область",
+            "city": "Балыкчи",
+            "address": "ул. Аманбаева, д. 153"
+        }
+    },
+    {
+        "model": "notary.notary",
+        "pk": 9,
+        "fields": {
+            "full_name": "Алаева Сабира Джамангуловна",
+            "phone": "+996709050162",
+            "email": "alaevasabira@gmail.com",
+            "region": "Бишкек",
+            "city": "Бишкек",
+            "address": "ул. Киевская, д. 159, кв. 23"
+        }
+    },
+    {
+        "model": "notary.notary",
+        "pk": 10,
+        "fields": {
+            "full_name": "Алиева Лариса Борисовна",
+            "phone": "0555433144",
+            "email": "belana71@list.ru",
+            "region": "None",
+            "city": "Чуй",
+            "address": "ул.Советская, 157"
+        }
+    },
+    {
+        "model": "notary.notary",
+        "pk": 11,
+        "fields": {
+            "full_name": "Алиева Камиля Аблезовна",
+            "phone": "0552503352",
+            "email": "kamaya_kg@mail.ru",
+            "region": "Бишкек",
+            "city": "Бишкек",
+            "address": "ул. Токтогула, 84-3"
+        }
+    },
+    {
+        "model": "notary.notary",
+        "pk": 12,
+        "fields": {
+            "full_name": "Алсеитова Дамира Чоноевна",
+            "phone": "555 024821",
+            "email": "d-alseitova@mail.ru",
+            "region": "Бишкек",
+            "city": "Бишкек",
+            "address": "ул. Токтогула, 230"
+        }
+    },
+    {
+        "model": "notary.notary",
+        "pk": 13,
+        "fields": {
+            "full_name": "Альчиева Анаркуль Карагуловна",
+            "phone": "709 110838",
+            "email": "alchieva.anarkul@mail.ru",
+            "region": "Бишкек",
+            "city": "Бишкек",
+            "address": "ул. Киевская 157-12"
+        }
+    },
+    {
+        "model": "notary.notary",
+        "pk": 14,
+        "fields": {
+            "full_name": "Алымбаева Гульмира Бегалиевна",
+            "phone": "0500 714172",
+            "email": "alymbaeva69@mail.ru",
+            "region": "Бишкек",
+            "city": "Бишкек",
+            "address": "л. И.Ахунбаеа, 131"
+        }
+    },
+    {
+        "model": "notary.notary",
+        "pk": 15,
+        "fields": {
+            "full_name": "Аманбекова Гулзада Аманбековна",
+            "phone": "+996555351001",
+            "email": "g.amanbekova92@gmail.com",
+            "region": "Бишкек",
+            "city": "Бишкек",
+            "address": "мкр 8, дом 31В"
+        }
+    },
+    {
+        "model": "notary.notary",
+        "pk": 16,
+        "fields": {
+            "full_name": "Аносова Любовь Михайловна",
+            "phone": "0770 307430",
+            "email": "lubovmihailovna048@gmail.com",
+            "region": "Бишкек",
+            "city": "Бишкек",
+            "address": "ул. Элебаева, дом 7"
+        }
+    },
+    {
+        "model": "notary.notary",
+        "pk": 17,
+        "fields": {
+            "full_name": "Арыкова Махабат Темирбековна",
+            "phone": "0772 503130",
+            "email": "mahabat.78@mail.ru",
+            "region": "Бишкек",
+            "city": "Бишкек",
+            "address": "ул. Абдрахманова, 135"
+        }
+    },
+    {
+        "model": "notary.notary",
+        "pk": 18,
+        "fields": {
+            "full_name": "Аракеева Кызжибек Арстаналыевна",
+            "phone": "+996707237437",
+            "email": "arakeevak@gmail.ru",
+            "region": "Бишкек",
+            "city": "Бишкек",
+            "address": "ул. Абдырахманова, 146/17"
+        }
+    },
+    {
+        "model": "notary.notary",
+        "pk": 19,
+        "fields": {
+            "full_name": "Аскарова Гулипа Аскаровна",
+            "phone": "+999554027027",
+            "email": "kaipkulova_64@mail.ru",
+            "region": "Бишкек",
+            "city": "Бишкек",
+            "address": "ул. Боконбаева, 177"
+        }
+    },
+    {
+        "model": "notary.notary",
+        "pk": 20,
+        "fields": {
+            "full_name": "Аскарова Чолпон Жумабековна",
+            "phone": "+996507510056",
+            "email": "temirhan0702@gmail.ru",
+            "region": "None",
+            "city": "Базар-Коргон",
+            "address": "ул. Б. Осмонова, д. №52, этаж 1, каб. №3"
+        }
+    },
+    {
+        "model": "notary.notary",
+        "pk": 21,
+        "fields": {
+            "full_name": "Атакулова Мээрим Анарбековна",
+            "phone": "+996776357555",
+            "email": "meerimatakulova88@gmail.com",
+            "region": "None",
+            "city": "Талас",
+            "address": "ул. А. Оторбаева, д. 331а, 2-й этаж, 3-4"
+        }
+    },
+    {
+        "model": "notary.notary",
+        "pk": 22,
+        "fields": {
+            "full_name": "Аширалиев Даниярбек Абдымиталипович",
+            "phone": "+996500599384",
+            "email": "ashiraliev@list.ru",
+            "region": "None",
+            "city": "Кызыл-Адыр",
+            "address": "ул. Ч.Айтматова, д. №9А, 2-этаж, каб.№5"
+        }
+    },
+    {
+        "model": "notary.notary",
+        "pk": 23,
+        "fields": {
+            "full_name": "Аширбекова Айджана Сагынбековна",
+            "phone": "+996707664353",
+            "email": "aijan_a80@mail.ru",
+            "region": "Бишкек",
+            "city": "Бишкек",
+            "address": "пр. Ч. Айтматова, д. 16, кв. 2"
+        }
+    },
+    {
+        "model": "notary.notary",
+        "pk": 24,
+        "fields": {
+            "full_name": "Байдолотова Нурия Алмазбековна",
+            "phone": "0703290116",
+            "email": "notarius.tls45b@gmail.com",
+            "region": "None",
+            "city": "Талас",
+            "address": "ул. Сарыгулова 45Б"
+        }
+    },
+    {
+        "model": "notary.notary",
+        "pk": 25,
+        "fields": {
+            "full_name": "Байзакова Диана Тунгучпаевна",
+            "phone": "+996550099099",
+            "email": "diana_1008@mail.ru",
+            "region": "Бишкек",
+            "city": "Бишкек",
+            "address": "ул.Абдрахманова, 144"
+        }
+    },
+    {
+        "model": "notary.notary",
+        "pk": 26,
+        "fields": {
+            "full_name": "Байханбаева Диана Захировна",
+            "phone": "0555 983125",
+            "email": "dinanot-2004@mail.ru",
+            "region": "Бишкек",
+            "city": "Бишкек",
+            "address": "ул. Ахунбаева, 141"
+        }
+    },
+    {
+        "model": "notary.notary",
+        "pk": 27,
+        "fields": {
+            "full_name": "Бакас кызы Гульзат",
+            "phone": "703 763707",
+            "region": "Бишкек",
+            "city": "Бишкек",
+            "address": "бул. М. Гвардии, 22"
+        }
+    },
+    {
+        "model": "notary.notary",
+        "pk": 28,
+        "fields": {
+            "full_name": "Бакирова Акмеер Жекшеновна",
+            "phone": "0555005325",
+            "email": "ak_bakirova@mail.ru",
+            "region": "Бишкек",
+            "city": "Бишкек",
+            "address": "ул. Юнусалиева159\\2"
+        }
+    },
+    {
+        "model": "notary.notary",
+        "pk": 29,
+        "fields": {
+            "full_name": "Баяманова Хамида Кенешовна",
+            "phone": "0773214483",
+            "email": "kbayamanova@mail.ru",
+            "region": "Бишкек",
+            "city": "Бишкек",
+            "address": "ул.Байтик Баатыра, 61\\1"
+        }
+    },
+    {
+        "model": "notary.notary",
+        "pk": 30,
+        "fields": {
+            "full_name": "Бектенова Жаңыл Абдралиевна",
+            "phone": "0509 53 69 54",
+            "email": "Jbektenova54@mail.com",
+            "region": "None",
+            "city": "Талас",
+            "address": "ул. Сарыгулова, д. 59"
+        }
+    },
+    {
+        "model": "notary.notary",
+        "pk": 31,
+        "fields": {
+            "full_name": "Боёнов Азамат Акылбекович",
+            "phone": "0777 630011",
+            "email": "boaza_@mail.ru",
+            "region": "Бишкек",
+            "city": "Бишкек",
+            "address": "ул. Асаналиева, 107"
+        }
+    },
+    {
+        "model": "notary.notary",
+        "pk": 32,
+        "fields": {
+            "full_name": "Батырбекова Назик Тариэльевна",
+            "phone": "0553577737",
+            "email": "nazik-555@mail.ru",
+            "region": "Бишкек",
+            "city": "Бишкек",
+            "address": "ул. Раззакова, д. 22"
+        }
+    },
+    {
+        "model": "notary.notary",
+        "pk": 33,
+        "fields": {
+            "full_name": "Джолбунова Анипа Болотбековна",
+            "phone": "0555 991218",
+            "region": "Бишкек",
+            "city": "Бишкек",
+            "address": "ул.Киевская, 120, каб. 25"
+        }
+    },
+    {
+        "model": "notary.notary",
+        "pk": 34,
+        "fields": {
+            "full_name": "Джолчуев Мирлан Алтынбекович",
+            "phone": "+996704000075",
+            "email": "mirlandzholchuev@gmail.ru",
+            "region": "None",
+            "city": "Ала-Бука",
+            "address": "ул. М. Мамырбекова, д. №40д"
+        }
+    },
+    {
+        "model": "notary.notary",
+        "pk": 35,
+        "fields": {
+            "full_name": "Джумагулова Клара Темирбековна",
+            "phone": "0704 880442",
+            "email": "klara.dzhumagulova@mail.ru",
+            "region": "Бишкек",
+            "city": "Бишкек",
+            "address": "ул. Байтик Баатыра, 49"
+        }
+    },
+    {
+        "model": "notary.notary",
+        "pk": 36,
+        "fields": {
+            "full_name": "Досалиева Назира Эгизбековна",
+            "phone": "+996559707075",
+            "email": "nazira.dosalieva@gmail.com",
+            "region": "Бишкек",
+            "city": "Бишкек",
+            "address": "мкр 12, ул. Нуркамал, 29"
+        }
+    },
+    {
+        "model": "notary.notary",
+        "pk": 37,
+        "fields": {
+            "full_name": "Дуйшеналиева Айгуль Кыдыргычовна",
+            "phone": "0550 796 405",
+            "email": "aigula228@mail.ru",
+            "region": "Бишкек",
+            "city": "Бишкек",
+            "address": "ул. Б.Баатыра, 5 Б"
+        }
+    },
+    {
+        "model": "notary.notary",
+        "pk": 38,
+        "fields": {
+            "full_name": "Дюшеева Гульмира Кубанычбековна",
+            "phone": "+996 555 775460",
+            "email": "dujsheeva@mail.ru",
+            "region": "Бишкек",
+            "city": "Бишкек",
+            "address": "ул. Абдрахманова, 141"
+        }
+    },
+    {
+        "model": "notary.notary",
+        "pk": 39,
+        "fields": {
+            "full_name": "Есинаманова Асель Дамировна",
+            "phone": "0709 080843",
+            "email": "medovyi87@mail.ru",
+            "region": "Бишкек",
+            "city": "Бишкек",
+            "address": "ЦОН, ул. М.Гвардия №4"
+        }
+    },
+    {
+        "model": "notary.notary",
+        "pk": 40,
+        "fields": {
+            "full_name": "Жайлобаева Асель Сулунбековна",
+            "phone": "0555600550",
+            "email": "zhailobaeva12@mail.ru",
+            "region": "Бишкек",
+            "city": "Бишкек",
+            "address": "ул. Усенбаева № 47/8"
+        }
+    },
+    {
+        "model": "notary.notary",
+        "pk": 41,
+        "fields": {
+            "full_name": "Жарасул кызы Жаркынай",
+            "phone": "0701 501105",
+            "region": "Бишкек",
+            "city": "Бишкек",
+            "address": "ул.Байтик Баатыра, 17/1, кв. 53,  1 этаж, каб. 1"
+        }
+    },
+    {
+        "model": "notary.notary",
+        "pk": 42,
+        "fields": {
+            "full_name": "Жолдошбаева Нуржан Акынбаевна",
+            "phone": "0557 241178",
+            "email": "joldoshbaeva@mail.ru",
+            "region": "Бишкек",
+            "city": "Бишкек",
+            "address": "ул. Валиханова, 2"
+        }
+    },
+    {
+        "model": "notary.notary",
+        "pk": 43,
+        "fields": {
+            "full_name": "Жоошова Асел Кылычбековна",
+            "phone": "+996772142843",
+            "email": "Joosheva_asel@mail.ru",
+            "region": "None",
+            "city": "Кант",
+            "address": "улица Ленина, дом 68"
+        }
+    },
+    {
+        "model": "notary.notary",
+        "pk": 44,
+        "fields": {
+            "full_name": "Жумаева Нурзаада Самудиновна",
+            "phone": "0773 234796",
+            "email": "nurzaada1973@mail.ru",
+            "region": "Ыссык-Кульская область",
+            "city": "Балыкчи",
+            "address": "ул. Гагарина б/н"
+        }
+    },
+    {
+        "model": "notary.notary",
+        "pk": 45,
+        "fields": {
+            "full_name": "Жумазаева Гульзат Сатывалдыевна",
+            "phone": "0558770444",
+            "email": "zhumazaeva_2011@mail.ru",
+            "region": "Бишкек",
+            "city": "Бишкек",
+            "address": "пр. Чуй, 192\\2"
+        }
+    },
+    {
+        "model": "notary.notary",
+        "pk": 46,
+        "fields": {
+            "full_name": "Жылкибаева Асель Кудайбергеновна",
+            "phone": "0772 148415",
+            "email": "Alisalma@mail.ru",
+            "region": "Бишкек",
+            "city": "Бишкек",
+            "address": "ул.Киевская 112/4"
+        }
+    },
+    {
+        "model": "notary.notary",
+        "pk": 47,
+        "fields": {
+            "full_name": "Исабеков Нурлан Сатыбалдиевич",
+            "phone": "0700504650",
+            "email": "ins-notary@mail.ru",
+            "region": "Бишкек",
+            "city": "Бишкек",
+            "address": "ул. Горького 27/18"
+        }
+    },
+    {
+        "model": "notary.notary",
+        "pk": 48,
+        "fields": {
+            "full_name": "Исак уулу Талант",
+            "phone": "+996550423886",
+            "email": "tisakuulu74@gmail.com",
+            "region": "Бишкек",
+            "city": "Бишкек",
+            "address": "ул. Турусбекова д. 49"
+        }
+    },
+    {
+        "model": "notary.notary",
+        "pk": 49,
+        "fields": {
+            "full_name": "Итибаева Мария Асековна",
+            "phone": "0500 012331",
+            "email": "Itibaev.nursultan@mail.ru",
+            "region": "Бишкек",
+            "city": "Бишкек",
+            "address": "ул. Кожвенная, №1 ТРК ОсОО «Дордой Базар»"
+        }
+    },
+    {
+        "model": "notary.notary",
+        "pk": 50,
+        "fields": {
+            "full_name": "Кадырбекова Айчурек Жаныбековна",
+            "phone": "+996772077177",
+            "email": "aichurek.not@mail.ru",
+            "region": "None",
+            "city": "Джалал-Абад",
+            "address": "ул. Абдурахманова, д. 16"
+        }
+    },
+    {
+        "model": "notary.notary",
+        "pk": 51,
+        "fields": {
+            "full_name": "Каланов Аманбек Наркозиевич",
+            "phone": "0502 230365",
+            "email": "amanbeknarkozievich@gmail.com",
+            "region": "Баткен область",
+            "city": "Интернациональное",
+            "address": "ул 60 лет Октября"
+        }
+    },
+    {
+        "model": "notary.notary",
+        "pk": 52,
+        "fields": {
+            "full_name": "Каракучуков Дуйшонбек Сабатбекович",
+            "phone": "0559 771648",
+            "email": "karakuchukov@list.ru",
+            "region": "Бишкек",
+            "city": "Бишкек",
+            "address": "4 м-н, 46/35"
+        }
+    },
+    {
+        "model": "notary.notary",
+        "pk": 53,
+        "fields": {
+            "full_name": "Кенебекова Наргиза Канатбековна",
+            "phone": "0555253325",
+            "email": "kenebekova2020@mail.ru",
+            "region": "Бишкек",
+            "city": "Бишкек",
+            "address": "ул. Московская, 91-2"
+        }
+    },
+    {
+        "model": "notary.notary",
+        "pk": 54,
+        "fields": {
+            "full_name": "Кожалиева Чынаркул Токтосуновна",
+            "phone": "0559 91 79 01",
+            "email": "notarius-kozhalieva@mail.ru",
+            "region": "Ыссык-Кульская область",
+            "city": "Чолпон-Ата",
+            "address": "аллея Ала-Тоо, № 1"
+        }
+    },
+    {
+        "model": "notary.notary",
+        "pk": 55,
+        "fields": {
+            "full_name": "Кожобаев Берен Заирович",
+            "phone": "+996773897330",
+            "email": "Kozhobaev.Beren@mail.ru",
+            "region": "Бишкек",
+            "city": "Бишкек",
+            "address": "ул. Токтогула, 179-1"
+        }
+    },
+    {
+        "model": "notary.notary",
+        "pk": 56,
+        "fields": {
+            "full_name": "Кожомкулова Айгул Есенжановна",
+            "phone": "0701 388553",
+            "email": "Aigul1808@inbox.ru",
+            "region": "Бишкек",
+            "city": "Бишкек",
+            "address": "ул. Боконбаева, 126"
+        }
+    },
+    {
+        "model": "notary.notary",
+        "pk": 57,
+        "fields": {
+            "full_name": "Кокобаева Жазгуль Закировна",
+            "phone": "0707525232",
+            "email": "kokobaeva.zhazgul@mail.ru",
+            "region": "Ыссык-Кульская область",
+            "city": "Балыкчи",
+            "address": "ул. С. Каралаева, д. 21, кв. 5"
+        }
+    },
+    {
+        "model": "notary.notary",
+        "pk": 58,
+        "fields": {
+            "full_name": "Команова Гульнара Ренатовна",
+            "phone": "0772504052",
+            "email": "komanova.g@gmail.com",
+            "region": "Бишкек",
+            "city": "Бишкек",
+            "address": "ул. Льва Толстого, 2б"
+        }
+    },
+    {
+        "model": "notary.notary",
+        "pk": 59,
+        "fields": {
+            "full_name": "Кубанычбекова Чолпон Кылычевна",
+            "phone": "0553422550",
+            "email": "kubanychbekova_ch@mail.ru",
+            "region": "Бишкек",
+            "city": "Бишкек",
+            "address": "ул. Малдыбаева, 34а\n"
+        }
+    },
+    {
+        "model": "notary.notary",
+        "pk": 60,
+        "fields": {
+            "full_name": "Кулбашева Айнура Аалиевна",
+            "phone": "+996555290776",
+            "email": "alievna27@mail.ru",
+            "region": "Бишкек",
+            "city": "Бишкек",
+            "address": "ул. Сухэ-Батора, 3/4, кабинет 1."
+        }
+    },
+    {
+        "model": "notary.notary",
+        "pk": 61,
+        "fields": {
+            "full_name": "Курманбаев Самат Бактыбекович",
+            "phone": "0555 962256",
+            "region": "Бишкек",
+            "city": "Бишкек",
+            "address": "ул. И.Ахунбаева, дом 100, кв. 51-52, 1 этаж, каб. 1"
+        }
+    },
+    {
+        "model": "notary.notary",
+        "pk": 62,
+        "fields": {
+            "full_name": "Ли Александр Владимирович",
+            "phone": "0703 365040",
+            "email": "notlee@mail.ru",
+            "region": "Бишкек",
+            "city": "Бишкек",
+            "address": "пр. Чуй, № 113"
+        }
+    },
+    {
+        "model": "notary.notary",
+        "pk": 63,
+        "fields": {
+            "full_name": "Макарова Ирина Алексеевна",
+            "phone": "0704450012",
+            "email": "miairina74@mail.ru",
+            "region": "Бишкек",
+            "city": "Бишкек",
+            "address": "по.Чуй, 147,1 а"
+        }
+    },
+    {
+        "model": "notary.notary",
+        "pk": 64,
+        "fields": {
+            "full_name": "Макарова Маргарита Григорьевна",
+            "phone": "+996550932333",
+            "email": "rita.makarova1986@mail.ru",
+            "region": "Бишкек",
+            "city": "Бишкек",
+            "address": "ул. Исанова, 18, ул. Боконбаева, 147"
+        }
+    },
+    {
+        "model": "notary.notary",
+        "pk": 65,
+        "fields": {
+            "full_name": "Маликова Дамира  Маликовна",
+            "phone": "0555 323217",
+            "region": "Бишкек",
+            "city": "Бишкек",
+            "address": "Абдрахманова, 170/1. 7 эт, №3"
+        }
+    },
+    {
+        "model": "notary.notary",
+        "pk": 66,
+        "fields": {
+            "full_name": "Маматкулова Азиза Абдуллаевна",
+            "phone": "0552 000701",
+            "email": "mamatkulova.aziza@mail.ru",
+            "region": "None",
+            "city": "Джалал-Абад",
+            "address": "ул. Пушкина,№86/4"
+        }
+    },
+    {
+        "model": "notary.notary",
+        "pk": 67,
+        "fields": {
+            "full_name": "Мамытова Асель Борисовна",
+            "phone": "0551577791",
+            "email": "arinka1009@mail.ru",
+            "region": "Бишкек",
+            "city": "Бишкек",
+            "address": "пр Чуй 4Б"
+        }
+    },
+    {
+        "model": "notary.notary",
+        "pk": 68,
+        "fields": {
+            "full_name": "Минина Александра Юрьевна",
+            "phone": "+966555586606",
+            "email": "alexelnaz@bk.ru",
+            "region": "Бишкек",
+            "city": "Бишкек",
+            "address": "ул. Московская, 136"
+        }
+    },
+    {
+        "model": "notary.notary",
+        "pk": 69,
+        "fields": {
+            "full_name": "Молдокматова Акылай Болотовна",
+            "phone": "507457777",
+            "region": "Бишкек",
+            "city": "Бишкек",
+            "address": "ул.Ауэзова, 3В"
+        }
+    },
+    {
+        "model": "notary.notary",
+        "pk": 70,
+        "fields": {
+            "full_name": "Момбекова Жаңыл Джоомартовна",
+            "phone": "+996709058808",
+            "email": "Jmombekova@inbox.ru",
+            "region": "None",
+            "city": "Военно Антоновка",
+            "address": "ул. Степная, 83"
+        }
+    },
+    {
+        "model": "notary.notary",
+        "pk": 71,
+        "fields": {
+            "full_name": "Муллаянова Перизат Шейшенбековна",
+            "phone": "0555712532",
+            "email": "p.mullayanova@mail.ru",
+            "region": "None",
+            "city": "Беловодское",
+            "address": "ул. Ленина, 57\\25"
+        }
+    },
+    {
+        "model": "notary.notary",
+        "pk": 72,
+        "fields": {
+            "full_name": "Мурзахметова Нурбүбү",
+            "phone": "0555575151",
+            "email": "nuken2014@mail.ru",
+            "region": "Бишкек",
+            "city": "Бишкек",
+            "address": "ул. Московская, №126- 3"
+        }
+    },
+    {
+        "model": "notary.notary",
+        "pk": 73,
+        "fields": {
+            "full_name": "Мусакулова Айгуль Мухаммеднуровна",
+            "phone": "+996556967196",
+            "email": "musakulova.aigul@gmail.com",
+            "region": "Бишкек",
+            "city": "Бишкек",
+            "address": "ул. Московская д. 163, кв. 6"
+        }
+    },
+    {
+        "model": "notary.notary",
+        "pk": 74,
+        "fields": {
+            "full_name": "Насырова Роза Жолдошовна",
+            "phone": "0554503305",
+            "email": "rose0166@mail.ru",
+            "region": "Бишкек",
+            "city": "Бишкек",
+            "address": "ул.Тоголок Молдо, д. № 60"
+        }
+    },
+    {
+        "model": "notary.notary",
+        "pk": 75,
+        "fields": {
+            "full_name": "Ни Наталья Владимировна",
+            "phone": "+996555917706",
+            "email": "notarius-ni@mail.ru",
+            "region": "Бишкек",
+            "city": "Бишкек",
+            "address": "ул. Абдрахманова, 175"
+        }
+    },
+    {
+        "model": "notary.notary",
+        "pk": 76,
+        "fields": {
+            "full_name": "Нурметова Надира Жолдасовна",
+            "phone": "+996504311411",
+            "email": "nadira84_n@mail.ru",
+            "region": "None",
+            "city": "Токмок",
+            "address": "ул. С. Ибраимова, дом № 196, квартира № 5, кабинет № 1"
+        }
+    },
+    {
+        "model": "notary.notary",
+        "pk": 77,
+        "fields": {
+            "full_name": "Омуров Ынтымак Тыныбекович",
+            "phone": "0707 863 998",
+            "email": "opsd@rambler.ru",
+            "region": "Нарынская область",
+            "city": "Чаек",
+            "address": "ул. Э.Матыева, 102/1"
+        }
+    },
+    {
+        "model": "notary.notary",
+        "pk": 78,
+        "fields": {
+            "full_name": "Орозбаева Михренса Салаевна",
+            "phone": "0550360800",
+            "email": "milanotarius@mail.com",
+            "region": "Бишкек",
+            "city": "Бишкек",
+            "address": "пр. Чуй, 52"
+        }
+    },
+    {
+        "model": "notary.notary",
+        "pk": 79,
+        "fields": {
+            "full_name": "Орунбаева Элиза Рахимжановна",
+            "phone": "0550 009022",
+            "region": "Баткен область",
+            "city": "Кызыл Кия",
+            "address": "ул. Асаналиева, б/н"
+        }
+    },
+    {
+        "model": "notary.notary",
+        "pk": 80,
+        "fields": {
+            "full_name": "Осмоналиева Бубурайым Кенжегараевна",
+            "phone": "0559 996 177",
+            "email": "osmonaliyeva53@mail.r",
+            "region": "None",
+            "city": "Лебединовка",
+            "address": "ул. Зеленая б/н"
+        }
+    },
+    {
+        "model": "notary.notary",
+        "pk": 81,
+        "fields": {
+            "full_name": "Осмоналиева Гульнара Кубанычбековна",
+            "phone": "0555 741445",
+            "email": "ogulnara1234@gmail.com",
+            "region": "Ысык-Атинский район, Чуйская область",
+            "city": "Ивановка",
+            "address": "улица Гр.Ильина 154"
+        }
+    },
+    {
+        "model": "notary.notary",
+        "pk": 82,
+        "fields": {
+            "full_name": "Пуха Ирина Михайловна",
+            "phone": "0550143146",
+            "email": "I.puha@mail.ru",
+            "region": "Ыссык-Кульская область",
+            "city": "Чолпон-Ата",
+            "address": "ул. Советская, 111"
+        }
+    },
+    {
+        "model": "notary.notary",
+        "pk": 83,
+        "fields": {
+            "full_name": "Рыскулов Куттубек Ракынович",
+            "phone": "+996501616075",
+            "email": "ryskulov75@mail.ru",
+            "region": "Сокулукский район, Чуйская область",
+            "city": "Сокулук",
+            "address": "улица Фрунзе, дом №134"
+        }
+    },
+    {
+        "model": "notary.notary",
+        "pk": 84,
+        "fields": {
+            "full_name": "Рыскулова Сымбат Шаршебаевна",
+            "phone": "+996555042557",
+            "email": "ryskulova_notary68@mail.ru",
+            "region": "Бишкек",
+            "city": "Бишкек",
+            "address": "ул Киевская, 39"
+        }
+    },
+    {
+        "model": "notary.notary",
+        "pk": 85,
+        "fields": {
+            "full_name": "Сайдалиев Умид Фархадович",
+            "phone": "0556355235",
+            "email": "umid.cip@gmail.com",
+            "region": "Бишкек",
+            "city": "Бишкек",
+            "address": "ул. Гагарина, 169а"
+        }
+    },
+    {
+        "model": "notary.notary",
+        "pk": 86,
+        "fields": {
+            "full_name": "Саламатова Рыскан Жумагазиевна",
+            "phone": "+996773795126",
+            "email": "Ryskan.salamatova@bk.ru",
+            "region": "Бишкек",
+            "city": "Бишкек",
+            "address": "ул Жибек-Жолу, д. № 385, каб. № 2\n"
+        }
+    },
+    {
+        "model": "notary.notary",
+        "pk": 87,
+        "fields": {
+            "full_name": "Салиев Асылбек Лембаевич",
+            "phone": "0553 507 507",
+            "email": "saliev-asylbek@mail.ru",
+            "region": "Ыссык-Кульская область",
+            "city": "Каракол",
+            "address": "ул. Кыштобаева, 72"
+        }
+    },
+    {
+        "model": "notary.notary",
+        "pk": 88,
+        "fields": {
+            "full_name": "Салиева Гульзада Асылбековна",
+            "phone": "0558 553955",
+            "region": "Бишкек",
+            "city": "Бишкек",
+            "address": "ул. Боконбаева, 14/56"
+        }
+    },
+    {
+        "model": "notary.notary",
+        "pk": 89,
+        "fields": {
+            "full_name": "Сасыкулова Уулкан Адылбековна",
+            "phone": "+996552565860",
+            "email": "ulik5069@gmail.com",
+            "region": "Бишкек",
+            "city": "Бишкек",
+            "address": "пр. Чуй, 1-этаж, квартира №4"
+        }
+    },
+    {
+        "model": "notary.notary",
+        "pk": 90,
+        "fields": {
+            "full_name": "Сейтимбекова Дильдахан Вакеновна",
+            "phone": "0557 019 952",
+            "email": "sitimbekovad@gmail.com",
+            "region": "None",
+            "city": "Кара Балта",
+            "address": "улица Кожомбердиева, 14"
+        }
+    },
+    {
+        "model": "notary.notary",
+        "pk": 91,
+        "fields": {
+            "full_name": "Сейитова Наргиза Койлубаевна",
+            "phone": "0703205502",
+            "email": "nargiza_knu@mail.ru",
+            "region": "Бишкек",
+            "city": "Бишкек",
+            "address": "ул. Байтик Баатыра,13,кв.2"
+        }
+    },
+    {
+        "model": "notary.notary",
+        "pk": 92,
+        "fields": {
+            "full_name": "Сейдахматова Света Буланбековна",
+            "phone": "0555957448",
+            "email": "seidahmatova@gmail.com",
+            "region": "None",
+            "city": "Талас",
+            "address": "ул.Бердике-Баатыр № 200-2"
+        }
+    },
+    {
+        "model": "notary.notary",
+        "pk": 93,
+        "fields": {
+            "full_name": "Смаилова Айгуль Жапарбековна",
+            "phone": "0705 806640",
+            "email": "smailova_aku@mail.ru",
+            "region": "Бишкек",
+            "city": "Бишкек",
+            "address": "ул. Исанова, 25/1"
+        }
+    },
+    {
+        "model": "notary.notary",
+        "pk": 94,
+        "fields": {
+            "full_name": "Соломченко Людмила Александровна",
+            "phone": "0555 64 78 25",
+            "email": "l.solomchenko@mail.ru",
+            "region": "None",
+            "city": "Сузак",
+            "address": "ул. Мадумар Ата, д. 21"
+        }
+    },
+    {
+        "model": "notary.notary",
+        "pk": 95,
+        "fields": {
+            "full_name": "Соодонбекова Асель Бейшеевна",
+            "phone": "+996772680225",
+            "email": "Asel.beysheevna@mail.ru",
+            "region": "Бишкек",
+            "city": "Бишкек",
+            "address": "3-мкр, д. 24, кв. 33"
+        }
+    },
+    {
+        "model": "notary.notary",
+        "pk": 96,
+        "fields": {
+            "full_name": "Сулайманова Нургуль Тентиевна",
+            "phone": "0555757490",
+            "email": "nurgul757490@gmail.com",
+            "region": "Бишкек",
+            "city": "Бишкек",
+            "address": "мкр 11, дом 12/1, кв. 41"
+        }
+    },
+    {
+        "model": "notary.notary",
+        "pk": 97,
+        "fields": {
+            "full_name": "Сыдыкбекова Гүлмира Ашымакуновна",
+            "phone": "0550 95 18 30",
+            "email": "gulmira-Sadykbekova@mail.ru",
+            "region": "Ыссык-Кульская область",
+            "city": "Чолпон-Ата",
+            "address": "ул. Советская, 112"
+        }
+    },
+    {
+        "model": "notary.notary",
+        "pk": 98,
+        "fields": {
+            "full_name": "Сыдыкова Салтанат Райымбековна",
+            "phone": "0555077333",
+            "email": "Sydykovasaltanat46@gmail.ru",
+            "region": "Бишкек",
+            "city": "Бишкек",
+            "address": "ул. Ч. Айтматова, д. 14, кв. 41, 42"
+        }
+    },
+    {
+        "model": "notary.notary",
+        "pk": 99,
+        "fields": {
+            "full_name": "Тажиева Лайликан",
+            "phone": "+996555252505",
+            "email": "alykanovalaili@gmail.com",
+            "region": "Бишкек",
+            "city": "Бишкек",
+            "address": "ул. Московская, д. 91, кв. 29"
+        }
+    },
+    {
+        "model": "notary.notary",
+        "pk": 100,
+        "fields": {
+            "full_name": "Ташбаев Алишер Абдуманнапович",
+            "phone": "0222 022220",
+            "email": "alisher.tashbaev.1981@mail.ru",
+            "region": "Бишкек",
+            "city": "Бишкек",
+            "address": "ул Калыка Акиева, дом 11, квартира 42"
+        }
+    },
+    {
+        "model": "notary.notary",
+        "pk": 101,
+        "fields": {
+            "full_name": "Таштандиева Аида Рысбековна",
+            "phone": "+996555918686",
+            "email": "tashtandieva@mail.ru",
+            "region": "Бишкек",
+            "city": "Бишкек",
+            "address": "пр Чуй, 26"
+        }
+    },
+    {
+        "model": "notary.notary",
+        "pk": 102,
+        "fields": {
+            "full_name": "Тё Татьяна Владимировна",
+            "phone": "0772 173791",
+            "email": "ttyo2007@yandex.ru",
+            "region": "Бишкек",
+            "city": "Бишкек",
+            "address": "мкр. 9, дом 3, 1 эатж"
+        }
+    },
+    {
+        "model": "notary.notary",
+        "pk": 103,
+        "fields": {
+            "full_name": "Токоева Мыскал Джолдошбековна",
+            "phone": "555 008090",
+            "email": "mtokoeva@gmail.com",
+            "region": "Бишкек",
+            "city": "Бишкек",
+            "address": "ул Тоголок Молдо, 5, кв 17, 18"
+        }
+    },
+    {
+        "model": "notary.notary",
+        "pk": 104,
+        "fields": {
+            "full_name": "Токолдошова Элизат Жолтоевна",
+            "phone": "+996555105224",
+            "email": "etokoldoshova@inbox.ru",
+            "region": "Бишкек",
+            "city": "Бишкек",
+            "address": "пр. Жибек Жолу, 217"
+        }
+    },
+    {
+        "model": "notary.notary",
+        "pk": 105,
+        "fields": {
+            "full_name": "Токтоболотова Салима Абдылдаевна",
+            "phone": "+996555111808",
+            "email": "miss.bodonova@mail.ru",
+            "region": "None",
+            "city": "Джалал-Абад",
+            "address": "ул. Ж. Бакиева, 16, 1-этаж, 1-кабинет"
+        }
+    },
+    {
+        "model": "notary.notary",
+        "pk": 106,
+        "fields": {
+            "full_name": "Торобекова Эльвира Эсенбековна",
+            "phone": "0552 302352",
+            "email": "elvina-555@mail.ru",
+            "region": "Бишкек",
+            "city": "Бишкек",
+            "address": "ул. Киевская, 112"
+        }
+    },
+    {
+        "model": "notary.notary",
+        "pk": 107,
+        "fields": {
+            "full_name": "Торобекова Эльнура Салымбековна",
+            "email": "e.abdyldaeva80@mail.ru",
+            "region": "Бишкек",
+            "city": "Бишкек",
+            "address": "ул. Абдрахманова,304"
+        }
+    },
+    {
+        "model": "notary.notary",
+        "pk": 108,
+        "fields": {
+            "full_name": "Торокулов Турдумамбет Джарманбетович",
+            "email": "turdukulov55@bk.ru",
+            "region": "None",
+            "city": "Кызыл-Адыр",
+            "address": "ул. 50 лет Киргизии № 7"
+        }
+    },
+    {
+        "model": "notary.notary",
+        "pk": 109,
+        "fields": {
+            "full_name": "Тукубашева Айгул Ильясовна",
+            "phone": "+996703888881",
+            "email": "atukubasheva@mail.ru",
+            "region": "Бишкек",
+            "city": "Бишкек",
+            "address": "ул. Московская, 51, каб. 2"
+        }
+    },
+    {
+        "model": "notary.notary",
+        "pk": 110,
+        "fields": {
+            "full_name": "Тулеева Назира Бейшембековна",
+            "phone": "705333064",
+            "email": "nazira-7777@mail.ru",
+            "region": "Бишкек",
+            "city": "Бишкек",
+            "address": "ул. Логвиненко д. 26 «а»"
+        }
+    },
+    {
+        "model": "notary.notary",
+        "pk": 111,
+        "fields": {
+            "full_name": "Турдалиев Муканбет Амантурович",
+            "phone": "0700 087 975",
+            "region": "None",
+            "city": "Чолпон-ата",
+            "address": "ул. Советская, д. 127/1"
+        }
+    },
+    {
+        "model": "notary.notary",
+        "pk": 112,
+        "fields": {
+            "full_name": "Турсунбеков Самат Жумабекович",
+            "phone": "0703 384494",
+            "email": "tursunbekov_1984@mail.ru",
+            "region": "Бишкек",
+            "city": "Бишкек",
+            "address": "БУ Каухар, ул. Суеркулова, 5/1, 1 этаж"
+        }
+    },
+    {
+        "model": "notary.notary",
+        "pk": 113,
+        "fields": {
+            "full_name": "Тыналиева Калиман Тологоновна",
+            "phone": "0555 988876",
+            "email": "tynalieva_kt@mail.ru",
+            "region": "Бишкек",
+            "city": "Бишкек",
+            "address": "ул. Раззакова, 51"
+        }
+    },
+    {
+        "model": "notary.notary",
+        "pk": 114,
+        "fields": {
+            "full_name": "Усенова Асель Канатбековна",
+            "phone": "+996559959511",
+            "email": "asel-usenova1977@mail.ru",
+            "region": "Бишкек",
+            "city": "Бишкек",
+            "address": "ул. Ахунбаева, д. 144, кв. 12"
+        }
+    },
+    {
+        "model": "notary.notary",
+        "pk": 115,
+        "fields": {
+            "full_name": "Усупбаева Салтанат Куменовна",
+            "phone": "0555 701019",
+            "email": "usupbaeva1958@mail.ru",
+            "region": "Бишкек",
+            "city": "Бишкек",
+            "address": "ул. Киевская, д. № 120, каб. 3"
+        }
+    },
+    {
+        "model": "notary.notary",
+        "pk": 116,
+        "fields": {
+            "full_name": "Ханбабаев Дилшадбек Токтобаевич",
+            "phone": "0773530064",
+            "email": "Khanbabaev19964@mail.ru",
+            "region": "None",
+            "city": "Алабука",
+            "address": "ул. Нарынбаева, 19."
+        }
+    },
+    {
+        "model": "notary.notary",
+        "pk": 117,
+        "fields": {
+            "full_name": "Ханкелдиева Нуру Кунаевна",
+            "phone": "0705-97-17-37",
+            "email": "Khankeldieva@gmail.com",
+            "region": "Бишкек",
+            "city": "Бишкек",
+            "address": "ул. Юнусалиева, 22"
+        }
+    },
+    {
+        "model": "notary.notary",
+        "pk": 118,
+        "fields": {
+            "full_name": "Хамдамова Анаркуль Андашевна",
+            "phone": "+996505515445",
+            "email": "ahamdamova691@gmail.com",
+            "region": "None",
+            "city": "None",
+            "address": "Ысык-Атинский район"
+        }
+    },
+    {
+        "model": "notary.notary",
+        "pk": 119,
+        "fields": {
+            "full_name": "Цой Станислав Николаевич",
+            "phone": "0559 120099",
+            "email": "notarius-74@mail.ru",
+            "region": "Бишкек",
+            "city": "Бишкек",
+            "address": "пр. Чуй, 48"
+        }
+    },
+    {
+        "model": "notary.notary",
+        "pk": 120,
+        "fields": {
+            "full_name": "Чынгышев Жанарбек Сатыгулович",
+            "phone": "0709103647",
+            "email": "shibusakumar@gmail.com",
+            "region": "Нарынская область",
+            "city": "Нарын",
+            "address": "ул. Ленина, 44"
+        }
+    },
+    {
+        "model": "notary.notary",
+        "pk": 121,
+        "fields": {
+            "full_name": "Шагидова-Секишева Бермет Жумашбековна",
+            "phone": "0558 271178",
+            "region": "Бишкек",
+            "city": "Бишкек",
+            "address": "ул. Фрунзе, 340"
+        }
+    },
+    {
+        "model": "notary.notary",
+        "pk": 122,
+        "fields": {
+            "full_name": "Шаменова Айзаада Джакыпбековна",
+            "phone": "+996701159570",
+            "email": "aizi-77@mail.ru",
+            "region": "Бишкек",
+            "city": "Бишкек",
+            "address": "ул. Ибраимова, д. 115/3, помещение офис №102"
+        }
+    },
+    {
+        "model": "notary.notary",
+        "pk": 123,
+        "fields": {
+            "full_name": "Шамшиев Шайбанбек Салимбекович",
+            "phone": "0778 888781",
+            "region": "Баткен область",
+            "city": "Арка",
+            "address": ""
+        }
+    },
+    {
+        "model": "notary.notary",
+        "pk": 124,
+        "fields": {
+            "full_name": "Янфу Салима Сумаровна",
+            "phone": "0555361757",
+            "email": "salima.nasiza.78@mail.ru",
+            "region": "Бишкек",
+            "city": "Бишкек",
+            "address": "пр. Чуй, 113"
+        }
+    },
+    {
+        "model": "notary.notary",
+        "pk": 125,
+        "fields": {
+            "full_name": "Усеков Алтынбек Абдулазизович",
+            "email": "usekovaltinbekw@gmail.com",
+            "region": "None",
+            "city": "Жаны-Жер",
+            "address": "ул. Дружба б/н"
+        }
+    },
+    {
+        "model": "notary.notary",
+        "pk": 126,
+        "fields": {
+            "full_name": "Усубалиев  Тыныбек Дженишович",
+            "phone": "0502 011407",
+            "region": "Бишкек",
+            "city": "Бишкек",
+            "address": "ул. Медерова, 143"
+        }
+    }
+]
