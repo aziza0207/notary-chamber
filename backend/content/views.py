@@ -14,7 +14,13 @@ class FAQListAPIView(generics.ListAPIView):
 
 class DocumentListAPIView(generics.ListAPIView):
     serializer_class = DocumentSerializer
-    queryset = Document.objects.all()
+
+    def get_queryset(self):
+        queryset = Document.objects.all()
+        value_to_search = self.request.query_params.get('search')
+        if value_to_search:
+            queryset = queryset.filter(title_ru__icontains=value_to_search)
+        return queryset
 
 
 class NewsListAPIView(generics.ListAPIView):
