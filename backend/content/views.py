@@ -18,8 +18,11 @@ class DocumentListAPIView(generics.ListAPIView):
     def get_queryset(self):
         queryset = Document.objects.all()
         value_to_search = self.request.query_params.get('search')
-        if value_to_search:
-            queryset = queryset.filter(title_ru__icontains=value_to_search)
+        if isinstance(value_to_search, str):
+            if len(value_to_search) > 0:
+                queryset = queryset.filter(title_ru__icontains=value_to_search)
+            else:
+                return []
         return queryset
 
 
