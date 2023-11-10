@@ -1,10 +1,20 @@
 from rest_framework import generics
-
+from django.http import JsonResponse
+from django.views.decorators.csrf import csrf_exempt
 from .models import FAQ, Contact, Link, News, PhotoSet, Photo, Video, Document
 from .pagination import NewsListPagination
 from .serializers import (DocumentSerializer, ContactSerializer, FAQSerializer,
                           LinkSerializer, NewsDetailSerializer,
                           NewsListSerializer, PhotoSetListSerializer, PhotoSetDetailSerializer, VideoSerializer)
+
+@csrf_exempt
+def upload_photo(request):
+    if request.method == 'POST':
+        files = request.FILES.getlist('files')
+        # for file in files:
+        #     Photo.objects.create(photo=file, photoset=1)
+            
+        return JsonResponse({'message': 'Files uploaded successfully.'})
 
 
 class FAQListAPIView(generics.ListAPIView):

@@ -1,0 +1,46 @@
+{% block multi_upload_button %}
+<div class="form-group">
+    <div parent_model="{{ parent_model_name }}">
+        <p>{{ parent_model_name }}</p>
+        <p>{{ parent_instance_id }}</p>
+        <p>{{ inline_model_name }}</p>
+        <p>{{ upload_url }}</p>
+    </div>
+    <input type="file" id="fileInput" accept="image/*" multiple>
+    <button onclick="uploadFiles()">Upload Files</button>
+    <script>
+        let upload_url = "{{ upload_url }}"
+        let parameters = {
+            "parent_model_name": "{{ parent_model_name }}",
+            "parent_instance_id": "{{ parent_instance_id }}",
+            "inline_model_name": "{{ inline_model_name }}",
+        }
+
+        function uploadFiles() {
+            const fileInput = document.getElementById('fileInput');
+            const files = fileInput.files;
+            if (files.length === 0) {
+                alert('Please select at least one file.');
+                return;
+            }
+
+            const formData = new FormData();
+            for (let i = 0; i < files.length; i++) {
+                formData.append('files', files[i]);
+            }
+
+            fetch(upload_url, {
+                method: 'POST',
+                body: formData
+            })
+            .then(response => response.json())
+            .then(data => {
+                console.log('Upload successful:', data);
+            })
+            .catch(error => {
+                console.error('Error during upload:', error);
+            });
+        }
+    </script>
+   </div>
+{% endblock %}
