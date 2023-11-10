@@ -33,7 +33,7 @@ python manage.py loaddata content/fixtures/contacts.json
 
 # "big" fixtures
 
- python manage.py loaddata notary/fixtures/cities_all.json
- python manage.py loaddata notary/fixtures/notary_ex.json
+# python manage.py loaddata notary/fixtures/cities_all.json
+ python manage.py loaddata notary/fixtures/notary_all.json
 
 exec "$@"

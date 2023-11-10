@@ -1,6 +1,7 @@
 from django.db import models
 from .schedule_abs_model import WorkSchedule, DayOffSchedule
 
+
 # from location_field.models.plain import PlainLocationField
 
 
@@ -10,7 +11,7 @@ def notary_photos(instance, filename):
 
 class Notary(WorkSchedule, DayOffSchedule):
     full_name = models.CharField("Имя", max_length=100)
-    city = models.ForeignKey("City", on_delete=models.SET_NULL, null=True, verbose_name="Город")
+    city = models.CharField("Город", null=True, blank=True, max_length=150)
 
     phone = models.CharField("Номер телефона", max_length=30)
     email = models.EmailField("Email", null=True, blank=True)
@@ -26,7 +27,6 @@ class Notary(WorkSchedule, DayOffSchedule):
                                 рекомендуется проверять полученные координаты.
                                 ''')
 
-
     class Meta:
         ordering = ["id"]
         verbose_name = "Нотариус"
@@ -34,15 +34,3 @@ class Notary(WorkSchedule, DayOffSchedule):
 
     def __str__(self):
         return self.full_name
-
-
-class City(models.Model):
-    name = models.CharField("Название", max_length=255)
-
-    class Meta:
-        ordering = ["id"]
-        verbose_name = "Город"
-        verbose_name_plural = "Города"
-
-    def __str__(self):
-        return self.name

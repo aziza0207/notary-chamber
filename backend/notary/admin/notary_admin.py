@@ -1,15 +1,10 @@
 from django.contrib.admin import register
 from modeltranslation.admin import TabbedTranslationAdmin, TranslationStackedInline
 
-from ..models import Notary, City, WorkSchedule, DayOffSchedule
+from ..models import Notary,  WorkSchedule, DayOffSchedule
 from .mixin import AdminFieldMixin
 
 
-@register(City)
-class CityAdmin(TabbedTranslationAdmin):
-    list_display = ["id", "name", ]
-    list_display_links = ["name"]
-    fields = ["name"]
 
 
 @register(Notary)

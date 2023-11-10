@@ -16,16 +16,19 @@ from .services import make_message
 class NotaryListAPIView(generics.ListAPIView):
     serializer_class = NotarySerializer
     pagination_class = NotaryListPagination
-    
+
     def get_queryset(self):
         requested_page = self.request.query_params.get('page')
         value_to_search = self.request.query_params.get('search')
-        queryset = Notary.objects.all().select_related('city')
+        queryset = Notary.objects.all()
         if requested_page == 'all':
             self.pagination_class = None
         if value_to_search:
-            queryset = queryset.filter(Q(full_name__icontains=value_to_search) | Q(city_ru__icontains=value_to_search))
+            queryset = queryset.filter(
+                Q(full_name__icontains=value_to_search) | Q(city_ru__icontains=value_to_search))
         return queryset
+
+
 
 
 @csrf_exempt

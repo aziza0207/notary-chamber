@@ -1,6 +1,6 @@
 from modeltranslation.translator import TranslationOptions, register
 
-from .models import Notary, City, WorkSchedule, DayOffSchedule
+from .models import Notary, WorkSchedule, DayOffSchedule
 
 
 @register(WorkSchedule)
@@ -13,9 +13,7 @@ class DayOffScheduleTranslationOptions(TranslationOptions):
     fields = ("start_day_off", "end_day_off")
 
 
-@register(City)
-class CityTranslationOptions(TranslationOptions):
-    fields = ('name',)
+
 
 
 @register(Notary)

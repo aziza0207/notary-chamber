@@ -1,6 +1,7 @@
 from django.db import models
 from ..constants import DaysChoice
 
+
 # DAYS_OF_THE_WEEK = (
 #     ("1", "Пон"),
 #     ("2", "Вт"),
@@ -20,11 +21,10 @@ from ..constants import DaysChoice
 
 
 class WorkSchedule(models.Model):
-
-    start_day = models.CharField("Рабочие дни с", max_length=5,
+    start_day = models.CharField("Рабочие дни с", max_length=15,
                                  choices=DaysChoice.choices,
                                  blank=True, null=True)
-    end_day = models.CharField("по", max_length=5,
+    end_day = models.CharField("по", max_length=15,
                                choices=DaysChoice.choices,
                                blank=True, null=True)
     start_time = models.TimeField("Рабочее время с", blank=True, null=True)
@@ -38,10 +38,10 @@ class WorkSchedule(models.Model):
 
 class DayOffSchedule(models.Model):
     start_day_off = models.CharField("Выходные с",
-                                     max_length=5,
+                                     max_length=15,
                                      choices=DaysChoice.choices,
                                      blank=True, null=True)
-    end_day_off = models.CharField("по", max_length=5, choices=DaysChoice.choices,
+    end_day_off = models.CharField("по", max_length=15, choices=DaysChoice.choices,
                                    blank=True, null=True
                                    )
 
