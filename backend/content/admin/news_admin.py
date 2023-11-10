@@ -1,16 +1,14 @@
 from django.contrib import admin
 from modeltranslation.admin import TabbedTranslationAdmin
 
-from ..mixins import AdminFieldMixin, AdminMultiInputMixin
+from ..mixins import AdminFieldMixin
 from ..models import News, NewsImage
 
 
-class NewsImageImageInline(AdminMultiInputMixin, admin.StackedInline):
+class NewsImageImageInline(admin.StackedInline):
     model = NewsImage
     extra = 0
-    # readonly_fields = ('add_multiadd_button',)
-    # fields = ('image', 'add_multiadd_button',)
-    # list_display = ('add_multiadd_button',)
+    template = 'admin/edit_inline/stacked_with_multi.html'
 
 
 @admin.action(description="Закрепить выбранные новости")
@@ -35,7 +33,5 @@ class NewsAdmin(AdminFieldMixin, TabbedTranslationAdmin):
     fields = ["title", "slug", "description", ("main_image", "get_little_image",), "video", "is_pinned", "date"]
 
     actions = [make_pinned, make_unpinned]
-
-    
 
 admin.site.register(News, NewsAdmin)

@@ -2,7 +2,10 @@ from django.urls import path
 
 from .views import (ContactListAPIView, DocumentListAPIView, FAQListAPIView,
                     LinksListAPIView, NewsDetailAPIView, NewsListAPIView,
-                    NewsPinnedAPIView, PhotoSetListAPIView, PhotoSetDetailAPIView, VideoListAPIView)
+                    NewsPinnedAPIView, PhotoSetListAPIView, PhotoSetDetailAPIView, VideoListAPIView,
+                    upload_photo)
+
+app_name = 'content'
 
 urlpatterns = [
     path('documents/', DocumentListAPIView.as_view(), name='documents'),
@@ -15,4 +18,5 @@ urlpatterns = [
     path('gallery-photo/', PhotoSetListAPIView.as_view(), name='gallery-photo'),
     path('gallery-photo/<str:slug>/', PhotoSetDetailAPIView.as_view(), name='gallery-photo'),
     path('gallery-video/', VideoListAPIView.as_view(), name='gallery-video'),
+    path('upload_photo/', upload_photo, name='upload_photo'),
 ]
