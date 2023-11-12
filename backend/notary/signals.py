@@ -1,7 +1,7 @@
 from django.db.models.signals import pre_save
 from django.dispatch import receiver
-from geopy.geocoders import Nominatim
 from geopy.exc import GeopyError
+from geopy.geocoders import Nominatim
 
 from notary.models import Notary
 

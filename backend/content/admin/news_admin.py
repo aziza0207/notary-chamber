@@ -1,14 +1,17 @@
 from django.contrib import admin
 from modeltranslation.admin import TabbedTranslationAdmin
 
-from ..mixins import AdminFieldMixin
+from ..mixins import AdminFieldMixin, AdminMultiInputMixin
 from ..models import News, NewsImage
 
 
-class NewsImageImageInline(admin.StackedInline):
+class NewsImageImageInline(AdminFieldMixin, admin.StackedInline):
     model = NewsImage
     extra = 0
     template = 'admin/edit_inline/stacked_with_multi.html'
+    
+    readonly_fields = ('get_little_image',)
+    fields = (('image', 'get_little_image',),)
 
 
 @admin.action(description="Закрепить выбранные новости")
@@ -21,7 +24,7 @@ def make_unpinned(modeladmin, request, queryset):
     queryset.update(is_pinned=False)
 
 
-class NewsAdmin(AdminFieldMixin, TabbedTranslationAdmin):
+class NewsAdmin(AdminFieldMixin, AdminMultiInputMixin, TabbedTranslationAdmin):
     inlines = (NewsImageImageInline,)
     prepopulated_fields = {"slug": ("title",)}
 
