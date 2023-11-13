@@ -1,3 +1,4 @@
+from django.http import HttpResponse
 from django.views.decorators.csrf import csrf_exempt
 from rest_framework import generics
 
@@ -22,7 +23,11 @@ def upload_photo(request):
         parameters_str = request.FILES.get('json_data').read().decode()
         inline_model_class, create_args = make_creation_args(parameters_str)
         for file in files:
-            inline_model_class.objects.create(image=file, **create_args)
+            try:
+                inline_model_class.objects.create(image=file, **create_args)
+            except Exception:
+                return HttpResponse('An error occured while saving files')
+        return HttpResponse('Uploaded successfully')
 
 
 class FAQListAPIView(generics.ListAPIView):

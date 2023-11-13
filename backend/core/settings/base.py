@@ -142,10 +142,10 @@ LANGUAGES = (
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/4.2/howto/static-files/
 
-# if DEBUG:
-#     STATICFILES_DIRS = [
-#         os.path.join(BASE_DIR, 'static_back/')
-#     ]
+if DEBUG:
+    STATICFILES_DIRS = [
+        os.path.join(BASE_DIR, 'static/')
+    ]
 
 STATIC_URL = 'static_back/'
 STATIC_ROOT = os.path.join(BASE_DIR, 'static_root/')

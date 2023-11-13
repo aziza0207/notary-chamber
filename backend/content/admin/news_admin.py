@@ -24,6 +24,7 @@ def make_unpinned(modeladmin, request, queryset):
     queryset.update(is_pinned=False)
 
 
+@admin.register(News)
 class NewsAdmin(AdminFieldMixin, AdminMultiInputMixin, TabbedTranslationAdmin):
     inlines = (NewsImageImageInline,)
     prepopulated_fields = {"slug": ("title",)}
@@ -37,7 +38,3 @@ class NewsAdmin(AdminFieldMixin, AdminMultiInputMixin, TabbedTranslationAdmin):
     fields = ["title", "slug", "description", ("main_image", "get_little_image",), "video", "is_pinned", "date"]
 
     actions = [make_pinned, make_unpinned]
-
-    
-
-admin.site.register(News, NewsAdmin)

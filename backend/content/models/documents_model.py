@@ -12,7 +12,7 @@ class Document(models.Model):
     class Meta:
         ordering = ["title"]
         verbose_name = "Документ"
-        verbose_name_plural = "Все документы"
+        verbose_name_plural = "Документы"
 
     def __str__(self):
         return self.title
