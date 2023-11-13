@@ -6,7 +6,7 @@ from content.models import Photo, PhotoSet, Video
 class PhotoSerializer(serializers.ModelSerializer):
     class Meta:
         model = Photo
-        fields = ('id', 'photo', 'pub_date',)
+        fields = ('id', 'image', 'pub_date',)
 
 
 class PhotoSetListSerializer(serializers.ModelSerializer):

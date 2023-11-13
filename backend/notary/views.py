@@ -23,12 +23,17 @@ class NotaryListAPIView(generics.ListAPIView):
         queryset = Notary.objects.all()
         if requested_page == 'all':
             self.pagination_class = None
-        if value_to_search:
-            queryset = queryset.filter(
-                Q(full_name__icontains=value_to_search) | Q(city_ru__icontains=value_to_search))
+        if isinstance(value_to_search, str):
+            if len(value_to_search) > 0:
+                if value_to_search.isascii():
+                    queryset = queryset.filter(Q(full_name_en__icontains=value_to_search) | Q(city_en__icontains=value_to_search))
+
+                else:
+                    queryset = queryset.filter(
+                    Q(full_name_ru__icontains=value_to_search) | Q(city_ru__icontains=value_to_search))
+            else:
+                return []
         return queryset
-
-
 
 
 @csrf_exempt
