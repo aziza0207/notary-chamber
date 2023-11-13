@@ -34,5 +34,5 @@ class AdminMultiInputMixin:
             'inline_model_name': self.inlines[0].model._meta.model_name,
             'upload_url': request.build_absolute_uri(reverse('content:upload_photo'))
         })
-
+        print(extra_context)
         return super().change_view(request, object_id, form_url, extra_context=extra_context)
