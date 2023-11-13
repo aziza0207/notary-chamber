@@ -11,3 +11,9 @@ docker-compose -f docker-compose.yml -f docker-compose.override.yml up.
 docker-compose -f docker-compose.yml -f docker-compose.prod.yml up.
 
 So, they both override basic docker-compose.yml.
+
+###
+
+Regarding the multi-upload button in the admin panel:
+
+The multi_upload_button.html is included in edit_inline/stacked_with_multi.html, which overrides edit_inline/stacked.html. It includes a JavaScript script that manages both 1) multiple input and 2) additional context for creating instances on the Django server side. This context is written by the overridden change_view method in AdminMultiInputMixin in mixins.py.

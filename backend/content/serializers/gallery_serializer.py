@@ -1,6 +1,6 @@
 from rest_framework import serializers
 
-from content.models import PhotoSet, Photo, Video
+from content.models import Photo, PhotoSet, Video
 
 
 class PhotoSerializer(serializers.ModelSerializer):

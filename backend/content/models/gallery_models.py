@@ -1,6 +1,5 @@
-from django.db import models
 from autoslug import AutoSlugField
-from transliterate import translit
+from django.db import models
 
 
 def gallery_files(instance, filename):
@@ -24,7 +23,7 @@ class PhotoSet(models.Model):
 
 
 class Photo(models.Model):
-    photo = models.ImageField(upload_to=gallery_files, verbose_name='Изображение')
+    image = models.ImageField(upload_to=gallery_files, verbose_name='Изображение')
     photoset = models.ForeignKey('PhotoSet', verbose_name='Фотосет', related_name='photos', on_delete=models.CASCADE)
     pub_date = models.DateTimeField(auto_now_add=True, verbose_name='Опубликовано')
 
