@@ -19,7 +19,14 @@ class AdminMultiInputMixin:
         '''
         The function generates additional context required in the view for creating multiple inline objects.
         Works in tandem with an overridden template in the inline class featuring a 'load multiple' button.
+
+        Additionally, it forcefully adds the '_continue' option to optimize redirect behavior.
         '''
+
+        request.POST._mutable = True
+        request.POST['_continue'] = True
+        request.POST._mutable = False
+
         extra_context = extra_context or {}
         extra_context.update({
             'parent_model_name': self.__dict__.get('model').__name__,

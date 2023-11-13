@@ -5,7 +5,7 @@ FRONTEND_HOME = config('FRONTEND_HOME', default='')
 JAZZMIN_SETTINGS = {
     "site_title": "Briskly Minds",
 
-    # "site_logo": 'img/briskly_logo.jpg',
+    "site_logo": 'admin/notary_2.png',
 
     "copyright": "Sanarip Galley",
     "topmenu_links": [
@@ -14,9 +14,9 @@ JAZZMIN_SETTINGS = {
 
         {"name": "Открыть сайт", "url": FRONTEND_HOME, "new_window": True},
 
-        # {"app": "questions", },
+        {"app": "notary", },
 
-        # {"app": "candidates", },
+        {"app": "content", },
     ],
 
     # Whether to display the side menu
@@ -29,7 +29,9 @@ JAZZMIN_SETTINGS = {
 
     "hide_models": [],
 
-    "order_with_respect_to": [],
+    "order_with_respect_to": ["notary.notary", "notary.recipient", "content.contact", "content.faq",
+                              "content.document", "content.link", "content.news", "content.photoset",
+                              "content.video"],
 
     # "show_ui_builder": True
 }
