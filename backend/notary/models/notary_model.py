@@ -1,6 +1,6 @@
 from django.db import models
-from .schedule_abs_model import WorkSchedule, DayOffSchedule
 
+from .schedule_abs_model import DayOffSchedule, WorkSchedule
 
 # from location_field.models.plain import PlainLocationField
 

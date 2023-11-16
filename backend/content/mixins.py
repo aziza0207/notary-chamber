@@ -21,6 +21,8 @@ class AdminMultiInputMixin:
         Works in tandem with an overridden template in the inline class featuring a 'load multiple' button.
 
         Additionally, it forcefully adds the '_continue' option to optimize redirect behavior.
+        There is a workaround involving the replacement of 'http' with 'https' that needs to be
+        addressed and rewritten.
         '''
 
         request.POST._mutable = True

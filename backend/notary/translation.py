@@ -1,6 +1,6 @@
 from modeltranslation.translator import TranslationOptions, register
 
-from .models import Notary, WorkSchedule, DayOffSchedule
+from .models import DayOffSchedule, Notary, WorkSchedule
 
 
 @register(WorkSchedule)

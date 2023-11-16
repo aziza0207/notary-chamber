@@ -23,7 +23,7 @@
                 formData.append('files', files[i]);
             }
 
-            formData.append('json_data', new Blob([JSON.stringify(parameters)], { type: 'application/json' }));
+            formData.append('json_data', new Object([JSON.stringify(parameters)], { type: 'application/json' }));
 
             fetch(upload_url, {
                 method: 'POST',

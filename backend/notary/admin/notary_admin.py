@@ -1,10 +1,8 @@
 from django.contrib.admin import register
-from modeltranslation.admin import TabbedTranslationAdmin, TranslationStackedInline
+from modeltranslation.admin import TabbedTranslationAdmin
 
-from ..models import Notary,  WorkSchedule, DayOffSchedule
+from ..models import Notary
 from .mixin import AdminFieldMixin
-
-
 
 
 @register(Notary)

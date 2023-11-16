@@ -5,10 +5,10 @@ from ..mixins import AdminFieldMixin, AdminMultiInputMixin
 from ..models import News, NewsImage
 
 
-class NewsImageImageInline(AdminFieldMixin, admin.StackedInline):
+class NewsImageImageInline(AdminFieldMixin, admin.TabularInline):
     model = NewsImage
     extra = 0
-    template = 'admin/edit_inline/stacked_with_multi.html'
+    template = 'admin/edit_inline/tabular_with_multi.html'
     
     readonly_fields = ('get_little_image',)
     fields = (('image', 'get_little_image',),)

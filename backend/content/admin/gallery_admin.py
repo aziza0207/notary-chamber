@@ -6,11 +6,11 @@ from content.models import Photo, PhotoSet, Video
 from ..mixins import AdminFieldMixin, AdminMultiInputMixin
 
 
-class PhotoAdmin(AdminFieldMixin, admin.StackedInline):
+class PhotoAdmin(AdminFieldMixin, admin.TabularInline):
     model = Photo
     extra = 0
-    template = 'admin/edit_inline/stacked_with_multi.html'
-    
+    template = 'admin/edit_inline/tabular_with_multi.html'
+
     readonly_fields = ('get_little_image',)
     fields = (('image', 'get_little_image',),)
 
