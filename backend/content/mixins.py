@@ -32,7 +32,6 @@ class AdminMultiInputMixin:
             'parent_model_name': self.__dict__.get('model').__name__,
             'parent_instance_id': object_id,
             'inline_model_name': self.inlines[0].model._meta.model_name,
-            'upload_url': request.build_absolute_uri(reverse('content:upload_photo'))
+            'upload_url': request.build_absolute_uri(reverse('content:upload_photo')).replace('http:', 'https:')
         })
-        print(extra_context)
         return super().change_view(request, object_id, form_url, extra_context=extra_context)
