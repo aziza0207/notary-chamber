@@ -6,17 +6,17 @@ def news_images(instance, filename):
 
 
 class NewsImage(models.Model):
-    image = models.ImageField("Изображение", blank=True, null=True, upload_to=news_images)
-    news = models.ForeignKey("content.News", verbose_name="Новости", on_delete=models.CASCADE,
-                             related_name="images")
+    image = models.ImageField('Изображение', blank=True, null=True, upload_to=news_images)
+    news = models.ForeignKey('content.News', verbose_name='Новости', on_delete=models.CASCADE,
+                             related_name='images')
 
 
     class Meta:
-        verbose_name = "Изображение"
-        verbose_name_plural = "Изображения"
+        verbose_name = 'Изображение'
+        verbose_name_plural = 'Изображения'
 
     def __str__(self):
-        return f"Новости - {self.news.title}"
+        return f'Новости - {self.news.title}'
 
 
 def news_main_image(instance, filename):
@@ -24,22 +24,21 @@ def news_main_image(instance, filename):
 
 
 class News(models.Model):
-    main_image = models.ImageField("Основное изображение", blank=True, null=True, upload_to=news_main_image)
-    title = models.CharField("Заголовок", max_length=255)
-    slug = models.SlugField("Слаг", blank=True, null=True, db_index=True, unique=True)
+    main_image = models.ImageField('Основное изображение', blank=True, null=True, upload_to=news_main_image)
+    title = models.CharField('Заголовок', max_length=255)
+    slug = models.SlugField('Слаг', blank=True, null=True, db_index=True, unique=True)
     description = models.TextField()
-    video = models.URLField("Линк на ютуб", blank=True, null=True)
-    date = models.DateField("Дата", auto_now_add=True, blank=True, null=True)
-    is_pinned = models.BooleanField("Закрепленные", default=False)
-    is_recommended = models.BooleanField("Рекомендованные", default=False)
+    video = models.URLField('Линк на ютуб', blank=True, null=True)
+    date = models.DateField('Дата', auto_now_add=True, blank=True, null=True)
+    is_pinned = models.BooleanField('Закрепленные', default=False)
 
     class Meta:
-        ordering = ["-date", "is_pinned"]
-        verbose_name = "Новости"
-        verbose_name_plural = "Новости"
+        ordering = ['-date', 'is_pinned']
+        verbose_name = 'Новости'
+        verbose_name_plural = 'Новости'
 
     def __str__(self):
-        return self.title[:50] + "..."
+        return self.title[:50] + '...'
 
 
 

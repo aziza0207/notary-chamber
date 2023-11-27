@@ -8,7 +8,7 @@ from ..models import News, NewsImage
 class ImageSerializer(serializers.ModelSerializer):
     class Meta:
         model = NewsImage
-        fields = ("image",)
+        fields = ('image',)
 
 
 class NewsListSerializer(serializers.ModelSerializer):
@@ -16,13 +16,13 @@ class NewsListSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = News
-        fields = ("slug", "main_image", "title", "description", "date")
+        fields = ('slug', 'main_image', 'title', 'description', 'date')
 
     def get_description(self, obj):
         max_length = 120
         description = obj.description
         if len(description) > max_length:
-            return description[:max_length] + "..."
+            return description[:max_length] + '...'
         else:
             return description
 
@@ -34,14 +34,13 @@ class NewsDetailSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = News
-        fields = ("main_image",
-                  "title",
-                  "description",
-                  "video",
-                  "images",
-                  "recommended",
-                  "date",
-                  "recommended")
+        fields = ('main_image',
+                  'title',
+                  'description',
+                  'video',
+                  'images',
+                  'date',
+                  'recommended')
 
     def get_recommended(self, obj):
         slug = obj.slug

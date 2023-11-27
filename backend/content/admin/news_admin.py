@@ -14,12 +14,12 @@ class NewsImageImageInline(AdminFieldMixin, admin.TabularInline):
     fields = (('image', 'get_little_image',),)
 
 
-@admin.action(description="Закрепить выбранные новости")
+@admin.action(description='Закрепить выбранные новости')
 def make_pinned(modeladmin, request, queryset):
     queryset.update(is_pinned=True)
 
 
-@admin.action(description="Открепить выбранные новости")
+@admin.action(description='Открепить выбранные новости')
 def make_unpinned(modeladmin, request, queryset):
     queryset.update(is_pinned=False)
 
@@ -27,14 +27,14 @@ def make_unpinned(modeladmin, request, queryset):
 @admin.register(News)
 class NewsAdmin(AdminFieldMixin, AdminMultiInputMixin, TabbedTranslationAdmin):
     inlines = (NewsImageImageInline,)
-    prepopulated_fields = {"slug": ("title",)}
+    prepopulated_fields = {'slug': ('title',)}
 
-    list_display = ["id", "title", "is_pinned", "date", "get_little_image"]
-    list_display_links = ["title"]
+    list_display = ['id', 'title', 'is_pinned', 'date', 'get_little_image']
+    list_display_links = ['title']
 
-    readonly_fields = ["id", "date", "get_little_image",]
+    readonly_fields = ['id', 'date', 'get_little_image',]
 
-    search_fields = ["title", "slug"]
-    fields = ["title", "slug", "description", ("main_image", "get_little_image",), "video", "is_pinned", "date"]
+    search_fields = ['title', 'slug']
+    fields = ['title', 'slug', 'description', ('main_image', 'get_little_image',), 'video', 'is_pinned', 'date']
 
     actions = [make_pinned, make_unpinned]
