@@ -48,3 +48,6 @@ class NewsAdmin(AdminFieldMixin, AdminMultiInputMixin, TabbedTranslationAdmin):
 
     def response_add(self, request: HttpRequest, obj, post_url_continue: str | None = ...) -> HttpResponse:
         return super().response_add(request, obj, post_url_continue)
+    
+    def response_change(self, request: HttpRequest, obj) -> HttpResponse:
+        return super().response_change(request, obj)

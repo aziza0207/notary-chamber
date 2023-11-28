@@ -25,15 +25,11 @@ class AdminMultiInputMixin:
         addressed and rewritten.
         '''
 
-        request.POST._mutable = True
-        request.POST['_continue'] = True
-        request.POST._mutable = False
-
         extra_context = extra_context or {}
         extra_context.update({
-            # 'parent_model_name': self.__dict__.get('model').__name__,
-            # 'parent_instance_id': object_id,
-            # 'inline_model_name': self.inlines[0].model._meta.model_name,
+            'parent_model_name': self.__dict__.get('model').__name__,
+            'parent_instance_id': object_id,
+            'inline_model_name': self.inlines[0].model._meta.model_name,
             'upload_url': request.build_absolute_uri(reverse('content:upload_photo'))#.replace('http:', 'https:')
         })
         return super().change_view(request, object_id, form_url, extra_context=extra_context)

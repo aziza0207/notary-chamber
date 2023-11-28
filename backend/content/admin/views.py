@@ -1,6 +1,6 @@
-from django.http import HttpResponse
+from django.http import HttpResponse, HttpResponseRedirect
 from django.views.decorators.csrf import csrf_exempt
-
+from django.contrib import messages
 from .services import make_creation_args
 
 
@@ -15,15 +15,17 @@ def upload_photo(request):
         files = request.FILES.getlist('images')
         # parameters_str = request.FILES.get('json_data').read().decode()
         # inline_model_class, create_args = make_creation_args(parameters_str)
-        request.META.get('HTTP_REFERER').rsplit('/', 4)
+        referer_url = request.META.get('HTTP_REFERER')
         create_args = {
             
         }
+        count = 0
         for file in files:
             try:
-                pass
                 # inline_model_class.objects.create(image=file, **create_args)
+                count += 1
             except Exception:
-                return HttpResponse('An error occured while saving files', status=500)
-        return HttpResponse('Uploaded successfully', status=201)
+                messages.error(request, f'При загрузке изображения {file.name} произошла ошибка')
+        messages.info(request, f'Загружено {count} изображений из {len(files)}')
+        return HttpResponseRedirect(referer_url)
     return HttpResponse('Method not allowed', status=405)
