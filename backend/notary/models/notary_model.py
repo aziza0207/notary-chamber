@@ -1,6 +1,7 @@
 from django.db import models
 
 from .schedule_abs_model import DayOffSchedule, WorkSchedule
+from notary.constants import StatusChoice
 
 # from location_field.models.plain import PlainLocationField
 
@@ -12,7 +13,7 @@ def notary_photos(instance, filename):
 class Notary(WorkSchedule, DayOffSchedule):
     full_name = models.CharField("Имя", max_length=100)
     city = models.CharField("Город", null=True, blank=True, max_length=150)
-
+    status = models.CharField("Статус", max_length=50, choices=StatusChoice.choices, default=StatusChoice.ACTIVE)
     phone = models.CharField("Номер телефона", max_length=30)
     email = models.EmailField("Email", null=True, blank=True)
     photo = models.ImageField("Фото", blank=True, null=True, upload_to=notary_photos)

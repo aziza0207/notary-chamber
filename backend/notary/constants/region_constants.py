@@ -6,6 +6,3 @@ class RegionChoice(TextChoices):
     DJALAL_ABAD = ("Djalal_Abad", _("Джалал-Абад"))
     BISHKEK = ("Bishkek", _("Бишкек"))
     KANT = ("Каnt", _("Кант"))
-
-
-

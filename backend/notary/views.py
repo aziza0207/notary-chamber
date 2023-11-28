@@ -13,6 +13,16 @@ from .serializers import NotarySerializer
 from .services import make_message
 
 
+class NotaryStatusListView(generics.ListAPIView):
+    serializer_class = NotarySerializer
+    pagination_class = NotaryListPagination
+
+    def get_queryset(self):
+        requested_status = self.request.query_params.get('status')
+        queryset = Notary.objects.filter(status=requested_status)
+        return queryset
+
+
 class NotaryListAPIView(generics.ListAPIView):
     serializer_class = NotarySerializer
     pagination_class = NotaryListPagination

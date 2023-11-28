@@ -14,6 +14,7 @@ class NotarySerializer(serializers.ModelSerializer):
         model = Notary
         fields = ('id',
                   'full_name',
+                  "status",
                   'phone',
                   'photo',
                   'city',

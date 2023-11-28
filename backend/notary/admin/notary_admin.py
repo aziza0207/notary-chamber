@@ -12,7 +12,7 @@ class NotaryAdmin(AdminFieldMixin, TabbedTranslationAdmin):
 
     fieldsets = (
         ("Личная информация", {
-            "fields": ("full_name", "phone", "photo"),
+            "fields": ("full_name", "status", "phone", "photo"),
 
         }), ("Адрес", {
             "fields": ("region",
@@ -37,7 +37,6 @@ class NotaryAdmin(AdminFieldMixin, TabbedTranslationAdmin):
         ("Выходные", {
             "fields": ("start_day_off",
                        "end_day_off",
-
                        ),
 
         }),
