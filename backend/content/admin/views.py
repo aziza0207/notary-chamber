@@ -12,12 +12,17 @@ def upload_photo(request):
     the parameters necessary for object creation.
     '''
     if request.method == 'POST':
-        files = request.FILES.getlist('files')
-        parameters_str = request.FILES.get('json_data').read().decode()
-        inline_model_class, create_args = make_creation_args(parameters_str)
+        files = request.FILES.getlist('images')
+        # parameters_str = request.FILES.get('json_data').read().decode()
+        # inline_model_class, create_args = make_creation_args(parameters_str)
+        request.META.get('HTTP_REFERER').rsplit('/', 4)
+        create_args = {
+            
+        }
         for file in files:
             try:
-                inline_model_class.objects.create(image=file, **create_args)
+                pass
+                # inline_model_class.objects.create(image=file, **create_args)
             except Exception:
                 return HttpResponse('An error occured while saving files', status=500)
         return HttpResponse('Uploaded successfully', status=201)

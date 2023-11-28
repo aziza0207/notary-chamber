@@ -1,8 +1,15 @@
 from django.contrib import admin
+from django.http.request import HttpRequest
+from django.http.response import HttpResponse
 from modeltranslation.admin import TabbedTranslationAdmin
+from django.contrib.admin.helpers import AdminForm
 
 from ..mixins import AdminFieldMixin, AdminMultiInputMixin
 from ..models import News, NewsImage
+
+
+class NewsAdminForm(AdminForm):
+    pass
 
 
 class NewsImageImageInline(AdminFieldMixin, admin.TabularInline):
@@ -38,3 +45,6 @@ class NewsAdmin(AdminFieldMixin, AdminMultiInputMixin, TabbedTranslationAdmin):
     fields = ['title', 'slug', 'description', ('main_image', 'get_little_image',), 'video', 'is_pinned', 'date']
 
     actions = [make_pinned, make_unpinned]
+
+    def response_add(self, request: HttpRequest, obj, post_url_continue: str | None = ...) -> HttpResponse:
+        return super().response_add(request, obj, post_url_continue)
