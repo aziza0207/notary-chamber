@@ -1,0 +1,170 @@
+[
+    {
+        "model": "content.NotaryWorker",
+        "pk": 1,
+        "fields": {
+            "full_name": "Рыскулова Сымбат Шаршебаевна",
+            "department": "1",
+            "position": "Председатель"
+        }
+    },
+    {
+        "model": "content.NotaryWorker",
+        "pk": 2,
+        "fields": {
+            "full_name": "Алсеитова Дамира Чоноевна",
+            "department": "1",
+            "position": "Заместитель председателя"
+        }
+    },
+    {
+        "model": "content.NotaryWorker",
+        "pk": 3,
+        "fields": {
+            "full_name": "Алымбекова Салтанат Турсуновна",
+            "department": "1",
+            "position": "частный нотариус нотариального округа города Ош"
+        }
+    },
+    {
+        "model": "content.NotaryWorker",
+        "pk": 4,
+        "fields": {
+            "full_name": "Абакирова Асель Мырзакановна",
+            "department": "1",
+            "position": "начальник управления адвокатуры, нотариата и апостилирования Министерства юстиции КР"
+        }
+    },
+    {
+        "model": "content.NotaryWorker",
+        "pk": 5,
+        "fields": {
+            "full_name": "Бекбоев Эльчибек Турдуназирович",
+            "department": "1",
+            "position": "заместитель начальника Чуй-Бишкекского управления юстиции"
+        }
+    },
+    {
+        "model": "content.NotaryWorker",
+        "pk": 6,
+        "fields": {
+            "full_name": "Исаев Кубанычбек Аскербекович",
+            "department": "1",
+            "position": "Заведующий отделом Управления мониторинга-ситуационный центр Министерства юстиции КР"
+        }
+    },
+    {
+        "model": "content.NotaryWorker",
+        "pk": 7,
+        "fields": {
+            "full_name": "Курманова Тамара Аблабековна",
+            "department": "1",
+            "position": "частный нотариус нотариального округа города Бишкек"
+        }
+    },
+    {
+        "model": "content.NotaryWorker",
+        "pk": 8,
+        "fields": {
+            "full_name": "Таштандиева Аида Рысбековна",
+            "department": "1",
+            "position": "частный нотариус нотариального округа города Бишкек"
+        }
+    },
+    {
+        "model": "content.NotaryWorker",
+        "pk": 9,
+        "fields": {
+            "full_name": "Ширнин Александр Александрович",
+            "department": "1",
+            "position": "частный нотариус нотариального округа города Бишкек"
+        }
+    },
+    {
+        "model": "content.NotaryWorker",
+        "pk": 10,
+        "fields": {
+            "full_name": "Акматов Адилбек Бердибекович",
+            "department": "2",
+            "position": "Председатель, частный нотариус нотариального округа города Бишкек"
+        }
+    },
+    {
+        "model": "content.NotaryWorker",
+        "pk": 11,
+        "fields": {
+            "full_name": "Дюшеева Гульмира Кубанычбековна",
+            "department": "2",
+            "position": "частный нотариус нотариального округа города Бишкек"
+        }
+    },
+    {
+        "model": "content.NotaryWorker",
+        "pk": 12,
+        "fields": {
+            "full_name": "Маткадирова Айчурок Мийзаминовна",
+            "department": "2",
+            "position": "частный нотариус нотариального округа города Ош"
+        }
+    },
+    {
+        "model": "content.NotaryWorker",
+        "pk": 13,
+        "fields": {
+            "full_name": "Казакбаева Жаркын Киргизбаевна",
+            "department": "3",
+            "position": "Председатель, частный нотариус нотариального округа города Бишкек"
+        }
+    },
+    {
+        "model": "content.NotaryWorker",
+        "pk": 14,
+        "fields": {
+            "full_name": "Абдылбек кызы Аида",
+            "department": "3",
+            "position": "частный нотариус нотариального округа города Бишкек"
+        }
+    },
+    {
+        "model": "content.NotaryWorker",
+        "pk": 15,
+        "fields": {
+            "full_name": "Бакас кызы Гулзат",
+            "department": "3",
+            "position": "частный нотариус нотариального округа города Бишкек"
+        }
+    },
+    {
+        "model": "content.NotaryWorker",
+        "pk": 16,
+        "fields": {
+            "full_name": "Ормонкулова Гульнара Атантаевна",
+            "department": "3"
+        }
+    },
+    {
+        "model": "content.NotaryWorker",
+        "pk": 17,
+        "fields": {
+            "full_name": "Мавлянкулова Аизаз Меййманкуловна",
+            "department": "3"
+        }
+    },
+    {
+        "model": "content.NotaryWorker",
+        "pk": 18,
+        "fields": {
+            "full_name": "Мусабев Бакыт Турдубекович",
+            "department": "3"
+        }
+    },
+    {
+        "model": "content.NotaryWorker",
+        "pk": 19,
+        "fields": {
+            "full_name": "Токоева Мыскал Джолбошбековна",
+            "department": "3",
+            "position": "частный нотариус нотариального округа города Бишкек"
+        }
+    }
+]

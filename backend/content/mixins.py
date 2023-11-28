@@ -5,9 +5,9 @@ from django.utils.safestring import mark_safe
 class AdminFieldMixin:
     def get_little_image(self, object):
         try:
-            return mark_safe(f"<img src='{object.main_image.url}' width=50>")
+            return mark_safe(f"<img src='{object.main_image.url}' width=50>") if object.main_image else None
         except AttributeError:
-            return mark_safe(f"<img src='{object.image.url}' width=50>")
+            return mark_safe(f"<img src='{object.image.url}' width=50>") if object.image else None
         except ValueError:
             return None
 

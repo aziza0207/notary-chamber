@@ -1,6 +1,16 @@
 from modeltranslation.translator import TranslationOptions, register
 
-from content.models import FAQ, Document, Link, News, PhotoSet, Video
+from content.models import FAQ, Document, Link, News, PhotoSet, Video, NotaryChamberDepartment, NotaryWorker
+
+
+@register(NotaryChamberDepartment)
+class NotaryChamberDepartmentTranslationOptions(TranslationOptions):
+    fields = ('name', 'description',)
+
+
+@register(NotaryWorker)
+class NotaryWorkerTranslationOptions(TranslationOptions):
+    fields = ('full_name', 'position',)
 
 
 @register(Document)
