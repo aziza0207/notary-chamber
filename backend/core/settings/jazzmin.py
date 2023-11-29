@@ -3,7 +3,7 @@ from decouple import config
 FRONTEND_HOME = config('FRONTEND_HOME', default='')
 
 JAZZMIN_SETTINGS = {
-    "site_title": "Briskly Minds",
+    "site_title": "Notary Chamber",
 
     "site_logo": 'admin/notary_2.png',
 
