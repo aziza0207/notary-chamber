@@ -14,9 +14,9 @@ django-autoslug==1.9.9
 django-cleanup==8.0.0
 django-cors-headers==4.2.0
 django-debug-toolbar==4.2.0
+django-extensions==3.2.3
 django-jazzmin==2.6.0
 django-modeltranslation==0.18.11
-django-multiupload==0.6.1
 djangorestframework==3.14.0
 drf-spectacular==0.26.5
 drf-yasg==1.21.7
@@ -50,10 +50,8 @@ ruff==0.1.2
 six==1.16.0
 sqlparse==0.4.4
 tomli==2.0.1
-transliterate==1.10.2
 typing_extensions==4.8.0
 tzdata==2023.3
 uritemplate==4.1.1
 vine==5.0.0
 wcwidth==0.2.9
-
