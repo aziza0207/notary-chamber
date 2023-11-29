@@ -19,7 +19,7 @@ class NotaryStatusListView(generics.ListAPIView):
 
     def get_queryset(self):
         requested_status = self.request.query_params.get('status')
-        queryset = Notary.objects.filter(status=requested_status)
+        queryset = Notary.objects.prefetch_related('assistants').filter(status=requested_status)
         return queryset
 
 
@@ -30,7 +30,7 @@ class NotaryListAPIView(generics.ListAPIView):
     def get_queryset(self):
         requested_page = self.request.query_params.get('page')
         value_to_search = self.request.query_params.get('search')
-        queryset = Notary.objects.all()
+        queryset = Notary.objects.prefetch_related('assistants')
         if requested_page == 'all':
             self.pagination_class = None
         if isinstance(value_to_search, str):
