@@ -1,0 +1,539 @@
+[
+    {
+        "model": "structure.NotaryCouncilWorker",
+        "pk": 1,
+        "fields": {
+            "full_name": "Рыскулова Сымбат Шаршебаевна",
+            "department": "1",
+            "position": "Председатель"
+        }
+    },
+    {
+        "model": "structure.NotaryCouncilWorker",
+        "pk": 2,
+        "fields": {
+            "full_name": "Алсеитова Дамира Чоноевна",
+            "department": "1",
+            "position": "Заместитель председателя"
+        }
+    },
+    {
+        "model": "structure.NotaryCouncilWorker",
+        "pk": 3,
+        "fields": {
+            "full_name": "Алымбекова Салтанат Турсуновна",
+            "department": "1",
+            "position": "частный нотариус нотариального округа города Ош"
+        }
+    },
+    {
+        "model": "structure.NotaryCouncilWorker",
+        "pk": 4,
+        "fields": {
+            "full_name": "Абакирова Асель Мырзакановна",
+            "department": "1",
+            "position": "начальник управления адвокатуры, нотариата и апостилирования Министерства юстиции КР"
+        }
+    },
+    {
+        "model": "structure.NotaryCouncilWorker",
+        "pk": 5,
+        "fields": {
+            "full_name": "Бекбоев Эльчибек Турдуназирович",
+            "department": "1",
+            "position": "заместитель начальника Чуй-Бишкекского управления юстиции"
+        }
+    },
+    {
+        "model": "structure.NotaryCouncilWorker",
+        "pk": 6,
+        "fields": {
+            "full_name": "Исаев Кубанычбек Аскербекович",
+            "department": "1",
+            "position": "Заведующий отделом Управления мониторинга-ситуационный центр Министерства юстиции КР"
+        }
+    },
+    {
+        "model": "structure.NotaryCouncilWorker",
+        "pk": 7,
+        "fields": {
+            "full_name": "Курманова Тамара Аблабековна",
+            "department": "1",
+            "position": "частный нотариус нотариального округа города Бишкек"
+        }
+    },
+    {
+        "model": "structure.NotaryCouncilWorker",
+        "pk": 8,
+        "fields": {
+            "full_name": "Таштандиева Аида Рысбековна",
+            "department": "1",
+            "position": "частный нотариус нотариального округа города Бишкек"
+        }
+    },
+    {
+        "model": "structure.NotaryCouncilWorker",
+        "pk": 9,
+        "fields": {
+            "full_name": "Ширнин Александр Александрович",
+            "department": "1",
+            "position": "частный нотариус нотариального округа города Бишкек"
+        }
+    },
+    {
+        "model": "structure.ComissionWorker",
+        "pk": 1,
+        "fields": {
+            "full_name": "Акматов Адилбек Бердибекович",
+            "department": "1",
+            "position": "Председатель, частный нотариус нотариального округа города Бишкек"
+        }
+    },
+    {
+        "model": "structure.ComissionWorker",
+        "pk": 2,
+        "fields": {
+            "full_name": "Дюшеева Гульмира Кубанычбековна",
+            "department": "1",
+            "position": "частный нотариус нотариального округа города Бишкек"
+        }
+    },
+    {
+        "model": "structure.ComissionWorker",
+        "pk": 3,
+        "fields": {
+            "full_name": "Маткадирова Айчурок Мийзаминовна",
+            "department": "1",
+            "position": "частный нотариус нотариального округа города Ош"
+        }
+    },
+    {
+        "model": "structure.ComissionWorker",
+        "pk": 4,
+        "fields": {
+            "full_name": "Казакбаева Жаркын Киргизбаевна",
+            "department": "2",
+            "position": "Председатель, частный нотариус нотариального округа города Бишкек"
+        }
+    },
+    {
+        "model": "structure.ComissionWorker",
+        "pk": 5,
+        "fields": {
+            "full_name": "Абдылбек кызы Аида",
+            "department": "2",
+            "position": "частный нотариус нотариального округа города Бишкек"
+        }
+    },
+    {
+        "model": "structure.ComissionWorker",
+        "pk": 6,
+        "fields": {
+            "full_name": "Бакас кызы Гулзат",
+            "department": "2",
+            "position": "частный нотариус нотариального округа города Бишкек"
+        }
+    },
+    {
+        "model": "structure.ComissionWorker",
+        "pk": 7,
+        "fields": {
+            "full_name": "Ормонкулова Гульнара Атантаевна",
+            "department": "2"
+        }
+    },
+    {
+        "model": "structure.ComissionWorker",
+        "pk": 8,
+        "fields": {
+            "full_name": "Мавлянкулова Аизаз Меййманкуловна",
+            "department": "2"
+        }
+    },
+    {
+        "model": "structure.ComissionWorker",
+        "pk": 9,
+        "fields": {
+            "full_name": "Мусабев Бакыт Турдубекович",
+            "department": "2"
+        }
+    },
+    {
+        "model": "structure.ComissionWorker",
+        "pk": 10,
+        "fields": {
+            "full_name": "Токоева Мыскал Джолбошбековна",
+            "department": "2",
+            "position": "частный нотариус нотариального округа города Бишкек"
+        }
+    },
+    {
+        "model": "structure.ComissionWorker",
+        "pk": 11,
+        "fields": {
+            "full_name": "Альчиева Анакуль Карагуловна",
+            "department": "3",
+            "position": "пред, частный нотариус нотариального округа города Бишкек"
+        }
+    },
+    {
+        "model": "structure.ComissionWorker",
+        "pk": 12,
+        "fields": {
+            "full_name": "Бекбаева Чолпон",
+            "department": "3",
+            "position": "частный нотариус нотариального округа города Бишкек"
+        }
+    },
+    {
+        "model": "structure.ComissionWorker",
+        "pk": 13,
+        "fields": {
+            "full_name": "Насырова Жылдыз",
+            "department": "3",
+            "position": "частный нотариус нотариального округа города Бишкек"
+        }
+    },
+    {
+        "model": "structure.ComissionWorker",
+        "pk": 14,
+        "fields": {
+            "full_name": "Жумазаева Гульзат",
+            "department": "3",
+            "position": "частный нотариус нотариального округа города Бишкек"
+        }
+    },
+    {
+        "model": "structure.ComissionWorker",
+        "pk": 15,
+        "fields": {
+            "full_name": "Валиева Наргиза",
+            "department": "3",
+            "position": "частный нотариус нотариального округа города Ош"
+        }
+    },
+    {
+        "model": "structure.ComissionWorker",
+        "pk": 16,
+        "fields": {
+            "full_name": "Кочкарова М",
+            "department": "3",
+            "position": ""
+        }
+    },
+    {
+        "model": "structure.ComissionWorker",
+        "pk": 17,
+        "fields": {
+            "full_name": "Абдураимов А",
+            "department": "3",
+            "position": ""
+        }
+    },
+    {
+        "model": "structure.ComissionWorker",
+        "pk": 18,
+        "fields": {
+            "full_name": "Усупбаеава Салтанат",
+            "department": "4",
+            "position": "председ, частный нотариус нотариального округа города Бишкек"
+        }
+    },
+    {
+        "model": "structure.ComissionWorker",
+        "pk": 19,
+        "fields": {
+            "full_name": "Абдылдаева Нуржамал",
+            "department": "4",
+            "position": "частный нотариус нотариального округа города Бишкек"
+        }
+    },
+    {
+        "model": "structure.ComissionWorker",
+        "pk": 20,
+        "fields": {
+            "full_name": "Сманова Жылдыз",
+            "department": "4",
+            "position": ""
+        }
+    },
+    {
+        "model": "structure.ComissionWorker",
+        "pk": 21,
+        "fields": {
+            "full_name": "Сыдыкова М",
+            "department": "4",
+            "position": "частный нотариус нотариального округа города Бишкек"
+        }
+    },
+    {
+        "model": "structure.ComissionWorker",
+        "pk": 22,
+        "fields": {
+            "full_name": "Осмоналиева Гуль",
+            "department": "4",
+            "position": "Исык Ата"
+        }
+    },
+    {
+        "model": "structure.ComissionWorker",
+        "pk": 21,
+        "fields": {
+            "full_name": "Алтышова АЙгуль",
+            "department": "5",
+            "position": ""
+        }
+    },
+    {
+        "model": "structure.ComissionWorker",
+        "pk": 22,
+        "fields": {
+            "full_name": "Асланов Н С ",
+            "department": "5",
+            "position": ""
+        }
+    },
+    {
+        "model": "structure.ComissionWorker",
+        "pk": 23,
+        "fields": {
+            "full_name": "Анаркулова Эльвира",
+            "department": "5",
+            "position": ""
+        }
+    },
+    {
+        "model": "structure.ComissionWorker",
+        "pk": 24,
+        "fields": {
+            "full_name": "Сайдалиев Умид",
+            "department": "5",
+            "position": ""
+        }
+    },
+    {
+        "model": "structure.ComissionWorker",
+        "pk": 26,
+        "fields": {
+            "full_name": "Кадырбекова Айчу",
+            "department": "5",
+            "position": ""
+        }
+    },
+    {
+        "model": "structure.ComissionWorker",
+        "pk": 27,
+        "fields": {
+            "full_name": "Байзакова Ди",
+            "department": "5",
+            "position": ""
+        }
+    },
+    {
+        "model": "structure.ComissionWorker",
+        "pk": 28,
+        "fields": {
+            "full_name": "Усенова Ас",
+            "department": "5",
+            "position": ""
+        }
+    },
+    {
+        "model": "structure.ComissionWorker",
+        "pk": 29,
+        "fields": {
+            "full_name": "Шакирова Асе",
+            "department": "5",
+            "position": ""
+        }
+    },
+    {
+        "model": "structure.ComissionWorker",
+        "pk": 30,
+        "fields": {
+            "full_name": "Туйбаев Тимур",
+            "department": "5",
+            "position": ""
+        }
+    },
+    {
+        "model": "structure.ComissionWorker",
+        "pk": 31,
+        "fields": {
+            "full_name": "Алабева Сабира",
+            "department": "6",
+            "position": ""
+        }
+    },
+    {
+        "model": "structure.ComissionWorker",
+        "pk": 32,
+        "fields": {
+            "full_name": "Смаилова Айгуль",
+            "department": "6",
+            "position": ""
+        }
+    },
+    {
+        "model": "structure.ComissionWorker",
+        "pk": 33,
+        "fields": {
+            "full_name": "Жороев М",
+            "department": "6",
+            "position": ""
+        }
+    },
+    {
+        "model": "structure.ComissionWorker",
+        "pk": 34,
+        "fields": {
+            "full_name": "Орунбаева элиза",
+            "department": "6",
+            "position": ""
+        }
+    },
+    {
+        "model": "structure.ComissionWorker",
+        "pk": 35,
+        "fields": {
+            "full_name": "Сейдахманова Света",
+            "department": "6",
+            "position": ""
+        }
+    },
+    {
+        "model": "structure.ComissionWorker",
+        "pk": 36,
+        "fields": {
+            "full_name": "Тажибаева камаля",
+            "department": "6",
+            "position": ""
+        }
+    },
+    {
+        "model": "structure.ComissionWorker",
+        "pk": 37,
+        "fields": {
+            "full_name": "Шаршембиева айнур",
+            "department": "6",
+            "position": ""
+        }
+    },
+    {
+        "model": "structure.ComissionWorker",
+        "pk": 38,
+        "fields": {
+            "full_name": "Аракеева Кыз",
+            "department": "7",
+            "position": ""
+        }
+    },
+    {
+        "model": "structure.ComissionWorker",
+        "pk": 39,
+        "fields": {
+            "full_name": "Кенебекова Н",
+            "department": "7",
+            "position": ""
+        }
+    },
+    {
+        "model": "structure.ComissionWorker",
+        "pk": 40,
+        "fields": {
+            "full_name": "Боенов Азама",
+            "department": "7",
+            "position": ""
+        }
+    },
+    {
+        "model": "structure.ComissionWorker",
+        "pk": 41,
+        "fields": {
+            "full_name": "Кожобаев Берен",
+            "department": "7",
+            "position": ""
+        }
+    },
+    {
+        "model": "structure.ComissionWorker",
+        "pk": 42,
+        "fields": {
+            "full_name": "Орозбаева Михри",
+            "department": "7",
+            "position": ""
+        }
+    },
+    {
+        "model": "structure.ComissionWorker",
+        "pk": 43,
+        "fields": {
+            "full_name": "Чынгышов жанарб",
+            "department": "7",
+            "position": ""
+        }
+    },
+    {
+        "model": "structure.ComissionWorker",
+        "pk": 44,
+        "fields": {
+            "full_name": "Омуркеева Нурми",
+            "department": "7",
+            "position": ""
+        }
+    },
+    {
+        "model": "structure.ComissionWorker",
+        "pk": 45,
+        "fields": {
+            "full_name": "Борончиев эмиль",
+            "department": "8",
+            "position": ""
+        }
+    },
+    {
+        "model": "structure.ComissionWorker",
+        "pk": 46,
+        "fields": {
+            "full_name": "Сайфулин данияр",
+            "department": "8",
+            "position": ""
+        }
+    },
+    {
+        "model": "structure.ComissionWorker",
+        "pk": 47,
+        "fields": {
+            "full_name": "Саламатова рыскан",
+            "department": "7",
+            "position": ""
+        }
+    },
+    {
+        "model": "structure.ComissionWorker",
+        "pk": 48,
+        "fields": {
+            "full_name": "Сопиева элизат",
+            "department": "7",
+            "position": ""
+        }
+    },
+    {
+        "model": "structure.ComissionWorker",
+        "pk": 49,
+        "fields": {
+            "full_name": "Ни наталья",
+            "department": "8",
+            "position": ""
+        }
+    },
+    {
+        "model": "structure.ComissionWorker",
+        "pk": 50,
+        "fields": {
+            "full_name": "Турдалиев муканбет",
+            "department": "8",
+            "position": ""
+        }
+    }
+]

@@ -2,8 +2,7 @@ from django.urls import path
 
 from .admin.views import upload_photo
 from .views import (ContactListAPIView, DocumentListAPIView, FAQListAPIView, LinksListAPIView, NewsDetailAPIView,
-                    NewsListAPIView, NewsPinnedAPIView, PhotoSetDetailAPIView, PhotoSetListAPIView, VideoListAPIView,
-                    DepartmentListAPIView)
+                    NewsListAPIView, NewsPinnedAPIView, PhotoSetDetailAPIView, PhotoSetListAPIView, VideoListAPIView)
 
 app_name = 'content'
 
@@ -19,5 +18,4 @@ urlpatterns = [
     path('gallery-photo/<str:slug>/', PhotoSetDetailAPIView.as_view(), name='gallery-photo'),
     path('gallery-video/', VideoListAPIView.as_view(), name='gallery-video'),
     path('upload_photo/', upload_photo, name='upload_photo'),
-    path('departments/', DepartmentListAPIView.as_view(), name='departments')
 ]

@@ -1,6 +1,14 @@
 [
     {
-        "model": "content.NotaryChamberDepartment",
+        "model": "structure.GeneralAssembly",
+        "pk": 1,
+        "fields": {
+            "name": "Общее собрание частных нотариусов",
+            "description": "Высшим органом управления Нотариальной палаты Кыргызской Республики является Общее собрание частных нотариусов."
+        }
+    },
+    {
+        "model": "structure.NotaryCouncil",
         "pk": 1,
         "fields": {
             "name": "Совет Нотариальной палаты",
@@ -8,19 +16,67 @@
         }
     },
     {
-        "model": "content.NotaryChamberDepartment",
-        "pk": 2,
+        "model": "structure.Comission",
+        "pk": 1,
         "fields": {
             "name": "Ревизионная комиссия Нотариальной палаты",
             "description": "Ревизионная комиссия осуществляет контроль за финансово-хозяйственной деятельностью Палаты."
         }
     },
     {
-        "model": "content.NotaryChamberDepartment",
-        "pk": 3,
+        "model": "structure.Comission",
+        "pk": 2,
         "fields": {
             "name": "Комиссия по этике",
             "description": "Комиссия  рассматривает жалобы и заявления на действия или бездействия частных нотариусов -  членов Палаты по вопросам этики, определяемым Кодексом об этике частного нотариуса."
+        }
+    },
+    {
+        "model": "structure.Comission",
+        "pk": 3,
+        "fields": {
+            "name": "Экспертно-методическая комиссия",
+            "description": ""
+        }
+    },
+    {
+        "model": "structure.Comission",
+        "pk": 4,
+        "fields": {
+            "name": "Комиссия по нотариальному делопроизводству и архивированию документов",
+            "description": ""
+        }
+    },
+    {
+        "model": "structure.Comission",
+        "pk": 5,
+        "fields": {
+            "name": "Комиссия по оказанию правовой помощи и социальной защиты нотариусов",
+            "description": ""
+        }
+    },
+    {
+        "model": "structure.Comission",
+        "pk": 6,
+        "fields": {
+            "name": "Комиссия по международному сотрудничеству",
+            "description": ""
+        }
+    },
+    {
+        "model": "structure.Comission",
+        "pk": 7,
+        "fields": {
+            "name": "Комиссия по делам спорта и культуры",
+            "description": ""
+        }
+    },
+    {
+        "model": "structure.Comission",
+        "pk": 8,
+        "fields": {
+            "name": "Комиссия по информационным технологиям",
+            "description": ""
         }
     }
 ]

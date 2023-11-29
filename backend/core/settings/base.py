@@ -35,7 +35,7 @@ THIRD_PARTY_APPS = [
     'drf_yasg',
     'drf_spectacular',
     'django_admin_logs',
-
+    'django_extensions',
 ]
 
 if not PRODUCTION:
@@ -48,9 +48,7 @@ ADMIN_APPS = [
     'modeltranslation',
 ]
 
-LOCAL_APPS = ["content", "notary",
-
-              ]
+LOCAL_APPS = ['content', 'notary', 'structure',]
 
 INSTALLED_APPS = [
     *ADMIN_APPS,

@@ -25,6 +25,7 @@ urlpatterns = [
     path(f'{config("ADMIN_URL")}/', admin.site.urls),
     path('api/', include("content.urls")),
     path('api/', include("notary.urls")),
+    path('api/', include("structure.urls")),
     path('api/schema/', SpectacularAPIView.as_view(), name='schema'),
     path('api/docs/', SpectacularSwaggerView.as_view(), name='docs'),
 ]
