@@ -1,0 +1,18 @@
+[
+    {
+        "model": "notary.assistant",
+        "pk": 1,
+        "fields": {
+            "full_name": "Абдылбек Бдылбек",
+            "notary": "1"
+        }
+    },
+    {
+        "model": "notary.assistant",
+        "pk": 2,
+        "fields": {
+            "full_name": "Кеблыдба Кеблыд",
+            "notary": "1"
+        }
+    }
+]
