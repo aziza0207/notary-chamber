@@ -12,12 +12,14 @@ def make_message(request):
     if role:
         centre = data.get('centre')
         recipients = EducationalCentre.objects.all()
-        subject = f'[{RoleChoice[str(role).upper()]}][{CentreChoice[str(centre).upper()]}]Заявка на обучение в центре'
+        subject_role = RoleChoice[str(role).upper()]
+        subject_centre = CentreChoice[str(centre).upper()]
+        subject = f'[{subject_role}][{subject_centre}]Заявка на обучение в центре'
         message = f'''Сведения о кандидате на обучение.
         \nИмя: {data.get('name')}.
         \nКонтакты: Телефон: {data.get('phone')}. Почта:{data.get('email')}.
-        \nРоль {role}.
-        \nУчебный центр: {centre}.'''
+        \nРоль: {subject_role.label}.
+        \nУчебный центр: {subject_centre.label}.'''
     else:
         recipients = Recipient.objects.all()
         subject = 'Новое сообщение от клиента'
