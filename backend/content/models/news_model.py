@@ -27,8 +27,8 @@ class News(models.Model):
     main_image = models.ImageField('Основное изображение', blank=True, null=True, upload_to=news_main_image)
     title = models.CharField('Заголовок', max_length=255)
     slug = models.SlugField('Слаг', blank=True, null=True, db_index=True, unique=True)
-    description = models.TextField()
-    video = models.URLField('Линк на ютуб', blank=True, null=True)
+    description = models.TextField('Текст')
+    video = models.URLField('ССылка на видео', blank=True, null=True)
     date = models.DateField('Дата', auto_now_add=True, blank=True, null=True)
     is_pinned = models.BooleanField('Закрепленные', default=False)
 

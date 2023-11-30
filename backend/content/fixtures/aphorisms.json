@@ -1,0 +1,32 @@
+[
+    {   
+        "model": "content.aphorism",
+        "pk": 1,
+        "fields": {
+            "text": "Суров закон, но он закон",
+            "text_ru": "Суров закон, но он закон",
+            "text_ky": "Мыйзам катаал, бирок бул мыйзам",
+            "text_en": "The law is harsh, but it is the law"
+        }
+    },
+    {   
+        "model": "content.aphorism",
+        "pk": 2,
+        "fields": {
+            "text": "Не царь — закон, но закон — царь",
+            "text_ru": "Не царь — закон, но закон — царь",
+            "text_ky": "Падыша мыйзам эмес, мыйзам падыша",
+            "text_en": "The king is not the law, but the law is the king"
+        }
+    },
+    {   
+        "model": "content.aphorism",
+        "pk": 3,
+        "fields": {
+            "text": "Государственные 'законы' на деле - государственный произвол",
+            "text_ru": "Государственные 'законы' на деле - государственный произвол",
+            "text_ky": "Мамлекеттик 'мыйзамдар' чындыгында мамлекеттик ээнбаштык",
+            "text_en": "State 'laws' in reality are state arbitrariness"
+        }
+    }
+]

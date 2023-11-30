@@ -1,6 +1,6 @@
 from modeltranslation.translator import TranslationOptions, register
 
-from content.models import FAQ, Document, Link, News, PhotoSet, Video
+from content.models import FAQ, Document, Link, News, PhotoSet, Video, Aphorism
 
 
 @register(Document)
@@ -31,3 +31,8 @@ class NewsTranslationOptions(TranslationOptions):
 @register(Link)
 class LinkTranslationOptions(TranslationOptions):
     fields = ('name',)
+
+
+@register(Aphorism)
+class AphorismTranslationOptions(TranslationOptions):
+    fields = ('text',)
