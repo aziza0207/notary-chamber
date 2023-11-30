@@ -1,7 +1,8 @@
-
 from rest_framework import serializers
+from django.utils.translation import gettext_lazy as _
 
 from ..models import Notary, Assistant
+from ..constants import StatusChoice
 
 
 class AssistantSerializer(serializers.ModelSerializer):
@@ -16,11 +17,13 @@ class NotarySerializer(serializers.ModelSerializer):
     break_start = serializers.SerializerMethodField()
     break_end = serializers.SerializerMethodField()
     assistants = AssistantSerializer(many=True)
+    status_label = serializers.SerializerMethodField()
     class Meta:
         model = Notary
         fields = ('id',
                   'full_name',
                   'status',
+                  'status_label',
                   'phone',
                   'photo',
                   'city',
@@ -37,6 +40,11 @@ class NotarySerializer(serializers.ModelSerializer):
                   'latitude', 'longitude',
                   'assistants'
                   )
+
+    def get_status_label(self, obj):
+        status = obj.status
+        status_label = _(StatusChoice[status.upper()].label)
+        return status_label
 
     def get_start_time(self, obj):
         if obj.start_time:

@@ -16,7 +16,7 @@
       "pk": 2,
      "fields": {
             "full_name": "Абдрахманов Тынычбек Казакбаевич",
-          "photo": "notary_photos/not2.jpg",
+            "photo": "notary_photos/not2.jpg",
             "phone": "0773741011",
             "email": "tynychbek59@gmail.com",
             "region": "None",
@@ -30,7 +30,7 @@
         "fields": {
             "full_name": "Абдыкадырова Назгул Дюшеновна",
             "phone": "0555737999",
-                     "photo": "notary_photos/not3.jpg",
+            "photo": "notary_photos/not3.jpg",
             "email": "notariys_kg@mail.ru",
             "region": "Ыссык-Кульская область",
             "city": "Каракол",
@@ -43,7 +43,7 @@
         "fields": {
             "full_name": "Абдылдабеков Жанболот Маликович",
             "phone": "0555 298268",
-             "photo": "notary_photos/not4.jpg",
+            "photo": "notary_photos/not4.jpg",
             "email": "janbolot_56@mail.ru",
             "region": "Нарынская область",
             "city": "Нарын",
@@ -56,7 +56,7 @@
         "fields": {
             "full_name": "Айманбетова Назира Шаршенбековна",
             "phone": "+996555969174",
-               "photo": "notary_photos/not5.jpg",
+            "photo": "notary_photos/not5.jpg",
             "email": "nazira.aymanbetova@mail.ru",
             "region": "Бишкек",
             "city": "Бишкек",
@@ -69,7 +69,7 @@
         "fields": {
             "full_name": "Аденова Чолпонай Аникеевна",
             "phone": "0554007998",
-                "photo": "notary_photos/not6.jpg",
+            "photo": "notary_photos/not6.jpg",
             "email": "adenova_61@mail.ru",
             "region": "Бишкек",
             "city": "Бишкек",
@@ -82,7 +82,7 @@
         "fields": {
             "full_name": "Акбаралиева Барно Абдувалиевна",
             "phone": "+996755976976",
-              "photo": "notary_photos/not7.jpg",
+            "photo": "notary_photos/not7.jpg",
             "email": "notariustokmok@mail.ru",
             "region": "None",
             "city": "Токмок",
@@ -95,7 +95,7 @@
         "fields": {
             "full_name": "Акиева Кыял Саяковна",
             "phone": "0703 332352",
-                   "photo": "notary_photos/not8.jpg",
+            "photo": "notary_photos/not8.jpg",
             "email": "akieva1980@bk.ru",
             "region": "Ыссык-Кульская область",
             "city": "Балыкчи",
@@ -108,7 +108,7 @@
         "fields": {
             "full_name": "Алаева Сабира Джамангуловна",
             "phone": "+996709050162",
-                   "photo": "notary_photos/not9.jpg",
+            "photo": "notary_photos/not9.jpg",
             "email": "alaevasabira@gmail.com",
             "region": "Бишкек",
             "city": "Бишкек",
@@ -121,7 +121,7 @@
         "fields": {
             "full_name": "Алиева Лариса Борисовна",
             "phone": "0555433144",
-                 "photo": "notary_photos/not10.jpg",
+            "photo": "notary_photos/not10.jpg",
             "email": "belana71@list.ru",
             "region": "None",
             "city": "Чуй",

@@ -11,8 +11,8 @@
         "model": "notary.EducationalCentre",
         "pk": 1,
         "fields": {
-            "name": "back_test_address",
-            "email": "wmshero@gmail.com"
+            "name": "true_address",
+            "email": "schoolnotary@gmail.com"
         }
     }
 ]

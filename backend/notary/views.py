@@ -44,7 +44,7 @@ class NotaryListAPIView(generics.ListAPIView):
             else:
                 return []
         return queryset
-
+    
 
 @csrf_exempt
 def make_and_send_message(request):
