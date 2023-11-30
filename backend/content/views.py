@@ -5,7 +5,9 @@ from .pagination import NewsListPagination
 from .serializers import (ContactSerializer, DocumentSerializer, FAQSerializer, LinkSerializer, NewsDetailSerializer,
                           NewsListSerializer, PhotoSetDetailSerializer, PhotoSetListSerializer, VideoSerializer,
                           AphorismSerializer)
+from .search_servises import validate_search_parameter
 
+from datetime import datetime
 
 class AphorismListAPIView(generics.ListAPIView):
     serializer_class = AphorismSerializer
@@ -17,24 +19,23 @@ class FAQListAPIView(generics.ListAPIView):
     queryset = FAQ.objects.all()
 
 
-class DocumentListAPIView(generics.ListAPIView):
-    serializer_class = DocumentSerializer
-
-    def get_queryset(self):
-        queryset = Document.objects.all()
-        value_to_search = self.request.query_params.get('search')
-        if isinstance(value_to_search, str):
-            if len(value_to_search) > 0:
-                queryset = queryset.filter(title_ru__icontains=value_to_search)
-            else:
-                return []
-        return queryset
-
-
 class NewsListAPIView(generics.ListAPIView):
     serializer_class = NewsListSerializer
-    queryset = News.objects.all()
     pagination_class = NewsListPagination
+
+    def get_queryset(self):
+        requested_title = self.request.query_params.get('title')
+        date_to_search = self.request.query_params.get('date')
+        queryset = News.objects.all()
+        if requested_title:
+            if validate_search_parameter(requested_title):
+                queryset = queryset.filter(title__icontains=requested_title)
+        elif date_to_search:
+            if validate_search_parameter(date_to_search):
+                cleaned_date = date_to_search.split(' GMT')[0]
+                clean_date = datetime.strptime(cleaned_date, "%a %b %d %Y %H:%M:%S").date()
+                queryset = queryset.filter(date=clean_date)
+        return queryset
 
 
 class NewsDetailAPIView(generics.RetrieveAPIView):

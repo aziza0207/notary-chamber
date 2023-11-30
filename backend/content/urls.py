@@ -1,14 +1,13 @@
 from django.urls import path
 
 from .admin.views import upload_photo
-from .views import (ContactListAPIView, DocumentListAPIView, FAQListAPIView, LinksListAPIView, NewsDetailAPIView,
+from .views import (ContactListAPIView, FAQListAPIView, LinksListAPIView, NewsDetailAPIView,
                     NewsListAPIView, NewsPinnedAPIView, PhotoSetDetailAPIView, PhotoSetListAPIView, VideoListAPIView,
                     AphorismListAPIView)
 
 app_name = 'content'
 
 urlpatterns = [
-    path('documents/', DocumentListAPIView.as_view(), name='documents'),
     path('faq/', FAQListAPIView.as_view(), name='faq'),
     path('news/', NewsListAPIView.as_view(), name='news'),
     path('news-detail/<str:slug>/', NewsDetailAPIView.as_view(), name='news-detail'),
