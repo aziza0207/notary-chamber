@@ -8,6 +8,7 @@ python manage.py create_default_admin
 python manage.py loaddata notary/fixtures/notaries.json # temporary fixture while notary model not updated
 python manage.py loaddata notary/fixtures/assistants.json
 
+python manage.py loaddata content/fixtures/aphorisms.json
 python manage.py loaddata content/fixtures/faq.json
 python manage.py loaddata notary/fixtures/recipients.json
 python manage.py loaddata content/fixtures/documents.json
