@@ -1,13 +1,13 @@
 from rest_framework import generics
 
-from .models import FAQ, Contact, Document, Link, News, PhotoSet, Video, Aphorism
+from .models import FAQ, Contact, Link, News, PhotoSet, Video, Aphorism
 from .pagination import NewsListPagination
-from .serializers import (ContactSerializer, DocumentSerializer, FAQSerializer, LinkSerializer, NewsDetailSerializer,
+from .serializers import (ContactSerializer, FAQSerializer, LinkSerializer, NewsDetailSerializer,
                           NewsListSerializer, PhotoSetDetailSerializer, PhotoSetListSerializer, VideoSerializer,
                           AphorismSerializer)
-from .search_servises import validate_search_parameter
 
 from datetime import datetime
+
 
 class AphorismListAPIView(generics.ListAPIView):
     serializer_class = AphorismSerializer
@@ -27,23 +27,27 @@ class NewsListAPIView(generics.ListAPIView):
         requested_title = self.request.query_params.get('title')
         date_to_search = self.request.query_params.get('date')
         queryset = News.objects.all()
-        if requested_title:
-            if validate_search_parameter(requested_title):
+        if isinstance(requested_title, str):
+            if len(requested_title) > 0:
                 queryset = queryset.filter(title__icontains=requested_title)
-        elif date_to_search:
-            if validate_search_parameter(date_to_search):
+            else: 
+                queryset = []
+        elif isinstance(date_to_search, str):
+            if len(date_to_search) > 0:
                 cleaned_date = date_to_search.split(' GMT')[0]
                 clean_date = datetime.strptime(cleaned_date, "%a %b %d %Y %H:%M:%S").date()
                 queryset = queryset.filter(date=clean_date)
+            else:
+                queryset = []
         return queryset
 
 
 class NewsDetailAPIView(generics.RetrieveAPIView):
-    lookup_field = "slug"
+    lookup_field = 'slug'
     serializer_class = NewsDetailSerializer
 
     def get_object(self):
-        slug = self.kwargs["slug"]
+        slug = self.kwargs['slug']
         return News.objects.get(slug=slug)
 
 
