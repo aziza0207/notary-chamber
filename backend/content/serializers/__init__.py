@@ -4,3 +4,4 @@ from .gallery_serializer import *
 from .news_serializer import *
 from .useful_links_serializer import *
 from .aphorism_serializers import *
+from .ed_centre_serializers import *

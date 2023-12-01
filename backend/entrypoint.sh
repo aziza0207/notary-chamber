@@ -18,6 +18,7 @@ python manage.py loaddata content/fixtures/gallery_photo.json
 python manage.py loaddata content/fixtures/detail_photos.json
 python manage.py loaddata content/fixtures/gallery_video.json
 python manage.py loaddata content/fixtures/contacts.json
+python manage.py loaddata content/fixtures/ed_centres.json
 
 python manage.py loaddata structure/fixtures/about_departments.json
 python manage.py loaddata structure/fixtures/about_workers.json
