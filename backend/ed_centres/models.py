@@ -12,6 +12,7 @@ class CenterInfo(models.Model):
     image = models.ImageField('Изображение', blank=True, null=True, upload_to=center_info)
 
     class Meta:
+        ordering = ('id',)
         verbose_name = 'Обр. центры - информация'
         verbose_name_plural = 'Обр. центры - информация'
 
@@ -23,6 +24,7 @@ class CenterTask(models.Model):
     text = models.TextField('Формулировка')
 
     class Meta:
+        ordering = ('id',)
         verbose_name = 'Обр. центры - задача'
         verbose_name_plural = 'Обр. центры - задачи'
 
@@ -40,6 +42,7 @@ class ManagerProfile(models.Model):
     image = models.ImageField('Изображение', blank=True, null=True, upload_to=center_management)
 
     class Meta:
+        ordering = ('id',)
         verbose_name = 'Обр. центры - руководитель'
         verbose_name_plural = 'Обр. центры - руководство'
 
@@ -51,6 +54,7 @@ class StudyPlan(models.Model):
     title = models.CharField('Раздел', max_length=255)
 
     class Meta:
+        ordering = ('id',)
         verbose_name = 'Обр. центры - учебный план'
         verbose_name_plural = 'Обр. центры - учебные планы'
 
@@ -64,6 +68,7 @@ class Discipline(models.Model):
     study_plan = models.ForeignKey(to='StudyPlan', on_delete=models.CASCADE, verbose_name='Учебный план', related_name='disciplines')
 
     class Meta:
+        ordering = ('id',)
         verbose_name = 'Обр. центры - учебная дисциплина'
         verbose_name_plural = 'Обр. центры - учебные дисциплины'
 
@@ -82,6 +87,7 @@ class TeachingStaff(models.Model):
     image = models.ImageField('Изображение', blank=True, null=True, upload_to=center_staff)
 
     class Meta:
+        ordering = ('id',)
         verbose_name = 'Обр. центры - преподаватель'
         verbose_name_plural = 'Обр. центры - преподаватели'
 
@@ -94,6 +100,7 @@ class EducationalMaterial(models.Model):
     url = models.URLField('Ссылка')
 
     class Meta:
+        ordering = ('id',)
         verbose_name = 'Обр. центры - учебный материал'
         verbose_name_plural = 'Обр. центры - учебные материалы'
 

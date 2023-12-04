@@ -17,6 +17,10 @@ JAZZMIN_SETTINGS = {
         {"app": "notary", },
 
         {"app": "content", },
+        
+        {"app": "structure", },
+        
+        {"app": "ed_centres", },
     ],
 
     # Whether to display the side menu
@@ -29,10 +33,17 @@ JAZZMIN_SETTINGS = {
 
     "hide_models": [],
 
-    "order_with_respect_to": ["notary.notary", "notary.recipient", "content.contact", "content.faq",
-                              "content.document", "content.link", "content.news", "content.photoset",
-                              "content.video", "structure.GeneralAssembly", "structure.NotaryCouncil",
-                              "structure.Comission"],
+    "order_with_respect_to": [
+        "notary.notary", "notary.recipient", "notary.EducationalCentre",
+        
+        "content.contact", "content.faq", "content.document", "content.link",
+        "content.news", "content.photoset", "content.video",
+        
+        "structure.GeneralAssembly", "structure.NotaryCouncil", "structure.Comission",
+        
+        "ed_centres.CenterInfo", "ed_centres.CenterTask", "ed_centres.ManagerProfile",
+        "ed_centres.StudyPlan", "ed_centres.TeachingStaff", "ed_centres.EducationalMaterial",
+        ],
 
     # "show_ui_builder": True
 }

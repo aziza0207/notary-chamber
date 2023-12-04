@@ -1,8 +1,8 @@
 from django.contrib import admin
 from modeltranslation.admin import TabbedTranslationAdmin, TranslationStackedInline, TranslationTabularInline
 
-from ..mixins import AdminFieldMixin
-from ..models import CenterInfo, CenterTask, ManagerProfile, StudyPlan, Discipline, TeachingStaff, EducationalMaterial
+from content.mixins import AdminFieldMixin
+from .models import CenterInfo, CenterTask, ManagerProfile, StudyPlan, Discipline, TeachingStaff, EducationalMaterial
 
 
 @admin.register(CenterInfo)

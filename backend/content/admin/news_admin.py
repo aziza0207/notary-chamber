@@ -1,4 +1,6 @@
-from django.contrib import admin
+from django.contrib import admin, messages
+from django.http.request import HttpRequest
+from django.template.response import TemplateResponse
 from modeltranslation.admin import TabbedTranslationAdmin
 
 from ..mixins import AdminFieldMixin, AdminMultiInputMixin
@@ -31,6 +33,7 @@ class NewsAdmin(AdminFieldMixin, AdminMultiInputMixin, TabbedTranslationAdmin):
 
     list_display = ['id', 'title', 'is_pinned', 'date', 'get_little_image']
     list_display_links = ['title']
+    list_editable = ['is_pinned',]
 
     readonly_fields = ['id', 'date', 'get_little_image',]
 
@@ -38,3 +41,10 @@ class NewsAdmin(AdminFieldMixin, AdminMultiInputMixin, TabbedTranslationAdmin):
     fields = ['title', 'slug', 'description', ('main_image', 'get_little_image',), 'video', 'is_pinned', 'date']
 
     actions = [make_pinned, make_unpinned]
+    
+    def changelist_view(self, request: HttpRequest, extra_context=None) -> TemplateResponse:
+        pinned_count = News.objects.filter(is_pinned=True).count()
+        if pinned_count > 2:
+            message = f'Слишком много закреплённых новостей: {pinned_count}. Максимум могут быть закреплены 2 новости.'
+            self.message_user(request, message=message, level=messages.WARNING)
+        return super().changelist_view(request, extra_context)

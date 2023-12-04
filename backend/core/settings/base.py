@@ -48,7 +48,12 @@ ADMIN_APPS = [
     'modeltranslation',
 ]
 
-LOCAL_APPS = ['content', 'notary', 'structure',]
+LOCAL_APPS = [
+    'content',
+    'notary',
+    'structure',
+    'ed_centres',
+    ]
 
 INSTALLED_APPS = [
     *ADMIN_APPS,

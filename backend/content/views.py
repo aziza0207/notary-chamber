@@ -1,43 +1,12 @@
 from rest_framework import generics
 
-from .models import FAQ, Contact, Link, News, PhotoSet, Video, Aphorism, CenterInfo, CenterTask, ManagerProfile, StudyPlan, TeachingStaff, EducationalMaterial
+from .models import FAQ, Contact, Link, News, PhotoSet, Video, Aphorism
 from .pagination import NewsListPagination
 from .serializers import (ContactSerializer, FAQSerializer, LinkSerializer, NewsDetailSerializer,
                           NewsListSerializer, PhotoSetDetailSerializer, PhotoSetListSerializer, VideoSerializer,
-                          AphorismSerializer, CenterInfoSerializer, CenterTaskSerializer, ManagerProfileSerializer,
-                          StudyPlanSerializer, TeachingStaffSerializer, EducationalMaterialSerializer)
+                          AphorismSerializer)
 
 from datetime import datetime
-
-
-class CenterInfoListAPIView(generics.ListAPIView):
-    serializer_class = CenterInfoSerializer
-    queryset = CenterInfo.objects.all()
-
-
-class CenterTaskListAPIView(generics.ListAPIView):
-    serializer_class = CenterTaskSerializer
-    queryset = CenterTask.objects.all()
-
-
-class ManagerProfileListAPIView(generics.ListAPIView):
-    serializer_class = ManagerProfileSerializer
-    queryset = ManagerProfile.objects.all()
-
-
-class StudyPlanListAPIView(generics.ListAPIView):
-    serializer_class = StudyPlanSerializer
-    queryset = StudyPlan.objects.all()
-
-
-class TeachingStaffListAPIView(generics.ListAPIView):
-    serializer_class = TeachingStaffSerializer
-    queryset = TeachingStaff.objects.all()
-
-
-class EducationalMaterialListAPIView(generics.ListAPIView):
-    serializer_class = EducationalMaterialSerializer
-    queryset = EducationalMaterial.objects.all()
 
 
 class AphorismListAPIView(generics.ListAPIView):

@@ -10,7 +10,6 @@ class NewsImage(models.Model):
     news = models.ForeignKey('content.News', verbose_name='Новости', on_delete=models.CASCADE,
                              related_name='images')
 
-
     class Meta:
         verbose_name = 'Изображение'
         verbose_name_plural = 'Изображения'
@@ -33,7 +32,7 @@ class News(models.Model):
     is_pinned = models.BooleanField('Закрепленные', default=False)
 
     class Meta:
-        ordering = ['-date', 'is_pinned']
+        ordering = ['is_pinned', '-date']
         verbose_name = 'Новости'
         verbose_name_plural = 'Новости'
 

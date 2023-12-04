@@ -1,6 +1,6 @@
 from rest_framework import serializers
 
-from ..models import CenterInfo, CenterTask, ManagerProfile, StudyPlan, Discipline, TeachingStaff, EducationalMaterial
+from .models import CenterInfo, CenterTask, ManagerProfile, StudyPlan, Discipline, TeachingStaff, EducationalMaterial
 
 
 class CenterInfoSerializer(serializers.ModelSerializer):

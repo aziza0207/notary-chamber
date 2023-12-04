@@ -1,6 +1,6 @@
 [
     {
-        "model": "content.CenterInfo",
+        "model": "ed_centres.CenterInfo",
         "pk": 1,
         "fields": {
             "title": "Основной вид деятельности",
@@ -19,35 +19,35 @@
         }
     },
     {
-        "model": "content.centertask",
+        "model": "ed_centres.centertask",
         "pk": 1,
         "fields": {
             "text": "Непрерывное обучение и повышение квалификации частных нотариусов, помощников частных нотариусов и обучение лиц, претендующих на получение лицензии на осуществления частной нотариальной деятельности;"
         }
     },
     {
-        "model": "content.centertask",
+        "model": "ed_centres.centertask",
         "pk": 2,
         "fields": {
             "text": "Проведение обобщения нотариальной практики, выявление нарушений при осуществлении и организации нотариальной деятельности;"
         }
     },
     {
-        "model": "content.centertask",
+        "model": "ed_centres.centertask",
         "pk": 3,
         "fields": {
             "text": "Сформировать и вести единую базу данных о частных нотариусах, прошедших повышение квалификации."
         }
     },
     {
-        "model": "content.centertask",
+        "model": "ed_centres.centertask",
         "pk": 4,
         "fields": {
             "text": "Cпособствовать созданию позитивного профессионального имиджа нотариуса;"
         }
     },
     {
-        "model": "content.ManagerProfile",
+        "model": "ed_centres.ManagerProfile",
         "pk": 1,
         "fields": {
             "text": "Дорогие студенты и нотариусы нашего Учебного Центра! Меня зовут [ИмяРуководителя], и я горжусь приветствовать вас в Учебном Центре Нотариальной Палаты. В своей профессиональной карьере я обладаю обширным опытом в сфере нотариата , и моя цель – делиться этим богатством знаний с вами.Мы в Учебном Центре стремимся создать поддерживающую и вдохновляющую образовательную среду, где каждый студент может раскрыть свой потенциал. Наша команда преподавателей – выдающиеся профессионалы , готовые не только передать вам теоретические знания, но и поделиться своими практическими навыками.Мы предлагаем не просто программы обучения, а возможность погружения в интенсивное и увлекательное изучение нотариальной деятельности. Если у вас есть вопросы или вы хотите узнать больше о нашем Центре, не стесняйтесь обращаться ко мне. Вместе мы создадим будущее, полное профессионального роста и успешной карьеры в нотариате.",
@@ -56,14 +56,14 @@
         }
     },
     {
-        "model": "content.studyplan",
+        "model": "ed_centres.studyplan",
         "pk": 1,
         "fields": {
             "title": "I - Семестр: Введение в Нотариат"
         }
     },
     {
-        "model": "content.discipline",
+        "model": "ed_centres.discipline",
         "pk": 1,
         "fields": {
             "name": "Основы нотариальной палаты",
@@ -72,7 +72,7 @@
         }
     },
     {
-        "model": "content.discipline",
+        "model": "ed_centres.discipline",
         "pk": 2,
         "fields": {
             "name": "Теория права и нотариальная практика",
@@ -81,14 +81,14 @@
         }
     },
     {
-        "model": "content.studyplan",
+        "model": "ed_centres.studyplan",
         "pk": 2,
         "fields": {
             "title": "II - Семестр: Правовые Основы"
         }
     },
     {
-        "model": "content.discipline",
+        "model": "ed_centres.discipline",
         "pk": 3,
         "fields": {
             "name": "Гражданское право",
@@ -97,7 +97,7 @@
         }
     },
     {
-        "model": "content.discipline",
+        "model": "ed_centres.discipline",
         "pk": 4,
         "fields": {
             "name": "Семейное право",
@@ -106,7 +106,7 @@
         }
     },
     {
-        "model": "content.teachingstaff",
+        "model": "ed_centres.teachingstaff",
         "pk": 1,
         "fields": {
             "image": "",
@@ -116,7 +116,7 @@
         }
     },
     {
-        "model": "content.teachingstaff",
+        "model": "ed_centres.teachingstaff",
         "pk": 2,
         "fields": {
             "image": "",
@@ -126,7 +126,7 @@
         }
     },
     {
-        "model": "content.teachingstaff",
+        "model": "ed_centres.teachingstaff",
         "pk": 3,
         "fields": {
             "image": "",
@@ -136,7 +136,7 @@
         }
     },
     {
-        "model": "content.teachingstaff",
+        "model": "ed_centres.teachingstaff",
         "pk": 4,
         "fields": {
             "image": "",
@@ -146,7 +146,7 @@
         }
     },
     {
-        "model": "content.EducationalMaterial",
+        "model": "ed_centres.EducationalMaterial",
         "pk": 1,
         "fields": {
             "title": "Расписание тренингов",
@@ -154,7 +154,7 @@
         }
     },
     {
-        "model": "content.EducationalMaterial",
+        "model": "ed_centres.EducationalMaterial",
         "pk": 2,
         "fields": {
             "title": "Подписаться на рассылку",
@@ -162,7 +162,7 @@
         }
     },
     {
-        "model": "content.EducationalMaterial",
+        "model": "ed_centres.EducationalMaterial",
         "pk": 3,
         "fields": {
             "title": "Литература",
