@@ -42,7 +42,7 @@ class NotaryListAPIView(generics.ListAPIView):
                     queryset = queryset.filter(
                     Q(full_name_ru__icontains=value_to_search) | Q(city_ru__icontains=value_to_search))
             else:
-                return []
+                return queryset.none()
         return queryset
     
 

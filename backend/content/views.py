@@ -62,14 +62,14 @@ class NewsListAPIView(generics.ListAPIView):
             if len(requested_title) > 0:
                 queryset = queryset.filter(title__icontains=requested_title)
             else: 
-                queryset = []
-        elif isinstance(date_to_search, str):
+                queryset = queryset.none()
+        if isinstance(date_to_search, str):
             if len(date_to_search) > 0:
                 cleaned_date = date_to_search.split(' GMT')[0]
                 clean_date = datetime.strptime(cleaned_date, "%a %b %d %Y %H:%M:%S").date()
                 queryset = queryset.filter(date=clean_date)
             else:
-                queryset = []
+                queryset = queryset.none()
         return queryset
 
 
