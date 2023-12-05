@@ -49,29 +49,4 @@ class NotaryAdmin(AdminFieldMixin, TabbedTranslationAdmin):
 
     )
 
-    # add_fieldsets = (
-    #     (None, {
-    #         'classes': ('wide',),
-    #         'fields': ('full_name',
-    #                    'phone',
-    #                    'photo',
-    #                    'region',
-    #                    'city',
-    #                    'address',
-    #                    # 'notary_coordinates',
-    #                    'start_day',
-    #                    'end_day',
-    #                    'start_time',
-    #                    'end_time',
-    #                    'break_start',
-    #                    'break_end',
-    #                    'start_day_off',
-    #                    'end_day_off',
-    #                    'latitude',
-    #                    'longitude',
-
-
-    #                    )}
-    #      ),
-    # )
     search_fields = ('full_name', 'region', 'city')

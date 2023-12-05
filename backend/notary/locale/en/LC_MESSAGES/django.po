@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-12-04 15:44+0600\n"
+"POT-Creation-Date: 2023-12-05 11:08+0600\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -21,6 +21,34 @@ msgstr ""
 #: apps.py:8
 msgid "Notary"
 msgstr "Notary"
+
+#: constants/days_constants.py:6
+msgid "Понедельник"
+msgstr "Monday"
+
+#: constants/days_constants.py:7
+msgid "Вторник"
+msgstr "Tuesday"
+
+#: constants/days_constants.py:8
+msgid "Среда"
+msgstr "Wednesday"
+
+#: constants/days_constants.py:9
+msgid "Четверг"
+msgstr "Thursday"
+
+#: constants/days_constants.py:10
+msgid "Пятница"
+msgstr "Friday"
+
+#: constants/days_constants.py:11
+msgid "Суббота"
+msgstr "Saturday"
+
+#: constants/days_constants.py:12
+msgid "Воскресенье"
+msgstr "Sunday"
 
 #: constants/notary_constants.py:6
 msgid "Действующий"

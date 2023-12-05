@@ -1,18 +1,12 @@
 from django.db.models import TextChoices
+from django.utils.translation import gettext_lazy as _
 
 
 class DaysChoice(TextChoices):
-    PON = "Понедельник", "Понедельник"
-    BT = "Вторник", "Вторник"
-    SR = "Среда", "Среда"
-    CT = "Четверг", "Четверг"
-    PT = "Пятница", "Пятница"
-    SB = "Суббота", "Суббота"
-    VS = "Воскресенье", "Воскресенье"
-    MON = "Monday", "Monday"
-    TUE = "Tuesday", "Tuesday"
-    WED = "Wednesday", "Wednesday"
-    THU = "Thursday", "Thursday"
-    FRI = "Friday", "Friday"
-    SAT = "Saturday", "Saturday"
-    SUN = "Sunday", "Sunday"
+    PON = _("Понедельник"), "Понедельник"
+    BT = _("Вторник"), "Вторник"
+    SR = _("Среда"), "Среда"
+    CT = _("Четверг"), "Четверг"
+    PT = _("Пятница"), "Пятница"
+    SB = _("Суббота"), "Суббота"
+    VS = _("Воскресенье"), "Воскресенье"

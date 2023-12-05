@@ -12,12 +12,17 @@ class AssistantSerializer(serializers.ModelSerializer):
 
 
 class NotarySerializer(serializers.ModelSerializer):
+    assistants = AssistantSerializer(many=True)
+    status_label = serializers.SerializerMethodField()
+
     start_time = serializers.SerializerMethodField()
     end_time = serializers.SerializerMethodField()
     break_start = serializers.SerializerMethodField()
     break_end = serializers.SerializerMethodField()
-    assistants = AssistantSerializer(many=True)
-    status_label = serializers.SerializerMethodField()
+    start_day = serializers.SerializerMethodField()
+    end_day = serializers.SerializerMethodField()
+    start_day_off = serializers.SerializerMethodField()
+    end_day_off = serializers.SerializerMethodField()
     class Meta:
         model = Notary
         fields = ('id',
@@ -45,6 +50,30 @@ class NotarySerializer(serializers.ModelSerializer):
         status = obj.status
         status_label = _(StatusChoice[status.upper()].label)
         return status_label
+
+    def get_start_day(self, obj):
+        if obj.start_day:
+            return _(obj.start_day)
+        else:
+            return obj.start_day
+
+    def get_end_day(self, obj):
+        if obj.end_day:
+            return _(obj.end_day)
+        else:
+            return obj.end_day
+
+    def get_start_day_off(self, obj):
+        if obj.start_day_off:
+            return _(obj.start_day_off)
+        else:
+            return obj.start_day_off
+
+    def get_end_day_off(self, obj):
+        if obj.end_day_off:
+            return _(obj.end_day_off)
+        else:
+            return obj.end_day_off
 
     def get_start_time(self, obj):
         if obj.start_time:
