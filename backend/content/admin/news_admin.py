@@ -1,8 +1,10 @@
+from typing import Any
 from django.contrib import admin
 from django.http.request import HttpRequest
 from django.http.response import HttpResponse
 from modeltranslation.admin import TabbedTranslationAdmin
 from django.contrib.admin.helpers import AdminForm
+from django.utils.datastructures import MultiValueDict
 
 from ..mixins import AdminFieldMixin, AdminMultiInputMixin
 from ..models import News, NewsImage
@@ -48,6 +50,16 @@ class NewsAdmin(AdminFieldMixin, AdminMultiInputMixin, TabbedTranslationAdmin):
 
     def response_add(self, request: HttpRequest, obj, post_url_continue: str | None = ...) -> HttpResponse:
         return super().response_add(request, obj, post_url_continue)
-    
+
     def response_change(self, request: HttpRequest, obj) -> HttpResponse:
         return super().response_change(request, obj)
+
+    def save_formset(self, request: Any, form: Any, formset: Any, change: Any) -> None:
+        if isinstance(formset.files, MultiValueDict):
+            formset.save(commit=False)
+            images = formset.files.getlist('images')
+            formset.save_new_objects(images)
+            for image in images:
+                ...
+                # formset.model.objects.create(image=image, fk=formset.instance)
+        return super().save_formset(request, form, formset, change)
