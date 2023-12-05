@@ -32,7 +32,7 @@ class News(models.Model):
     is_pinned = models.BooleanField('Закрепленные', default=False)
 
     class Meta:
-        ordering = ['is_pinned', '-date']
+        ordering = ['-date',]
         verbose_name = 'Новости'
         verbose_name_plural = 'Новости'
 

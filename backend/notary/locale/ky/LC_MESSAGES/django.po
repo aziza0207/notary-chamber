@@ -24,8 +24,8 @@ msgstr "Нотариат"
 
 #: constants/notary_constants.py:6
 msgid "Действующий"
-msgstr "Активдүү"
+msgstr "Иш үстүндө"
 
 #: constants/notary_constants.py:7
 msgid "Завершил деятельность"
-msgstr "Аткарылган иш"
+msgstr "Токтотулган"

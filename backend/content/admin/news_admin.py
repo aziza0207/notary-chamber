@@ -34,6 +34,7 @@ class NewsAdmin(AdminFieldMixin, AdminMultiInputMixin, TabbedTranslationAdmin):
     list_display = ['id', 'title', 'is_pinned', 'date', 'get_little_image']
     list_display_links = ['title']
     list_editable = ['is_pinned',]
+    ordering = ['-is_pinned', '-date',]
 
     readonly_fields = ['id', 'date', 'get_little_image',]
 
