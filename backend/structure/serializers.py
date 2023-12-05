@@ -1,6 +1,6 @@
 from rest_framework import serializers
 
-from .models import GeneralAssembly, GeneralAssemblyWorker, NotaryCouncil, NotaryCouncilWorker, Comission, ComissionWorker
+from .models import GeneralAssembly, GeneralAssemblyWorker, NotaryCouncil, NotaryCouncilWorker, Comission, ComissionWorker, NotaryCouncilDocument
 
 
 class GeneralAssemblyWorkerSerializer(serializers.ModelSerializer):
@@ -13,7 +13,13 @@ class GeneralAssemblySerializer(serializers.ModelSerializer):
     workers = GeneralAssemblyWorkerSerializer(many=True)
     class Meta:
         model = GeneralAssembly
-        fields = ('name', 'description', 'image', 'workers',)
+        fields = ('id', 'name', 'description', 'image', 'document', 'workers',)
+
+
+class NotaryCouncilDocumentSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = NotaryCouncilDocument
+        fields = ('id', 'document',)
 
 
 class NotaryCouncilWorkerSerializer(serializers.ModelSerializer):
@@ -24,9 +30,10 @@ class NotaryCouncilWorkerSerializer(serializers.ModelSerializer):
 
 class NotaryCouncilSerializer(serializers.ModelSerializer):
     workers = NotaryCouncilWorkerSerializer(many=True)
+    documents = NotaryCouncilDocumentSerializer(many=True)
     class Meta:
         model = NotaryCouncil
-        fields = ('name', 'description', 'image', 'workers',)
+        fields = ('id', 'name', 'description', 'image', 'documents', 'workers',)
 
 
 class ComissionWorkerSerializer(serializers.ModelSerializer):
@@ -39,7 +46,7 @@ class ComissionSerializer(serializers.ModelSerializer):
     workers = ComissionWorkerSerializer(many=True)
     class Meta:
         model = Comission
-        fields = ('name', 'description', 'image', 'workers',)
+        fields = ('id', 'name', 'description', 'image', 'document', 'workers',)
 
 
 
