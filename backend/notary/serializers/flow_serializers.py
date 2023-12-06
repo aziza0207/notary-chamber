@@ -13,7 +13,7 @@ class NotaryFlowSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = NotaryFlow
-        fields = ('id', 'date_range', 'roles',)
+        fields = ('id', 'name', 'date_range', 'roles',)
 
 
 class MinistryFlowSerializer(serializers.ModelSerializer):
@@ -21,4 +21,4 @@ class MinistryFlowSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = MinistryFlow
-        fields = ('id', 'date_range', 'roles',)
+        fields = ('id', 'name', 'date_range', 'roles',)
