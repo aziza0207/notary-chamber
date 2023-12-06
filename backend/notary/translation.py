@@ -1,6 +1,11 @@
 from modeltranslation.translator import TranslationOptions, register
 
-from .models import Notary, Assistant
+from .models import Notary, Assistant, Role
+
+
+@register(Role)
+class RoleTranslationOptions(TranslationOptions):
+    fields = ('name',)
 
 
 @register(Notary)

@@ -1,0 +1,37 @@
+[
+    {
+        "model": "notary.role",
+        "pk": 1,
+        "fields": {
+            "name": "Нотариус (стаж менее 5 лет)"
+        }
+    },
+    {
+        "model": "notary.role",
+        "pk": 2,
+        "fields": {
+            "name": "Нотариус (стаж более 5 лет)"
+        }
+    },
+    {
+        "model": "notary.role",
+        "pk": 3,
+        "fields": {
+            "name": "Юрист"
+        }
+    },
+    {
+        "model": "notary.role",
+        "pk": 4,
+        "fields": {
+            "name": "Помощник нотариуса"
+        }
+    },
+    {
+        "model": "notary.role",
+        "pk": 5,
+        "fields": {
+            "name": "Претендент"
+        }
+    }
+]

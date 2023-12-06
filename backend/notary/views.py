@@ -4,13 +4,25 @@ from django.db.models import Q
 from django.http import JsonResponse
 from django.views.decorators.csrf import csrf_exempt
 from rest_framework import generics, status
+from rest_framework.decorators import api_view
 
 from notary.tasks import send_mail_delayed
 
-from .models import Notary
+from .models import Notary, NotaryFlow, MinistryFlow
 from .pagination import NotaryListPagination
-from .serializers import NotarySerializer
+from .serializers import NotarySerializer, NotaryFlowSerializer, MinistryFlowSerializer
 from .services import make_message
+from datetime import date
+
+
+class NotaryFlowListAPIView(generics.ListAPIView):
+    serializer_class = NotaryFlowSerializer
+    queryset = NotaryFlow.objects.filter(date_start__gt=date.today())
+
+
+class MinistryFlowListAPIView(generics.ListAPIView):
+    serializer_class = MinistryFlowSerializer
+    queryset = MinistryFlow.objects.filter(date_start__gt=date.today())
 
 
 class NotaryStatusListView(generics.ListAPIView):
@@ -46,6 +58,7 @@ class NotaryListAPIView(generics.ListAPIView):
         return queryset
     
 
+@api_view(['POST'])
 @csrf_exempt
 def make_and_send_message(request):
     if request.method == 'POST':

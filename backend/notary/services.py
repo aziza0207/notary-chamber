@@ -2,25 +2,24 @@ import json
 
 from django.conf import settings
 
-from notary.models import Recipient, EducationalCentre
-from notary.constants import RoleChoice, CentreChoice
+from notary.models import Recipient, EducationalCentre, Role
+from notary.constants import CentreChoice
 
 
 def make_message(request):
     data = json.loads(request.body)
-    # role = data.get('role')
-    centre = data.get('centre')
-    if centre:
+    center = data.get('center')
+    if center:
+        role = int(data.get('role'))
         recipients = EducationalCentre.objects.all()
-        # subject_role = RoleChoice[str(role).upper()]
-        subject_centre = CentreChoice[str(centre).upper()]
-        # subject = f'[{subject_role}][{subject_centre}]Заявка на обучение в центре'
-                #\nРоль: {subject_role.label}.
-        subject = f'[{subject_centre}]Заявка на обучение в центре'
+        subject_role = Role.objects.get(id=role).name
+        subject_center = CentreChoice[str(center).upper()]
+        subject = f'[{subject_role}][{subject_center}]Заявка на обучение в центре'
         message = f'''Сведения о кандидате на обучение.
         \nИмя: {data.get('name')}.
-        \nКонтакты: Телефон: {data.get('phone')}. Почта:{data.get('email')}.
-        \nУчебный центр: {subject_centre.label}.'''
+        \nКонтакты: Телефон: {data.get('phone')}. Почта: {data.get('email')}.
+        \nРоль: {subject_role}.
+        \nУчебный центр: {subject_center.label}.'''
     else:
         recipients = Recipient.objects.all()
         subject = 'Новое сообщение от клиента'
