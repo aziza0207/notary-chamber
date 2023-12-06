@@ -7,8 +7,8 @@ class Recipient(models.Model):
 
     class Meta:
         ordering = ['-id']
-        verbose_name = 'Получатель рассылки'
-        verbose_name_plural = 'Получатели рассылки'
+        verbose_name = 'Получатель обращений граждан'
+        verbose_name_plural = 'Получатели обращений граждан'
 
     def __str__(self):
         return self.name
@@ -20,8 +20,8 @@ class EducationalCentre(models.Model):
 
     class Meta:
         ordering = ['-id']
-        verbose_name = 'Обработчик образовательного центра'
-        verbose_name_plural = 'Обработчики образовательного центра'
+        verbose_name = 'Получатель заявок на обучение'
+        verbose_name_plural = 'Получатели заявок на обучение'
 
     def __str__(self):
         return self.name

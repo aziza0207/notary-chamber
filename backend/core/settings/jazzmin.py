@@ -37,7 +37,7 @@ JAZZMIN_SETTINGS = {
         "notary.notary", "notary.recipient", "notary.EducationalCentre",
         
         "content.contact", "content.faq", "content.document", "content.link",
-        "content.news", "content.photoset", "content.video",
+        "content.aphorism", "content.news", "content.photoset", "content.video",
         
         "structure.GeneralAssembly", "structure.NotaryCouncil", "structure.Comission",
         
