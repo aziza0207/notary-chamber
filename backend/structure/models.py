@@ -5,10 +5,6 @@ def department_images(instance, filename):
     return f'structure/department/images/{filename}'
 
 
-def department_docs(instance, filename):
-    return f'structure/department/documents/{filename}'
-
-
 class AbstractDepartment(models.Model):
     name = models.CharField('Название', max_length=255)
     description = models.TextField('Описание', null=True, blank=True)
@@ -42,8 +38,6 @@ class AbstractWorker(models.Model):
 
 
 class GeneralAssembly(AbstractDepartment):
-    document = models.FileField('Документ', upload_to=department_docs, null=True, blank=True)
-
     class Meta:
         verbose_name = 'Общее собрание'
         verbose_name_plural = 'Общие собрания'
@@ -58,12 +52,6 @@ class NotaryCouncil(AbstractDepartment):
     class Meta:
         verbose_name = 'Совет'
         verbose_name_plural = 'Советы'
-
-
-class NotaryCouncilDocument(models.Model):
-    document = models.FileField('Документ', upload_to=department_docs, null=True, blank=True)
-    council = models.ForeignKey('NotaryCouncil', verbose_name='Совет',
-                                   related_name='documents', on_delete=models.CASCADE)
 
     class Meta:
         ordering = ['id']
@@ -80,8 +68,6 @@ class NotaryCouncilWorker(AbstractWorker):
 
 
 class Comission(AbstractDepartment):
-    document = models.FileField('Документ', upload_to=department_docs, null=True, blank=True)
-
     class Meta:
         verbose_name = 'Комиссия'
         verbose_name_plural = 'Комиссии'

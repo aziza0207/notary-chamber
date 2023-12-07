@@ -1,12 +1,17 @@
 from rest_framework import generics
 
-from .models import FAQ, Contact, Link, News, PhotoSet, Video, Aphorism
+from .models import FAQ, Contact, Link, News, PhotoSet, Video, Aphorism, Document
 from .pagination import NewsListPagination
 from .serializers import (ContactSerializer, FAQSerializer, LinkSerializer, NewsDetailSerializer,
                           NewsListSerializer, PhotoSetDetailSerializer, PhotoSetListSerializer, VideoSerializer,
-                          AphorismSerializer)
+                          AphorismSerializer, DocumentSerializer)
 
 from datetime import datetime
+
+
+class DocumentListApiView(generics.ListAPIView):
+    serializer_class = DocumentSerializer
+    queryset = Document.objects.all()
 
 
 class AphorismListAPIView(generics.ListAPIView):

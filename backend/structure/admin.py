@@ -2,7 +2,7 @@ from django.contrib import admin
 from content.mixins import AdminFieldMixin
 from modeltranslation.admin import TabbedTranslationAdmin, TranslationStackedInline
 
-from structure.models import GeneralAssembly, GeneralAssemblyWorker, NotaryCouncil, NotaryCouncilWorker, Comission, ComissionWorker, NotaryCouncilDocument
+from structure.models import GeneralAssembly, GeneralAssemblyWorker, NotaryCouncil, NotaryCouncilWorker, Comission, ComissionWorker
 
 
 class GeneralAssemblyWorkerAdmin(TranslationStackedInline):
@@ -16,7 +16,7 @@ class GeneralAssemblyAdmin(AdminFieldMixin, TabbedTranslationAdmin):
     list_display_links = ('name',)
     inlines = (GeneralAssemblyWorkerAdmin,)
     readonly_fields = ('get_little_image',)
-    fields = ('name', 'description', ('image', 'get_little_image',), 'document',)
+    fields = ('name', 'description', ('image', 'get_little_image',),)
 
 
 class NotaryCouncilWorkerAdmin(TranslationStackedInline):
@@ -24,16 +24,11 @@ class NotaryCouncilWorkerAdmin(TranslationStackedInline):
     extra = 0
 
 
-class NotaryCouncilDocumentAdmin(TranslationStackedInline):
-    model = NotaryCouncilDocument
-    extra = 0
-
-
 @admin.register(NotaryCouncil)
 class NotaryCouncilAdmin(AdminFieldMixin, TabbedTranslationAdmin):
     list_display = ('id', 'name', 'get_little_image',)
     list_display_links = ('name',)
-    inlines = (NotaryCouncilWorkerAdmin, NotaryCouncilDocumentAdmin,)
+    inlines = (NotaryCouncilWorkerAdmin,)
     readonly_fields = ('get_little_image',)
     fields = ('name', 'description', ('image', 'get_little_image',),)
 
@@ -49,4 +44,4 @@ class ComissionAdmin(AdminFieldMixin, TabbedTranslationAdmin):
     list_display_links = ('name',)
     inlines = (ComissionWorkerAdmin,)
     readonly_fields = ('get_little_image',)
-    fields = ('name', 'description', ('image', 'get_little_image',), 'document',)
+    fields = ('name', 'description', ('image', 'get_little_image',),)

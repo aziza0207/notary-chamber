@@ -1,0 +1,34 @@
+[
+    {   
+        "model": "content.document",
+        "pk": 1,
+        "fields": {
+            "title": "Кодекс этики",
+            "file": "content/documents/КОДЕКС ЭТИКИ.pdf"
+        }
+    },
+    {   
+        "model": "content.document",
+        "pk": 2,
+        "fields": {
+            "title": "Положение",
+            "file": "content/documents/Положение.pdf"
+        }
+    },
+    {   
+        "model": "content.document",
+        "pk": 3,
+        "fields": {
+            "title": "кыргыз УСТАВ",
+            "file": "content/documents/кыргыз УСТАВ.pdf"
+        }
+    },
+    {   
+        "model": "content.document",
+        "pk": 4,
+        "fields": {
+            "title": "РЕВКОмиссия.pdf",
+            "file": "content/documents/РЕВКОмиссия.pdf"
+        }
+    }
+]

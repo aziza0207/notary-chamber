@@ -1,17 +1,12 @@
 from modeltranslation.translator import TranslationOptions, register
 
 from structure.models import (GeneralAssembly, GeneralAssemblyWorker, NotaryCouncil, NotaryCouncilWorker,
-                              Comission, ComissionWorker, NotaryCouncilDocument)
-
-
-@register(NotaryCouncilDocument)
-class NotaryCouncilDocumentTranslationOptions(TranslationOptions):
-    fields = ('document',)
+                              Comission, ComissionWorker)
 
 
 @register(GeneralAssembly)
 class GeneralAsemblyTranslationOptions(TranslationOptions):
-    fields = ('name', 'description', 'document',)
+    fields = ('name', 'description',)
 
 
 @register(GeneralAssemblyWorker)
@@ -31,7 +26,7 @@ class NotaryCouncilWorkerTranslationOptions(TranslationOptions):
 
 @register(Comission)
 class ComissionTranslationOptions(TranslationOptions):
-    fields = ('name', 'description', 'document',)
+    fields = ('name', 'description',)
 
 
 @register(ComissionWorker)

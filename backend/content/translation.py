@@ -1,6 +1,11 @@
 from modeltranslation.translator import TranslationOptions, register
 
-from content.models import (FAQ, Link, News, PhotoSet, Video, Aphorism)
+from content.models import (FAQ, Link, News, PhotoSet, Video, Aphorism, Document)
+
+
+@register(Document)
+class DocumentTranslationOptions(TranslationOptions):
+    fields = ('title', 'file',)
 
 
 @register(FAQ)

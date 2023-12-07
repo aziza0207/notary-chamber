@@ -16,28 +16,11 @@
         }
     },
     {
-        "model": "structure.NotaryCouncilDocument",
-        "pk": 1,
-        "fields": {
-            "document_ru": "structure/department/documents/Положение.pdf",
-            "council": "1"
-        }
-    },
-    {
-        "model": "structure.NotaryCouncilDocument",
-        "pk": 2,
-        "fields": {
-            "document_ru": "structure/department/documents/кыргыз УСТАВ.pdf",
-            "council": "1"
-        }
-    },
-    {
         "model": "structure.Comission",
         "pk": 1,
         "fields": {
             "name": "Ревизионная комиссия Нотариальной палаты",
-            "description": "Ревизионная комиссия осуществляет контроль за финансово-хозяйственной деятельностью Палаты.",
-            "document_ru": "structure/department/documents/РЕВКОмиссия.pdf"
+            "description": "Ревизионная комиссия осуществляет контроль за финансово-хозяйственной деятельностью Палаты."
         }
     },
     {
@@ -45,8 +28,7 @@
         "pk": 2,
         "fields": {
             "name": "Комиссия по этике",
-            "description": "Комиссия  рассматривает жалобы и заявления на действия или бездействия частных нотариусов -  членов Палаты по вопросам этики, определяемым Кодексом об этике частного нотариуса.",
-            "document_ru": "structure/department/documents/КОДЕКС ЭТИКИ.pdf"
+            "description": "Комиссия  рассматривает жалобы и заявления на действия или бездействия частных нотариусов -  членов Палаты по вопросам этики, определяемым Кодексом об этике частного нотариуса."
         }
     },
     {
