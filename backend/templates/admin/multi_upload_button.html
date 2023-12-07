@@ -1,14 +1,7 @@
 {% block multi_upload_button %}
-<div class="form-group">
-    <input name="images" type="file" accept="image/*" multiple>
-    <button onclick="setFormActionAndSubmit('{{ upload_url }}')">Загрузить сразу несколько</button>
-    <script>
-        const id = '{{ opts.model_name }}' + '_form'
-        function setFormActionAndSubmit(action) {
-          let form = document.getElementById(id);
-          form.action = action;
-          form.submit();
-        }
-    </script>
+<div class="mb-3">
+  <label for="multi_input">Загрузить сразу несколько</label>
+  <input name="images" id="multi_input" class="form-control"  type="file" accept="image/*" multiple style='padding: 0.25rem 0.75rem;
+  font-size: 0.9rem;'>
 </div>
 {% endblock %}
