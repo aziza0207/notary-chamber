@@ -1,6 +1,5 @@
 from django.urls import path
 
-from .admin.views import upload_photo
 from .views import (ContactListAPIView, FAQListAPIView, LinksListAPIView, NewsDetailAPIView,
                     NewsListAPIView, NewsPinnedAPIView, PhotoSetDetailAPIView, PhotoSetListAPIView, VideoListAPIView,
                     AphorismListAPIView)
@@ -17,6 +16,5 @@ urlpatterns = [
     path('gallery-photo/', PhotoSetListAPIView.as_view(), name='gallery-photo'),
     path('gallery-photo/<str:slug>/', PhotoSetDetailAPIView.as_view(), name='gallery-photo'),
     path('gallery-video/', VideoListAPIView.as_view(), name='gallery-video'),
-    path('upload_photo/', upload_photo, name='upload_photo'),
     path('aphorisms/', AphorismListAPIView.as_view(), name='aphorisms'),
 ]

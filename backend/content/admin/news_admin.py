@@ -1,10 +1,22 @@
+
 from django.contrib import admin, messages
 from django.http.request import HttpRequest
 from django.template.response import TemplateResponse
+from django.http.request import HttpRequest
+from django.http.response import HttpResponse
 from modeltranslation.admin import TabbedTranslationAdmin
+from django.contrib.admin.helpers import AdminForm
+from django.contrib import admin, messages
+from django.http.request import HttpRequest
+from django.template.response import TemplateResponse
+
 
 from ..mixins import AdminFieldMixin, AdminMultiInputMixin
 from ..models import News, NewsImage
+
+
+class NewsAdminForm(AdminForm):
+    pass
 
 
 class NewsImageImageInline(AdminFieldMixin, admin.TabularInline):

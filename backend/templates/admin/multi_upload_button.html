@@ -1,42 +1,7 @@
 {% block multi_upload_button %}
-<div class="form-group">
-    <input type="file" id="fileInput" accept="image/*" multiple>
-    <button onclick="uploadFiles()">Загрузить сразу несколько</button>
-    <script>
-        let upload_url = "{{ upload_url }}"
-        const parameters = {
-            parent_model_name: "{{ parent_model_name }}",
-            parent_instance_id: "{{ parent_instance_id }}",
-            inline_model_name: "{{ inline_model_name }}",
-        };
-
-        function uploadFiles() {
-            const fileInput = document.getElementById('fileInput');
-            const files = fileInput.files;
-            if (files.length === 0) {
-                alert('Please select at least one file.');
-                return;
-            }
-
-            const formData = new FormData();
-            for (let i = 0; i < files.length; i++) {
-                formData.append('files', files[i]);
-            }
-
-            formData.append('json_data', new Object([JSON.stringify(parameters)], { type: 'application/json' }));
-
-            fetch(upload_url, {
-                method: 'POST',
-                body: formData
-            })
-            .then(response => response.json())
-            .then(data => {
-                console.log('Upload successful:', data);
-            })
-            .catch(error => {
-                console.error('Error during upload:', error);
-            });
-        }
-    </script>
-   </div>
+<div class="mb-3">
+  <label for="multi_input">Загрузить сразу несколько</label>
+  <input name="images" id="multi_input" class="form-control"  type="file" accept="image/*" multiple style='padding: 0.25rem 0.75rem;
+  font-size: 0.9rem;'>
+</div>
 {% endblock %}
