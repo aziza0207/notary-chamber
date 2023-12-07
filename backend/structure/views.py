@@ -11,7 +11,7 @@ class GeneralAssemblyListAPIView(generics.ListAPIView):
 
 class NotaryCouncilListAPIView(generics.ListAPIView):
     serializer_class = NotaryCouncilSerializer
-    queryset = NotaryCouncil.objects.prefetch_related('workers', 'documents').all()
+    queryset = NotaryCouncil.objects.prefetch_related('workers').all()
 
 
 class ComissionListAPIView(generics.ListAPIView):
