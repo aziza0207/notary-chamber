@@ -17,7 +17,7 @@ def make_message(request):
         message = f'''Сведения о кандидате на обучение.
         \nИмя: {data.get('name')}.
         \nКонтакты: Телефон: {data.get('phone')}. Почта: {data.get('email')}.
-        \nРоль: {subject_role} # {subject_role.upper()}.
+        \nРоль: {subject_role}.
         \nВыбранный курс: {flow.name}, {flow.date_range}.'''
     else:
         recipients = Recipient.objects.all()
