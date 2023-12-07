@@ -46,7 +46,7 @@ services:
 
     networks:
       - notpal_network
-  
+
   celery:
     container_name: notpal_celery
     build:

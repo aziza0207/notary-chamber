@@ -35,7 +35,7 @@ JAZZMIN_SETTINGS = {
 
     "order_with_respect_to": [
         "notary.notary", "notary.recipient", "notary.EducationalCentre",
-        "notary.roles", "notary.NotaryFlow", "notary.MinistryFlow",
+        "notary.role", "notary.NotaryFlow", "notary.MinistryFlow",
         
         "content.contact", "content.faq", "content.document", "content.link",
         "content.aphorism", "content.news", "content.photoset", "content.video",
