@@ -1,7 +1,7 @@
-from django.contrib.admin import register, ModelAdmin
+from django.contrib.admin import ModelAdmin, register
 from modeltranslation.admin import TabbedTranslationAdmin
 
-from ..models import NotaryFlow, MinistryFlow, Role
+from ..models import NotaryFlow, Role
 
 
 @register(NotaryFlow)

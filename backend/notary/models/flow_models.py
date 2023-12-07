@@ -39,11 +39,3 @@ class NotaryFlow(EducationalFlowAbstractModel):
     class Meta:
         verbose_name = 'Поток в нотариальный центр'
         verbose_name_plural = 'Потоки в нотариальный центр'
-
-
-class MinistryFlow(EducationalFlowAbstractModel):
-    roles = models.ManyToManyField(to='Role', related_name='ministry_flows', verbose_name='Роли', blank=True)
-
-    class Meta:
-        verbose_name = 'Поток в министерский центр'
-        verbose_name_plural = 'Потоки в министерский центр'

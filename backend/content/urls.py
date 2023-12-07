@@ -1,8 +1,8 @@
 from django.urls import path
 
-from .views import (ContactListAPIView, FAQListAPIView, LinksListAPIView, NewsDetailAPIView,
-                    NewsListAPIView, NewsPinnedAPIView, PhotoSetDetailAPIView, PhotoSetListAPIView, VideoListAPIView,
-                    AphorismListAPIView, DocumentListApiView)
+from .views import (AphorismListAPIView, ContactListAPIView, DocumentListApiView, FAQListAPIView, LinksListAPIView,
+                    NewsDetailAPIView, NewsListAPIView, NewsPinnedAPIView, PhotoSetDetailAPIView, PhotoSetListAPIView,
+                    VideoListAPIView)
 
 app_name = 'content'
 

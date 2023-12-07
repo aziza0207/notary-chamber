@@ -1,7 +1,9 @@
 from rest_framework import generics
-from .serializers import GeneralAssemblySerializer, NotaryCouncilSerializer, ComissionSerializer
-from .models import GeneralAssembly, NotaryCouncil, Comission
-                          
+
+from .models import Comission, GeneralAssembly, NotaryCouncil
+from .serializers import ComissionSerializer, GeneralAssemblySerializer, NotaryCouncilSerializer
+
+
 class GeneralAssemblyListAPIView(generics.ListAPIView):
     serializer_class = GeneralAssemblySerializer
     queryset = GeneralAssembly.objects.prefetch_related('workers').all()

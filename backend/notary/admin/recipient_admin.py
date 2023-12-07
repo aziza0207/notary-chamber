@@ -1,6 +1,6 @@
 from django.contrib import admin
 
-from notary.models import Recipient, EducationalCentre
+from notary.models import EducationalCentre, Recipient
 
 
 @admin.register(Recipient)

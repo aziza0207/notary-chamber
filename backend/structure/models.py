@@ -53,14 +53,6 @@ class NotaryCouncil(AbstractDepartment):
         verbose_name = 'Совет'
         verbose_name_plural = 'Советы'
 
-    class Meta:
-        ordering = ['id']
-        verbose_name = 'Документ'
-        verbose_name_plural = 'Документы'
-
-    def __str__(self):
-        return 'Документ совета'
-
 
 class NotaryCouncilWorker(AbstractWorker):
     department = models.ForeignKey('NotaryCouncil', verbose_name='Подразделение',

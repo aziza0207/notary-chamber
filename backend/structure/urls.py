@@ -1,6 +1,6 @@
 from django.urls import path
 
-from .views import GeneralAssemblyListAPIView, NotaryCouncilListAPIView, ComissionListAPIView
+from .views import ComissionListAPIView, GeneralAssemblyListAPIView, NotaryCouncilListAPIView
 
 app_name = 'structure'
 

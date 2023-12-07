@@ -1,8 +1,8 @@
-from rest_framework import serializers
 from django.utils.translation import gettext_lazy as _
+from rest_framework import serializers
 
-from ..models import Notary, Assistant
 from ..constants import StatusChoice
+from ..models import Assistant, Notary
 
 
 class AssistantSerializer(serializers.ModelSerializer):

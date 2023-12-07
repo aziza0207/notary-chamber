@@ -1,3 +1,5 @@
+from datetime import date
+
 from django.conf import settings
 from django.core.mail import send_mail
 from django.db.models import Q
@@ -8,21 +10,15 @@ from rest_framework.decorators import api_view
 
 from notary.tasks import send_mail_delayed
 
-from .models import Notary, NotaryFlow, MinistryFlow
+from .models import Notary, NotaryFlow
 from .pagination import NotaryListPagination
-from .serializers import NotarySerializer, NotaryFlowSerializer, MinistryFlowSerializer
+from .serializers import NotaryFlowSerializer, NotarySerializer
 from .services import make_message
-from datetime import date
 
 
 class NotaryFlowListAPIView(generics.ListAPIView):
     serializer_class = NotaryFlowSerializer
     queryset = NotaryFlow.objects.filter(date_start__gt=date.today())
-
-
-class MinistryFlowListAPIView(generics.ListAPIView):
-    serializer_class = MinistryFlowSerializer
-    queryset = MinistryFlow.objects.filter(date_start__gt=date.today())
 
 
 class NotaryStatusListView(generics.ListAPIView):

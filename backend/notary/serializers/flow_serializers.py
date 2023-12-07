@@ -1,5 +1,6 @@
 from rest_framework import serializers
-from ..models import NotaryFlow, MinistryFlow, Role
+
+from ..models import NotaryFlow, Role
 
 
 class RoleSerializer(serializers.ModelSerializer):
@@ -13,12 +14,4 @@ class NotaryFlowSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = NotaryFlow
-        fields = ('id', 'name', 'date_range', 'roles',)
-
-
-class MinistryFlowSerializer(serializers.ModelSerializer):
-    roles = RoleSerializer(many=True)
-
-    class Meta:
-        model = MinistryFlow
         fields = ('id', 'name', 'date_range', 'roles',)

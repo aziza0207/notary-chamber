@@ -1,6 +1,7 @@
 from rest_framework import serializers
 
-from .models import GeneralAssembly, GeneralAssemblyWorker, NotaryCouncil, NotaryCouncilWorker, Comission, ComissionWorker
+from .models import (Comission, ComissionWorker, GeneralAssembly, GeneralAssemblyWorker, NotaryCouncil,
+                     NotaryCouncilWorker)
 
 
 class GeneralAssemblyWorkerSerializer(serializers.ModelSerializer):

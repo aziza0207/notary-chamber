@@ -1,9 +1,8 @@
+import random
+
 import pytest
 from django.urls import reverse
 from rest_framework import status
-import random
-
-from ..models import News
 
 from .factories import NewsFactory
 

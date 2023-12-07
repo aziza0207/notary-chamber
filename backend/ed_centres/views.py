@@ -1,8 +1,8 @@
 from rest_framework import generics
 
-from .models import CenterInfo, CenterTask, ManagerProfile, StudyPlan, TeachingStaff, EducationalMaterial
-from .serializers import (CenterInfoSerializer, CenterTaskSerializer, ManagerProfileSerializer,
-                          StudyPlanSerializer, TeachingStaffSerializer, EducationalMaterialSerializer)
+from .models import CenterInfo, CenterTask, EducationalMaterial, ManagerProfile, StudyPlan, TeachingStaff
+from .serializers import (CenterInfoSerializer, CenterTaskSerializer, EducationalMaterialSerializer,
+                          ManagerProfileSerializer, StudyPlanSerializer, TeachingStaffSerializer)
 
 
 class CenterInfoListAPIView(generics.ListAPIView):

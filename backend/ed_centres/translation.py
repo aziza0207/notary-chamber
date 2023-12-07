@@ -1,6 +1,6 @@
 from modeltranslation.translator import TranslationOptions, register
 
-from .models import CenterInfo, CenterTask, ManagerProfile, StudyPlan, Discipline, TeachingStaff, EducationalMaterial
+from .models import CenterInfo, CenterTask, Discipline, EducationalMaterial, ManagerProfile, StudyPlan, TeachingStaff
 
 
 @register(EducationalMaterial)
@@ -34,5 +34,5 @@ class StudyPlanTranslationOptions(TranslationOptions):
 
 
 @register(Discipline)
-class MangerProfileTranslationOptions(TranslationOptions):
+class DisciplineTranslationOptions(TranslationOptions):
     fields = ('name', 'content',)

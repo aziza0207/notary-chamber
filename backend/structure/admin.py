@@ -1,8 +1,9 @@
 from django.contrib import admin
-from content.mixins import AdminFieldMixin
 from modeltranslation.admin import TabbedTranslationAdmin, TranslationStackedInline
 
-from structure.models import GeneralAssembly, GeneralAssemblyWorker, NotaryCouncil, NotaryCouncilWorker, Comission, ComissionWorker
+from content.mixins import AdminFieldMixin
+from structure.models import (Comission, ComissionWorker, GeneralAssembly, GeneralAssemblyWorker, NotaryCouncil,
+                              NotaryCouncilWorker)
 
 
 class GeneralAssemblyWorkerAdmin(TranslationStackedInline):

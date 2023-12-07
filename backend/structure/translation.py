@@ -1,7 +1,7 @@
 from modeltranslation.translator import TranslationOptions, register
 
-from structure.models import (GeneralAssembly, GeneralAssemblyWorker, NotaryCouncil, NotaryCouncilWorker,
-                              Comission, ComissionWorker)
+from structure.models import (Comission, ComissionWorker, GeneralAssembly, GeneralAssemblyWorker, NotaryCouncil,
+                              NotaryCouncilWorker)
 
 
 @register(GeneralAssembly)

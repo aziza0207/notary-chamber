@@ -1,7 +1,7 @@
 from django.contrib.admin import register
 from modeltranslation.admin import TabbedTranslationAdmin, TranslationStackedInline
 
-from ..models import Notary, Assistant
+from ..models import Assistant, Notary
 from .mixin import AdminFieldMixin
 
 

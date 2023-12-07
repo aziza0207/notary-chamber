@@ -1,6 +1,6 @@
 from django.urls import path
 
-from .views import NotaryListAPIView, NotaryStatusListView, NotaryFlowListAPIView, MinistryFlowListAPIView, make_and_send_message
+from .views import NotaryFlowListAPIView, NotaryListAPIView, NotaryStatusListView, make_and_send_message
 
 app_name = 'notary'
 

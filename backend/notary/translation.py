@@ -1,6 +1,6 @@
 from modeltranslation.translator import TranslationOptions, register
 
-from .models import Notary, Assistant, Role
+from .models import Assistant, Notary, Role
 
 
 @register(Role)

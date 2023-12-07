@@ -1,7 +1,8 @@
 from django.db import models
 
-from .schedule_abs_model import DayOffSchedule, WorkSchedule
 from notary.constants import StatusChoice
+
+from .schedule_abs_model import DayOffSchedule, WorkSchedule
 
 # from location_field.models.plain import PlainLocationField
 

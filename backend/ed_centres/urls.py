@@ -1,7 +1,7 @@
 from django.urls import path
 
-from .views import (CenterInfoListAPIView, CenterTaskListAPIView, ManagerProfileListAPIView,
-                    StudyPlanListAPIView, TeachingStaffListAPIView, EducationalMaterialListAPIView)
+from .views import (CenterInfoListAPIView, CenterTaskListAPIView, EducationalMaterialListAPIView,
+                    ManagerProfileListAPIView, StudyPlanListAPIView, TeachingStaffListAPIView)
 
 app_name = 'ed_centres'
 

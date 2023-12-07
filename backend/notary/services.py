@@ -2,7 +2,7 @@ import json
 
 from django.conf import settings
 
-from notary.models import Recipient, EducationalCentre, Role, NotaryFlow, MinistryFlow
+from notary.models import EducationalCentre, NotaryFlow, Recipient, Role
 
 
 def make_message(request):

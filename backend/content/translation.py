@@ -1,6 +1,6 @@
 from modeltranslation.translator import TranslationOptions, register
 
-from content.models import (FAQ, Link, News, PhotoSet, Video, Aphorism, Document)
+from content.models import FAQ, Aphorism, Document, Link, News, PhotoSet, Video
 
 
 @register(Document)
