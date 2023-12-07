@@ -10,10 +10,10 @@ class NotaryFlowAdmin(ModelAdmin):
     list_display_links = ('name', '_date_range',)
     
 
-@register(MinistryFlow)
-class MinistryFlowAdmin(ModelAdmin):
-    list_display = ('id', 'name', '_date_range',)
-    list_display_links = ('name', '_date_range',)
+# @register(MinistryFlow)
+# class MinistryFlowAdmin(ModelAdmin):
+#     list_display = ('id', 'name', '_date_range',)
+#     list_display_links = ('name', '_date_range',)
 
 
 @register(Role)
