@@ -10,7 +10,7 @@ class EducationalMaterialTranslationOptions(TranslationOptions):
 
 @register(TeachingStaff)
 class TeachingStaffTranslationOptions(TranslationOptions):
-    fields = ('full_name', 'office',)
+    fields = ('full_name', 'position',)
 
 
 @register(CenterInfo)

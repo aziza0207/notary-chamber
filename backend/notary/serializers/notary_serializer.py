@@ -30,7 +30,7 @@ class NotarySerializer(serializers.ModelSerializer):
                   'status',
                   'status_label',
                   'phone',
-                  'photo',
+                #   'photo',
                   'city',
                   'region',
                   'address',

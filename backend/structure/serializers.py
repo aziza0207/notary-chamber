@@ -7,7 +7,7 @@ from .models import (Comission, ComissionWorker, GeneralAssembly, GeneralAssembl
 class GeneralAssemblyWorkerSerializer(serializers.ModelSerializer):
     class Meta:
         model = GeneralAssemblyWorker
-        fields = ('id', 'full_name', 'position',)
+        fields = ('id', 'full_name', 'position', 'image',)
 
 
 class GeneralAssemblySerializer(serializers.ModelSerializer):
@@ -20,7 +20,7 @@ class GeneralAssemblySerializer(serializers.ModelSerializer):
 class NotaryCouncilWorkerSerializer(serializers.ModelSerializer):
     class Meta:
         model = NotaryCouncilWorker
-        fields = ('id', 'full_name', 'position',)
+        fields = ('id', 'full_name', 'position', 'image',)
 
 
 class NotaryCouncilSerializer(serializers.ModelSerializer):
@@ -33,7 +33,7 @@ class NotaryCouncilSerializer(serializers.ModelSerializer):
 class ComissionWorkerSerializer(serializers.ModelSerializer):
     class Meta:
         model = ComissionWorker
-        fields = ('id', 'full_name', 'position',)
+        fields = ('id', 'full_name', 'position', 'image',)
 
 
 class ComissionSerializer(serializers.ModelSerializer):

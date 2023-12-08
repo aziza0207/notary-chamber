@@ -38,7 +38,7 @@ class StudyPlanSerializer(serializers.ModelSerializer):
 class TeachingStaffSerializer(serializers.ModelSerializer):
     class Meta:
         model = TeachingStaff
-        fields = ('id', 'full_name', 'email', 'office', 'image',)
+        fields = ('id', 'full_name', 'position',)
 
 
 class EducationalMaterialSerializer(serializers.ModelSerializer):

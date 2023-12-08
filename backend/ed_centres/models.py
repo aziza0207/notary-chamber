@@ -82,9 +82,7 @@ def center_staff(instance, filename):
 
 class TeachingStaff(models.Model):
     full_name = models.CharField('ФИО', max_length=255)
-    email = models.EmailField('email')
-    office = models.CharField('Офис', max_length=255)
-    image = models.ImageField('Изображение', blank=True, null=True, upload_to=center_staff)
+    position = models.CharField('Должность', max_length=255)
 
     class Meta:
         ordering = ('id',)

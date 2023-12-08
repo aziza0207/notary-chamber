@@ -49,11 +49,11 @@ class StudyPlanAdmin(TabbedTranslationAdmin):
 
 @admin.register(TeachingStaff)
 class TeachingStaffAdmin(AdminFieldMixin, TabbedTranslationAdmin):
-    list_display = ('id', 'full_name', 'office', 'email', 'get_little_image',)
+    list_display = ('id', 'full_name', 'position', 'get_little_image',)
     list_display_links = ('full_name',)
     
     readonly_fields = ['get_little_image',]
-    fields = ['full_name', 'office', 'email', ('image', 'get_little_image',),]
+    fields = ['full_name', 'position', ('image', 'get_little_image',),]
 
 
 @admin.register(EducationalMaterial)
