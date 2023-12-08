@@ -36,6 +36,7 @@ THIRD_PARTY_APPS = [
     'drf_spectacular',
     'django_admin_logs',
     'django_extensions',
+    'import_export',
 ]
 
 if not PRODUCTION:
