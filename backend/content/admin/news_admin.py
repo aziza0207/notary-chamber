@@ -8,10 +8,6 @@ from ..mixins import AdminFieldMixin, AdminMultiInputMixin
 from ..models import News, NewsImage
 
 
-class NewsAdminForm(AdminForm):
-    pass
-
-
 class NewsImageImageInline(AdminFieldMixin, admin.TabularInline):
     model = NewsImage
     extra = 0
