@@ -109,7 +109,6 @@
         "model": "ed_centres.teachingstaff",
         "pk": 1,
         "fields": {
-            "image": "",
             "full_name": "Асанов Асан Асанович",
             "position": "Учитель"
         }
@@ -118,7 +117,6 @@
         "model": "ed_centres.teachingstaff",
         "pk": 2,
         "fields": {
-            "image": "",
             "full_name": "Камилев Камиль Асанович",
             "position": "Учитель"
         }
@@ -127,7 +125,6 @@
         "model": "ed_centres.teachingstaff",
         "pk": 3,
         "fields": {
-            "image": "",
             "full_name": "Асанов Асан Асанович",
             "position": "Учитель"
         }
@@ -136,7 +133,6 @@
         "model": "ed_centres.teachingstaff",
         "pk": 4,
         "fields": {
-            "image": "",
             "full_name": "Асанов Асан Асанович",
             "position": "Учитель"
         }
