@@ -2,11 +2,16 @@ from datetime import datetime
 
 from rest_framework import generics
 
-from .models import FAQ, Aphorism, Contact, Document, Link, News, PhotoSet, Video
+from .models import FAQ, Aphorism, Contact, Document, Link, News, PhotoSet, Video, SocialLink
 from .pagination import NewsListPagination
 from .serializers import (AphorismSerializer, ContactSerializer, DocumentSerializer, FAQSerializer, LinkSerializer,
                           NewsDetailSerializer, NewsListSerializer, PhotoSetDetailSerializer, PhotoSetListSerializer,
-                          VideoSerializer)
+                          VideoSerializer, SocialLinkSerializer)
+
+
+class SocialLinkListApiView(generics.ListAPIView):
+    serializer_class = SocialLinkSerializer
+    queryset = SocialLink.objects.all()
 
 
 class DocumentListApiView(generics.ListAPIView):
